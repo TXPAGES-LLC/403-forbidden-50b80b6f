@@ -1,0 +1,1694 @@
+{
+  "seo": 100,
+  "metadata": {
+    "url": "https://www.outlawfeed.com/",
+    "runtime": 24196,
+    "timestamp": 1776287328179,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/146.0.7680.153 Safari/537.36",
+    "environment": "Google PageSpeed Insights (mobile)",
+    "lighthouseVersion": "13.0.1"
+  },
+  "seoIssues": [
+    {
+      "id": "mainthread-work-breakdown",
+      "score": 0,
+      "title": "Minimize main-thread work",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "group": "scriptEvaluation",
+            "duration": 3225.9911999999786,
+            "groupLabel": "Script Evaluation"
+          },
+          {
+            "group": "scriptParseCompile",
+            "duration": 712.5995999999996,
+            "groupLabel": "Script Parsing & Compilation"
+          },
+          {
+            "group": "styleLayout",
+            "duration": 407.5499999999999,
+            "groupLabel": "Style & Layout"
+          },
+          {
+            "group": "other",
+            "duration": 392.4383999999954,
+            "groupLabel": "Other"
+          },
+          {
+            "group": "parseHTML",
+            "duration": 102.1452,
+            "groupLabel": "Parse HTML & CSS"
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 85.88280000000016,
+            "groupLabel": "Rendering"
+          },
+          {
+            "group": "garbageCollection",
+            "duration": 82.65960000000008,
+            "groupLabel": "Garbage Collection"
+          }
+        ],
+        "headings": [
+          {
+            "key": "groupLabel",
+            "label": "Category",
+            "valueType": "text"
+          },
+          {
+            "key": "duration",
+            "label": "Time Spent",
+            "valueType": "ms",
+            "granularity": 1
+          }
+        ],
+        "sortedBy": [
+          "duration"
+        ]
+      },
+      "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+    },
+    {
+      "id": "forced-reflow-insight",
+      "score": 0,
+      "title": "Forced reflow",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 7,
+                  "type": "source-location",
+                  "column": 18078,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Top function call",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 6,
+                  "type": "source-location",
+                  "column": 13507,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              },
+              {
+                "source": {
+                  "type": "text",
+                  "value": "[unattributed]"
+                },
+                "reflowTime": 17.154
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Source",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations."
+    },
+    {
+      "id": "first-contentful-paint",
+      "score": 63,
+      "title": "First Contentful Paint",
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)."
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "score": 0,
+      "title": "LCP request discovery",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "checklist",
+            "items": {
+              "eagerlyLoaded": {
+                "label": "lazy load not applied",
+                "value": true
+              },
+              "priorityHinted": {
+                "label": "fetchpriority=high should be applied",
+                "value": false
+              },
+              "requestDiscoverable": {
+                "label": "Request is discoverable in initial document",
+                "value": true
+              }
+            }
+          },
+          {
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,2,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,4,DIV,0,DIV,0,DIV,0,DIV,0,A,0,IMG",
+            "type": "node",
+            "snippet": "<img src=\"https://le-cdn.hibuwebsites.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/m…\" id=\"1416291950\" class=\"u_1416291950\" dm_changed=\"true\" data-dm-image-path=\"https://cdn.websites.hibu.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/mul…\" alt=\"Dog food products\" onerror=\"handleImageLoadError(this)\" height=\"140.25\" width=\"360.0\">",
+            "selector": "div#1167040901 > div#1060639386 > a#1655133594 > img#1416291950",
+            "nodeLabel": "Dog food products",
+            "boundingRect": {
+              "top": 555,
+              "left": 15,
+              "right": 397,
+              "width": 382,
+              "bottom": 704,
+              "height": 149
+            }
+          }
+        ]
+      },
+      "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading"
+    },
+    {
+      "id": "unused-css-rules",
+      "score": 50,
+      "title": "Reduce unused CSS",
+      "details": {
+        "type": "opportunity",
+        "items": [
+          {
+            "url": "https://cdn.hibuwebsites.com/012b6d2c903746fcbf11f9a7788d0c69/files/012b6d2c903746fcbf11f9a7788d0c69_withFlex_0.min.css?v=83",
+            "totalBytes": 30743,
+            "wastedBytes": 28249,
+            "wastedPercent": 91.88882518752091
+          },
+          {
+            "url": "https://static-res-cdn.websites.hibu.com/mnlt/production/6346/_dm/s/rt/dist/css/d-css-runtime-mobile-one-package-structured-global.min.css",
+            "totalBytes": 27264,
+            "wastedBytes": 26203,
+            "wastedPercent": 96.10754452404346
+          }
+        ],
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url"
+          },
+          {
+            "key": "totalBytes",
+            "label": "Transfer Size",
+            "valueType": "bytes"
+          },
+          {
+            "key": "wastedBytes",
+            "label": "Est Savings",
+            "valueType": "bytes"
+          }
+        ],
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 54452
+      },
+      "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "score": 50,
+      "title": "Legacy JavaScript",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "signal": "Array.isArray",
+                  "location": {
+                    "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                    "line": 6,
+                    "type": "source-location",
+                    "column": 1315,
+                    "urlProvider": "network"
+                  }
+                }
+              ]
+            },
+            "wastedBytes": 8273
+          },
+          {
+            "url": "https://wsv3cdn.audioeye.com/static-scripts/m/audioeye-scanner-esm/v11.0.42/audioeye-scanner-esm.js",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "signal": "String.prototype.trim",
+                  "location": {
+                    "url": "https://wsv3cdn.audioeye.com/static-scripts/m/audioeye-scanner-esm/v11.0.42/audioeye-scanner-esm.js",
+                    "line": 0,
+                    "type": "source-location",
+                    "column": 1029,
+                    "urlProvider": "network"
+                  }
+                }
+              ]
+            },
+            "wastedBytes": 7454
+          }
+        ],
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url",
+            "subItemsHeading": {
+              "key": "location",
+              "valueType": "source-location"
+            }
+          },
+          {
+            "key": null,
+            "valueType": "code",
+            "subItemsHeading": {
+              "key": "signal"
+            }
+          },
+          {
+            "key": "wastedBytes",
+            "label": "Wasted bytes",
+            "valueType": "bytes"
+          }
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "wastedBytes": 15727
+        }
+      },
+      "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)"
+    }
+  ],
+  "speedIndex": 4757.460391202386,
+  "diagnostics": {
+    "domSize": 0,
+    "minifyCss": 0,
+    "redirects": 780,
+    "bootupTime": 3618.551999999996,
+    "preloadLcp": 0,
+    "properSizing": 0,
+    "unminifiedCss": 0,
+    "allTextVisible": 0,
+    "mainThreadWork": 5009.266799999974,
+    "unusedCssRules": 0,
+    "networkRequests": 91,
+    "offscreenImages": 0,
+    "resourceSummary": {
+      "fonts": 272824,
+      "media": 0,
+      "other": 9231,
+      "total": 6655133,
+      "images": 36905,
+      "scripts": 1615277,
+      "stylesheets": 197523
+    },
+    "serveImagesWebp": 0,
+    "textCompression": 0,
+    "unusedCssRules2": 0,
+    "legacyJavaScript": 0,
+    "minifyJavaScript": 0,
+    "unusedJavaScript": 0,
+    "imageOptimization": 0,
+    "thirdPartyFacades": 0,
+    "modernImageFormats": 0,
+    "serverResponseTime": 21,
+    "preconnectToOrigins": 0,
+    "usePassiveListeners": 0,
+    "unminifiedJavaScript": 0,
+    "criticalResourceChains": 0,
+    "moderatelyStyledImages": 0,
+    "eliminateRenderBlocking": 0,
+    "renderBlockingResources": 0,
+    "efficientAnimatedContent": 0,
+    "fontPreloadOpportunities": 0
+  },
+  "performance": 76,
+  "accessibility": 96,
+  "bestPractices": 77,
+  "opportunities": [
+    {
+      "id": "mainthread-work-breakdown",
+      "score": 0,
+      "title": "Minimize main-thread work",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "group": "scriptEvaluation",
+            "duration": 3225.9911999999786,
+            "groupLabel": "Script Evaluation"
+          },
+          {
+            "group": "scriptParseCompile",
+            "duration": 712.5995999999996,
+            "groupLabel": "Script Parsing & Compilation"
+          },
+          {
+            "group": "styleLayout",
+            "duration": 407.5499999999999,
+            "groupLabel": "Style & Layout"
+          },
+          {
+            "group": "other",
+            "duration": 392.4383999999954,
+            "groupLabel": "Other"
+          },
+          {
+            "group": "parseHTML",
+            "duration": 102.1452,
+            "groupLabel": "Parse HTML & CSS"
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 85.88280000000016,
+            "groupLabel": "Rendering"
+          },
+          {
+            "group": "garbageCollection",
+            "duration": 82.65960000000008,
+            "groupLabel": "Garbage Collection"
+          }
+        ],
+        "headings": [
+          {
+            "key": "groupLabel",
+            "label": "Category",
+            "valueType": "text"
+          },
+          {
+            "key": "duration",
+            "label": "Time Spent",
+            "valueType": "ms",
+            "granularity": 1
+          }
+        ],
+        "sortedBy": [
+          "duration"
+        ]
+      },
+      "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)",
+      "displayValue": "5.0 s"
+    },
+    {
+      "id": "forced-reflow-insight",
+      "score": 0,
+      "title": "Forced reflow",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 7,
+                  "type": "source-location",
+                  "column": 18078,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Top function call",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 6,
+                  "type": "source-location",
+                  "column": 13507,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              },
+              {
+                "source": {
+                  "type": "text",
+                  "value": "[unattributed]"
+                },
+                "reflowTime": 17.154
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Source",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+      "displayValue": ""
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "score": 0,
+      "title": "LCP request discovery",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "checklist",
+            "items": {
+              "eagerlyLoaded": {
+                "label": "lazy load not applied",
+                "value": true
+              },
+              "priorityHinted": {
+                "label": "fetchpriority=high should be applied",
+                "value": false
+              },
+              "requestDiscoverable": {
+                "label": "Request is discoverable in initial document",
+                "value": true
+              }
+            }
+          },
+          {
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,2,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,4,DIV,0,DIV,0,DIV,0,DIV,0,A,0,IMG",
+            "type": "node",
+            "snippet": "<img src=\"https://le-cdn.hibuwebsites.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/m…\" id=\"1416291950\" class=\"u_1416291950\" dm_changed=\"true\" data-dm-image-path=\"https://cdn.websites.hibu.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/mul…\" alt=\"Dog food products\" onerror=\"handleImageLoadError(this)\" height=\"140.25\" width=\"360.0\">",
+            "selector": "div#1167040901 > div#1060639386 > a#1655133594 > img#1416291950",
+            "nodeLabel": "Dog food products",
+            "boundingRect": {
+              "top": 555,
+              "left": 15,
+              "right": 397,
+              "width": 382,
+              "bottom": 704,
+              "height": 149
+            }
+          }
+        ]
+      },
+      "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+      "displayValue": ""
+    },
+    {
+      "id": "document-latency-insight",
+      "score": 0,
+      "title": "Document request latency",
+      "details": {
+        "type": "checklist",
+        "items": {
+          "noRedirects": {
+            "label": "Had redirects (1 redirects, +305 ms)",
+            "value": false
+          },
+          "usesCompression": {
+            "label": "Applies text compression",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 21 ms)",
+            "value": true
+          }
+        },
+        "debugData": {
+          "type": "debugdata",
+          "wastedBytes": 0,
+          "redirectDuration": 305,
+          "serverResponseTime": 21,
+          "uncompressedResponseBytes": 0
+        }
+      },
+      "description": "Your first network request is the most important. [Reduce its latency](https://developer.chrome.com/docs/performance/insights/document-latency) by avoiding redirects, ensuring a fast server response, and enabling text compression.",
+      "displayValue": "Est savings of 310 ms"
+    },
+    {
+      "id": "third-party-cookies",
+      "score": 0,
+      "title": "Uses third-party cookies",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "url": "https://www.youtube.com/embed/DR8vhykInWE",
+            "name": "__Secure-YNID"
+          },
+          {
+            "url": "https://www.youtube.com/embed/DR8vhykInWE",
+            "name": "YSC"
+          },
+          {
+            "url": "https://www.youtube.com/embed/DR8vhykInWE",
+            "name": "__Secure-ROLLOUT_TOKEN"
+          },
+          {
+            "url": "https://www.youtube.com/embed/DR8vhykInWE",
+            "name": "VISITOR_INFO1_LIVE"
+          },
+          {
+            "url": "https://www.youtube.com/embed/DR8vhykInWE",
+            "name": "VISITOR_PRIVACY_METADATA"
+          }
+        ],
+        "headings": [
+          {
+            "key": "name",
+            "label": "Name",
+            "valueType": "text"
+          },
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url"
+          }
+        ]
+      },
+      "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+      "displayValue": "5 cookies found"
+    },
+    {
+      "id": "font-display-insight",
+      "score": 0,
+      "title": "Font display",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "url": "https://static-res-cdn.websites.hibu.com/fonts/dm-common-icons.ttf?5f0fg",
+            "wastedMs": 40
+          },
+          {
+            "url": "https://static-res-cdn.websites.hibu.com/fonts/social_icons/19052025/dm-social-icons.ttf",
+            "wastedMs": 30
+          }
+        ],
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url"
+          },
+          {
+            "key": "wastedMs",
+            "label": "Est Savings",
+            "valueType": "ms"
+          }
+        ],
+        "skipSumming": [
+          "wastedMs"
+        ]
+      },
+      "description": "Consider setting [font-display](https://developer.chrome.com/docs/performance/insights/font-display) to swap or optional to ensure text is consistently visible. swap can be further optimized to mitigate layout shifts with [font metric overrides](https://developer.chrome.com/blog/font-fallbacks).",
+      "displayValue": "Est savings of 40 ms"
+    },
+    {
+      "id": "inspector-issues",
+      "score": 0,
+      "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "url": "https://www.youtube.com/embed/DR8vhykInWE"
+                }
+              ]
+            },
+            "issueType": "Cookie"
+          }
+        ],
+        "headings": [
+          {
+            "key": "issueType",
+            "label": "Issue type",
+            "valueType": "text",
+            "subItemsHeading": {
+              "key": "url",
+              "valueType": "url"
+            }
+          }
+        ]
+      },
+      "description": "Issues logged to the `Issues` panel in Chrome Devtools indicate unresolved problems. They can come from network request failures, insufficient security controls, and other browser concerns. Open up the Issues panel in Chrome DevTools for more details on each issue.",
+      "displayValue": ""
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "score": 0,
+      "title": "Network dependency tree",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "D5AA0814409969223AD01EFF20528616": {
+                  "url": "https://www.outlawfeed.com/",
+                  "children": {
+                    "D5AA0814409969223AD01EFF20528616": {
+                      "url": "https://www.outlawfeed.com/",
+                      "children": {
+                        "54.10": {
+                          "url": "https://www.outlawfeed.com/_dm/s/rt/css/hibu/hibu-runtime.css?version=2026-04-09T13_55_15",
+                          "children": {},
+                          "transferSize": 527,
+                          "navStartToEndTime": 794
+                        },
+                        "54.12": {
+                          "url": "https://static-res-cdn.websites.hibu.com/libs/jquery/jquery-3.7.0.min.js",
+                          "children": {},
+                          "transferSize": 31299,
+                          "navStartToEndTime": 630
+                        },
+                        "54.13": {
+                          "url": "https://static-res-cdn.websites.hibu.com/mnlt/production/6346/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-mobile.min.js",
+                          "children": {},
+                          "transferSize": 98001,
+                          "navStartToEndTime": 696
+                        },
+                        "54.14": {
+                          "url": "https://static-res-cdn.websites.hibu.com/mnlt/production/6346/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js",
+                          "children": {},
+                          "transferSize": 5867,
+                          "navStartToEndTime": 660
+                        },
+                        "54.15": {
+                          "url": "https://dh-static-files.s3.amazonaws.com/prod/AppMeasurement.js",
+                          "children": {},
+                          "isLongest": true,
+                          "transferSize": 45330,
+                          "navStartToEndTime": 1029
+                        },
+                        "54.16": {
+                          "url": "https://dh-static-files.s3.amazonaws.com/prod/hibu-analytics.min.js",
+                          "children": {},
+                          "transferSize": 24131,
+                          "navStartToEndTime": 852
+                        },
+                        "54.17": {
+                          "url": "https://dh-static-files.s3.amazonaws.com/prod/omn_setting.js",
+                          "children": {},
+                          "transferSize": 9190,
+                          "navStartToEndTime": 850
+                        },
+                        "54.27": {
+                          "url": "https://cdn.hibuwebsites.com/fonts/s/nunito/v31/XRXV3I6Li01BKofINeaB.woff2",
+                          "children": {},
+                          "transferSize": 39527,
+                          "navStartToEndTime": 650
+                        },
+                        "54.28": {
+                          "url": "https://cdn.hibuwebsites.com/fonts/s/nunito/v31/XRXX3I6Li01BKofIMNaDRs4.woff2",
+                          "children": {},
+                          "transferSize": 42216,
+                          "navStartToEndTime": 693
+                        },
+                        "54.29": {
+                          "url": "https://cdn.hibuwebsites.com/fonts/s/exo/v24/4UaOrEtFpBISc36j.woff2",
+                          "children": {},
+                          "transferSize": 22252,
+                          "navStartToEndTime": 635
+                        }
+                      },
+                      "isLongest": true,
+                      "transferSize": 24581,
+                      "navStartToEndTime": 568
+                    }
+                  },
+                  "isLongest": true,
+                  "transferSize": 24581,
+                  "navStartToEndTime": 568
+                }
+              },
+              "longestChain": {
+                "duration": 1029
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "value": {
+              "type": "table",
+              "items": [
+                {
+                  "origin": "https://le-cdn.hibuwebsites.com/",
+                  "source": {
+                    "lhId": "page-3-LINK",
+                    "path": "1,HTML,0,HEAD,19,LINK",
+                    "type": "node",
+                    "snippet": "<link rel=\"preconnect\" href=\"https://le-cdn.hibuwebsites.com/\">",
+                    "selector": "head > link",
+                    "nodeLabel": "head > link",
+                    "boundingRect": {
+                      "top": 0,
+                      "left": 0,
+                      "right": 0,
+                      "width": 0,
+                      "bottom": 0,
+                      "height": 0
+                    }
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": []
+                  }
+                },
+                {
+                  "origin": "https://i.ytimg.com/",
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "warning": "Unused preconnect. Only use preconnect for origins that the page is likely to request."
+                      }
+                    ]
+                  }
+                }
+              ],
+              "headings": [
+                {
+                  "key": "origin",
+                  "label": "Origin",
+                  "valueType": "text",
+                  "subItemsHeading": {
+                    "key": "warning"
+                  }
+                },
+                {
+                  "key": "source",
+                  "label": "Source",
+                  "valueType": "node"
+                }
+              ]
+            },
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to."
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            },
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4."
+          }
+        ]
+      },
+      "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+      "displayValue": ""
+    },
+    {
+      "id": "frame-title",
+      "score": 0,
+      "title": "`<frame>` or `<iframe>` elements do not have a title",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "node": {
+              "lhId": "1-0-IFRAME",
+              "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,2,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,6,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,IFRAME",
+              "type": "node",
+              "snippet": "<iframe frameborder=\"0\" allowfullscreen=\"\" id=\"1206247662\" class=\"\" loading=\"lazy\" springtime-cookies=\"YSC,VISITOR_INFO1_LIVE,VISITOR_PRIVACY_METADATA\" springtime-src=\"https://www.youtube.com/embed/DR8vhykInWE\">",
+              "selector": "div#1011502006 > div#1524604331 > div#1571168637 > iframe#1206247662",
+              "nodeLabel": "div#1011502006 > div#1524604331 > div#1571168637 > iframe#1206247662",
+              "explanation": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "boundingRect": {
+                "top": 1560,
+                "left": 15,
+                "right": 397,
+                "width": 382,
+                "bottom": 1920,
+                "height": 360
+              }
+            }
+          }
+        ],
+        "headings": [
+          {
+            "key": "node",
+            "label": "Failing Elements",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            }
+          }
+        ],
+        "debugData": {
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.i",
+            "TTv5",
+            "TT12.d",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-2.1.1"
+          ],
+          "type": "debugdata",
+          "impact": "serious"
+        }
+      },
+      "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more about frame titles](https://dequeuniversity.com/rules/axe/4.11/frame-title).",
+      "displayValue": ""
+    },
+    {
+      "id": "bootup-time",
+      "score": 0,
+      "title": "Reduce JavaScript execution time",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "url": "https://wsv3cdn.audioeye.com/static-scripts/m/audioeye-scanner-esm/v11.0.42/audioeye-scanner-esm.js",
+            "total": 1873.6200000000003,
+            "scripting": 1774.9488000000003,
+            "scriptParseCompile": 26.3688
+          },
+          {
+            "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.mAyMrwD-maw.2021.O/am=AAAAAQ/d=1/br=1/rs=AGKMywEJ5XlAS0NHez-xp3iPAwsYYbtXNg/m=root,base",
+            "total": 748.792799999996,
+            "scripting": 527.5187999999958,
+            "scriptParseCompile": 100.50359999999998
+          },
+          {
+            "url": "https://www.outlawfeed.com/",
+            "total": 457.69800000000004,
+            "scripting": 22.202399999999994,
+            "scriptParseCompile": 7.867199999999999
+          },
+          {
+            "url": "Unattributable",
+            "total": 357.21839999999906,
+            "scripting": 53.466000000000015,
+            "scriptParseCompile": 0
+          },
+          {
+            "url": "https://www.youtube.com/s/player/ee507a59/player_embed_es6.vflset/en_US/base.js",
+            "total": 265.7844,
+            "scripting": 48.79800000000004,
+            "scriptParseCompile": 216.67439999999996
+          },
+          {
+            "url": "https://wsv3cdn.audioeye.com/static-scripts/v2/2026-04-08/startup.bundle.js",
+            "total": 171.05520000000007,
+            "scripting": 108.9120000000001,
+            "scriptParseCompile": 54.96119999999999
+          },
+          {
+            "url": "https://static-res-cdn.websites.hibu.com/libs/jquery/jquery-3.7.0.min.js",
+            "total": 136.5936,
+            "scripting": 116.3568,
+            "scriptParseCompile": 11.518799999999997
+          },
+          {
+            "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.mAyMrwD-maw.2021.O/am=AAAAAQ/d=1/exm=base,root/ed=1/br=1/rs=AGKMywEJ5XlAS0NHez-xp3iPAwsYYbtXNg/m=r78Drb",
+            "total": 131.08439999999996,
+            "scripting": 42.43799999999997,
+            "scriptParseCompile": 88.40520000000001
+          },
+          {
+            "url": "https://static-res-cdn.websites.hibu.com/mnlt/production/6346/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-mobile.min.js",
+            "total": 118.4472,
+            "scripting": 65.964,
+            "scriptParseCompile": 41.990399999999994
+          },
+          {
+            "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+            "total": 101.36520000000003,
+            "scripting": 71.77680000000004,
+            "scriptParseCompile": 5.466
+          },
+          {
+            "url": "https://connect.facebook.net/en_US/bundle/sdk.js/",
+            "total": 88.85400000000001,
+            "scripting": 59.860800000000005,
+            "scriptParseCompile": 28.009199999999996
+          },
+          {
+            "url": "https://aegis.audioeye.com/assets/index.js",
+            "total": 77.3964,
+            "scripting": 37.6008,
+            "scriptParseCompile": 17.365199999999998
+          },
+          {
+            "url": "https://www.youtube.com/embed/DR8vhykInWE",
+            "total": 74.74799999999999,
+            "scripting": 33.726,
+            "scriptParseCompile": 7.490399999999997
+          },
+          {
+            "url": "https://wsv3cdn.audioeye.com/static-scripts/v2/2026-04-08/compliance.bundle.js",
+            "total": 64.224,
+            "scripting": 42.733200000000004,
+            "scriptParseCompile": 5.6292
+          }
+        ],
+        "summary": {
+          "wastedMs": 3618.551999999996
+        },
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url"
+          },
+          {
+            "key": "total",
+            "label": "Total CPU Time",
+            "valueType": "ms",
+            "granularity": 1
+          },
+          {
+            "key": "scripting",
+            "label": "Script Evaluation",
+            "valueType": "ms",
+            "granularity": 1
+          },
+          {
+            "key": "scriptParseCompile",
+            "label": "Script Parse",
+            "valueType": "ms",
+            "granularity": 1
+          }
+        ],
+        "sortedBy": [
+          "total"
+        ]
+      },
+      "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/).",
+      "displayValue": "3.6 s"
+    }
+  ],
+  "firstInputDelay": 268,
+  "timeToInteractive": 17095.696348723184,
+  "totalBlockingTime": 514.5,
+  "accessibilityIssues": [
+    {
+      "id": "mainthread-work-breakdown",
+      "score": 0,
+      "title": "Minimize main-thread work",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "group": "scriptEvaluation",
+            "duration": 3225.9911999999786,
+            "groupLabel": "Script Evaluation"
+          },
+          {
+            "group": "scriptParseCompile",
+            "duration": 712.5995999999996,
+            "groupLabel": "Script Parsing & Compilation"
+          },
+          {
+            "group": "styleLayout",
+            "duration": 407.5499999999999,
+            "groupLabel": "Style & Layout"
+          },
+          {
+            "group": "other",
+            "duration": 392.4383999999954,
+            "groupLabel": "Other"
+          },
+          {
+            "group": "parseHTML",
+            "duration": 102.1452,
+            "groupLabel": "Parse HTML & CSS"
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 85.88280000000016,
+            "groupLabel": "Rendering"
+          },
+          {
+            "group": "garbageCollection",
+            "duration": 82.65960000000008,
+            "groupLabel": "Garbage Collection"
+          }
+        ],
+        "headings": [
+          {
+            "key": "groupLabel",
+            "label": "Category",
+            "valueType": "text"
+          },
+          {
+            "key": "duration",
+            "label": "Time Spent",
+            "valueType": "ms",
+            "granularity": 1
+          }
+        ],
+        "sortedBy": [
+          "duration"
+        ]
+      },
+      "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+    },
+    {
+      "id": "forced-reflow-insight",
+      "score": 0,
+      "title": "Forced reflow",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 7,
+                  "type": "source-location",
+                  "column": 18078,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Top function call",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 6,
+                  "type": "source-location",
+                  "column": 13507,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              },
+              {
+                "source": {
+                  "type": "text",
+                  "value": "[unattributed]"
+                },
+                "reflowTime": 17.154
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Source",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations."
+    },
+    {
+      "id": "first-contentful-paint",
+      "score": 63,
+      "title": "First Contentful Paint",
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)."
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "score": 0,
+      "title": "LCP request discovery",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "checklist",
+            "items": {
+              "eagerlyLoaded": {
+                "label": "lazy load not applied",
+                "value": true
+              },
+              "priorityHinted": {
+                "label": "fetchpriority=high should be applied",
+                "value": false
+              },
+              "requestDiscoverable": {
+                "label": "Request is discoverable in initial document",
+                "value": true
+              }
+            }
+          },
+          {
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,2,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,4,DIV,0,DIV,0,DIV,0,DIV,0,A,0,IMG",
+            "type": "node",
+            "snippet": "<img src=\"https://le-cdn.hibuwebsites.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/m…\" id=\"1416291950\" class=\"u_1416291950\" dm_changed=\"true\" data-dm-image-path=\"https://cdn.websites.hibu.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/mul…\" alt=\"Dog food products\" onerror=\"handleImageLoadError(this)\" height=\"140.25\" width=\"360.0\">",
+            "selector": "div#1167040901 > div#1060639386 > a#1655133594 > img#1416291950",
+            "nodeLabel": "Dog food products",
+            "boundingRect": {
+              "top": 555,
+              "left": 15,
+              "right": 397,
+              "width": 382,
+              "bottom": 704,
+              "height": 149
+            }
+          }
+        ]
+      },
+      "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading"
+    },
+    {
+      "id": "unused-css-rules",
+      "score": 50,
+      "title": "Reduce unused CSS",
+      "details": {
+        "type": "opportunity",
+        "items": [
+          {
+            "url": "https://cdn.hibuwebsites.com/012b6d2c903746fcbf11f9a7788d0c69/files/012b6d2c903746fcbf11f9a7788d0c69_withFlex_0.min.css?v=83",
+            "totalBytes": 30743,
+            "wastedBytes": 28249,
+            "wastedPercent": 91.88882518752091
+          },
+          {
+            "url": "https://static-res-cdn.websites.hibu.com/mnlt/production/6346/_dm/s/rt/dist/css/d-css-runtime-mobile-one-package-structured-global.min.css",
+            "totalBytes": 27264,
+            "wastedBytes": 26203,
+            "wastedPercent": 96.10754452404346
+          }
+        ],
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url"
+          },
+          {
+            "key": "totalBytes",
+            "label": "Transfer Size",
+            "valueType": "bytes"
+          },
+          {
+            "key": "wastedBytes",
+            "label": "Est Savings",
+            "valueType": "bytes"
+          }
+        ],
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 54452
+      },
+      "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "score": 50,
+      "title": "Legacy JavaScript",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "signal": "Array.isArray",
+                  "location": {
+                    "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                    "line": 6,
+                    "type": "source-location",
+                    "column": 1315,
+                    "urlProvider": "network"
+                  }
+                }
+              ]
+            },
+            "wastedBytes": 8273
+          },
+          {
+            "url": "https://wsv3cdn.audioeye.com/static-scripts/m/audioeye-scanner-esm/v11.0.42/audioeye-scanner-esm.js",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "signal": "String.prototype.trim",
+                  "location": {
+                    "url": "https://wsv3cdn.audioeye.com/static-scripts/m/audioeye-scanner-esm/v11.0.42/audioeye-scanner-esm.js",
+                    "line": 0,
+                    "type": "source-location",
+                    "column": 1029,
+                    "urlProvider": "network"
+                  }
+                }
+              ]
+            },
+            "wastedBytes": 7454
+          }
+        ],
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url",
+            "subItemsHeading": {
+              "key": "location",
+              "valueType": "source-location"
+            }
+          },
+          {
+            "key": null,
+            "valueType": "code",
+            "subItemsHeading": {
+              "key": "signal"
+            }
+          },
+          {
+            "key": "wastedBytes",
+            "label": "Wasted bytes",
+            "valueType": "bytes"
+          }
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "wastedBytes": 15727
+        }
+      },
+      "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)"
+    }
+  ],
+  "bestPracticesIssues": [
+    {
+      "id": "mainthread-work-breakdown",
+      "score": 0,
+      "title": "Minimize main-thread work",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "group": "scriptEvaluation",
+            "duration": 3225.9911999999786,
+            "groupLabel": "Script Evaluation"
+          },
+          {
+            "group": "scriptParseCompile",
+            "duration": 712.5995999999996,
+            "groupLabel": "Script Parsing & Compilation"
+          },
+          {
+            "group": "styleLayout",
+            "duration": 407.5499999999999,
+            "groupLabel": "Style & Layout"
+          },
+          {
+            "group": "other",
+            "duration": 392.4383999999954,
+            "groupLabel": "Other"
+          },
+          {
+            "group": "parseHTML",
+            "duration": 102.1452,
+            "groupLabel": "Parse HTML & CSS"
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 85.88280000000016,
+            "groupLabel": "Rendering"
+          },
+          {
+            "group": "garbageCollection",
+            "duration": 82.65960000000008,
+            "groupLabel": "Garbage Collection"
+          }
+        ],
+        "headings": [
+          {
+            "key": "groupLabel",
+            "label": "Category",
+            "valueType": "text"
+          },
+          {
+            "key": "duration",
+            "label": "Time Spent",
+            "valueType": "ms",
+            "granularity": 1
+          }
+        ],
+        "sortedBy": [
+          "duration"
+        ]
+      },
+      "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+    },
+    {
+      "id": "forced-reflow-insight",
+      "score": 0,
+      "title": "Forced reflow",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 7,
+                  "type": "source-location",
+                  "column": 18078,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Top function call",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "items": [
+              {
+                "source": {
+                  "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                  "line": 6,
+                  "type": "source-location",
+                  "column": 13507,
+                  "urlProvider": "network"
+                },
+                "reflowTime": 12.397
+              },
+              {
+                "source": {
+                  "type": "text",
+                  "value": "[unattributed]"
+                },
+                "reflowTime": 17.154
+              }
+            ],
+            "headings": [
+              {
+                "key": "source",
+                "label": "Source",
+                "valueType": "source-location"
+              },
+              {
+                "key": "reflowTime",
+                "label": "Total reflow time",
+                "valueType": "ms",
+                "granularity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations."
+    },
+    {
+      "id": "first-contentful-paint",
+      "score": 63,
+      "title": "First Contentful Paint",
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)."
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "score": 0,
+      "title": "LCP request discovery",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "checklist",
+            "items": {
+              "eagerlyLoaded": {
+                "label": "lazy load not applied",
+                "value": true
+              },
+              "priorityHinted": {
+                "label": "fetchpriority=high should be applied",
+                "value": false
+              },
+              "requestDiscoverable": {
+                "label": "Request is discoverable in initial document",
+                "value": true
+              }
+            }
+          },
+          {
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,2,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,4,DIV,0,DIV,0,DIV,0,DIV,0,A,0,IMG",
+            "type": "node",
+            "snippet": "<img src=\"https://le-cdn.hibuwebsites.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/m…\" id=\"1416291950\" class=\"u_1416291950\" dm_changed=\"true\" data-dm-image-path=\"https://cdn.websites.hibu.com/012b6d2c903746fcbf11f9a7788d0c69/dms3rep/mul…\" alt=\"Dog food products\" onerror=\"handleImageLoadError(this)\" height=\"140.25\" width=\"360.0\">",
+            "selector": "div#1167040901 > div#1060639386 > a#1655133594 > img#1416291950",
+            "nodeLabel": "Dog food products",
+            "boundingRect": {
+              "top": 555,
+              "left": 15,
+              "right": 397,
+              "width": 382,
+              "bottom": 704,
+              "height": 149
+            }
+          }
+        ]
+      },
+      "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading"
+    },
+    {
+      "id": "unused-css-rules",
+      "score": 50,
+      "title": "Reduce unused CSS",
+      "details": {
+        "type": "opportunity",
+        "items": [
+          {
+            "url": "https://cdn.hibuwebsites.com/012b6d2c903746fcbf11f9a7788d0c69/files/012b6d2c903746fcbf11f9a7788d0c69_withFlex_0.min.css?v=83",
+            "totalBytes": 30743,
+            "wastedBytes": 28249,
+            "wastedPercent": 91.88882518752091
+          },
+          {
+            "url": "https://static-res-cdn.websites.hibu.com/mnlt/production/6346/_dm/s/rt/dist/css/d-css-runtime-mobile-one-package-structured-global.min.css",
+            "totalBytes": 27264,
+            "wastedBytes": 26203,
+            "wastedPercent": 96.10754452404346
+          }
+        ],
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url"
+          },
+          {
+            "key": "totalBytes",
+            "label": "Transfer Size",
+            "valueType": "bytes"
+          },
+          {
+            "key": "wastedBytes",
+            "label": "Est Savings",
+            "valueType": "bytes"
+          }
+        ],
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 54452
+      },
+      "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "score": 50,
+      "title": "Legacy JavaScript",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "signal": "Array.isArray",
+                  "location": {
+                    "url": "https://wsv3cdn.audioeye.com/bootstrap.js?h=9e7873cc86749147e18a6afab8892bf5",
+                    "line": 6,
+                    "type": "source-location",
+                    "column": 1315,
+                    "urlProvider": "network"
+                  }
+                }
+              ]
+            },
+            "wastedBytes": 8273
+          },
+          {
+            "url": "https://wsv3cdn.audioeye.com/static-scripts/m/audioeye-scanner-esm/v11.0.42/audioeye-scanner-esm.js",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "signal": "String.prototype.trim",
+                  "location": {
+                    "url": "https://wsv3cdn.audioeye.com/static-scripts/m/audioeye-scanner-esm/v11.0.42/audioeye-scanner-esm.js",
+                    "line": 0,
+                    "type": "source-location",
+                    "column": 1029,
+                    "urlProvider": "network"
+                  }
+                }
+              ]
+            },
+            "wastedBytes": 7454
+          }
+        ],
+        "headings": [
+          {
+            "key": "url",
+            "label": "URL",
+            "valueType": "url",
+            "subItemsHeading": {
+              "key": "location",
+              "valueType": "source-location"
+            }
+          },
+          {
+            "key": null,
+            "valueType": "code",
+            "subItemsHeading": {
+              "key": "signal"
+            }
+          },
+          {
+            "key": "wastedBytes",
+            "label": "Wasted bytes",
+            "valueType": "bytes"
+          }
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "wastedBytes": 15727
+        }
+      },
+      "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)"
+    }
+  ],
+  "firstContentfulPaint": 2604.066744295347,
+  "cumulativeLayoutShift": 0.00061,
+  "largestContentfulPaint": 2833.0248768746255
+}

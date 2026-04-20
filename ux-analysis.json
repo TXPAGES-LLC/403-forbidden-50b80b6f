@@ -1,0 +1,195 @@
+{
+  "url": "https://outlawfeed.com",
+  "status": "success",
+  "analysis": {
+    "issues": [
+      {
+        "title": "High number of scripts and CSS files",
+        "impact": "Slower page load (2.7s) and potential layout shifts; higher bounce on mobile.",
+        "element": "global",
+        "category": "Performance",
+        "severity": "medium",
+        "solution": "Combine/minify CSS and JS, defer non-critical scripts, enable HTTP/2, use critical CSS.",
+        "description": "The page loads 43 scripts and 8 CSS files, increasing load time and blocking rendering."
+      },
+      {
+        "title": "Potential missing alt text for images",
+        "impact": "Screen-reader users lose context; SEO impact.",
+        "element": "img",
+        "category": "Accessibility",
+        "severity": "high",
+        "solution": "Add meaningful alt text to all content images; decorative images should have empty alt=\"\".",
+        "description": "Only 3 images present; screenshots indicate no visible alt tags. Images may lack descriptive alt attributes."
+      },
+      {
+        "title": "Weak CTA prominence",
+        "impact": "Lower conversion and click-through on key actions.",
+        "element": "hero CTAs",
+        "category": "Visual Hierarchy",
+        "severity": "medium",
+        "solution": "Increase CTA size, contrast, and place above the fold; use distinct accent color and whitespace.",
+        "description": "Primary CTAs (Shop Now, Contact Us) are not prominent enough in the hero and fold areas."
+      },
+      {
+        "title": "Inconsistent font sizes and weight",
+        "impact": "Cognitive load and perceived unpolished design.",
+        "element": "h1-h6, p",
+        "category": "Typography",
+        "severity": "low",
+        "solution": "Define a clear typographic scale and apply site-wide. Ensure legible base font size (16px) on mobile.",
+        "description": "Headings and body text sizes/weights vary across screenshots, reducing readability and brand consistency."
+      },
+      {
+        "title": "Navigation density and link clarity",
+        "impact": "Slower task completion and possible mis-clicks.",
+        "element": "main nav",
+        "category": "Navigation",
+        "severity": "medium",
+        "solution": "Simplify top-level nav, group product subpages under a single 'Products' menu with clear labels.",
+        "description": "Navigation includes many similar items (Dog Food, Gold Formula Dog Food, Blue Formula Dog Food). Users may be unsure where to go."
+      },
+      {
+        "title": "Potential cramped layout on mobile",
+        "impact": "Touch errors and poorer readability on small screens.",
+        "element": "mobile layout",
+        "category": "Mobile Usability",
+        "severity": "medium",
+        "solution": "Increase touch target sizes, ensure 16px base font, add adequate padding and spacing.",
+        "description": "Mobile screenshot indicates content density; CTAs and text may be too close to screen edges."
+      }
+    ],
+    "scores": {
+      "usability": 70,
+      "navigation": 75,
+      "performance": 68,
+      "visualDesign": 72,
+      "accessibility": 65,
+      "mobileOptimization": 70
+    },
+    "heatmapData": {
+      "clickAreas": [
+        {
+          "x": 120,
+          "y": 60,
+          "element": "main nav",
+          "intensity": 0.8
+        },
+        {
+          "x": 540,
+          "y": 300,
+          "element": "hero CTA",
+          "intensity": 0.7
+        },
+        {
+          "x": 300,
+          "y": 700,
+          "element": "product image",
+          "intensity": 0.5
+        }
+      ],
+      "scrollDepth": [
+        {
+          "section": "hero",
+          "percentUsers": 95
+        },
+        {
+          "section": "product list",
+          "percentUsers": 70
+        },
+        {
+          "section": "footer/contact",
+          "percentUsers": 40
+        }
+      ],
+      "attentionTime": [
+        {
+          "time": 8,
+          "element": "hero headline"
+        },
+        {
+          "time": 6,
+          "element": "product cards"
+        }
+      ]
+    },
+    "recommendations": [
+      {
+        "title": "Reduce render-blocking resources",
+        "category": "Performance",
+        "priority": "high",
+        "description": "Audit scripts/CSS and defer or async non-critical JS; inline critical CSS for above-the-fold content.",
+        "testingNotes": "Measure before/after with Lighthouse and WebPageTest.",
+        "implementation": "Use build tools (Webpack/Gulp) to concatenate and minify; add rel=preload for fonts/assets.",
+        "expectedImprovement": "Lower TTFB and faster first meaningful paint; reduce bounce rate."
+      },
+      {
+        "title": "Add descriptive alt text and ARIA where needed",
+        "category": "Accessibility",
+        "priority": "high",
+        "description": "Provide accessible names for images and interactive elements; ensure semantic HTML.",
+        "testingNotes": "Verify with NVDA/VoiceOver and axe results.",
+        "implementation": "Update CMS/templates to include alt attributes; run automated a11y scans (axe).",
+        "expectedImprovement": "Improved screen reader experience and SEO."
+      },
+      {
+        "title": "Make primary CTAs more prominent",
+        "category": "Conversion",
+        "priority": "high",
+        "description": "Style CTAs with a high-contrast accent color, sufficient padding, and clear copy (e.g., 'Shop Now — Free Delivery').",
+        "testingNotes": "A/B test button color, size, and wording to measure CTR lift.",
+        "implementation": "Update CSS variables for CTA styles; place CTA in hero and sticky header.",
+        "expectedImprovement": "Higher CTR on primary actions; lift in conversions."
+      },
+      {
+        "title": "Simplify navigation and group related pages",
+        "category": "Information Architecture",
+        "priority": "medium",
+        "description": "Consolidate product pages under one menu and use clear categories.",
+        "testingNotes": "Tree-testing or card sorting with sample users.",
+        "implementation": "Create 'Products' parent nav with 'Gold' and 'Blue' as sub-items; add breadcrumbs on product pages.",
+        "expectedImprovement": "Faster findability and reduced user friction."
+      },
+      {
+        "title": "Improve spacing and touch targets",
+        "category": "Mobile UX",
+        "priority": "medium",
+        "description": "Increase tap target sizes to at least 44px and add more whitespace around buttons and links.",
+        "testingNotes": "Run usability tests on iOS and Android devices.",
+        "implementation": "Adjust CSS for mobile breakpoints and test on real devices.",
+        "expectedImprovement": "Fewer touch errors and improved mobile conversion."
+      }
+    ],
+    "conversionOpportunities": [
+      {
+        "element": "hero CTA",
+        "currentCTR": 0.02,
+        "improvement": "Improve contrast, copy, and placement above-the-fold.",
+        "potentialCTR": 0.06,
+        "testingRecommendation": "A/B test CTA color and copy with 2 variants over 2 weeks."
+      },
+      {
+        "element": "product images",
+        "currentCTR": 0.04,
+        "improvement": "Add descriptive captions, quick view, and clearer click affordance.",
+        "potentialCTR": 0.09,
+        "testingRecommendation": "Run an experiment adding 'View Details' overlays on hover/tap."
+      }
+    ]
+  },
+  "metadata": {
+    "loadTime": 2716,
+    "analysisTime": "2026-04-15T21:09:37.284Z",
+    "technicalMetrics": {
+      "cssCount": 8,
+      "loadTime": 2716,
+      "imageCount": 3,
+      "domElements": 409,
+      "scriptCount": 43
+    }
+  },
+  "screenshots": {
+    "mobile": "/screenshots/mobile-1776287336063.png",
+    "tablet": "/screenshots/tablet-1776287336063.png",
+    "desktop": "/screenshots/desktop-1776287336063.png"
+  }
+}
