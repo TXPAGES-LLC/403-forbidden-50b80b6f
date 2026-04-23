@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import RetailerMap from "@/components/retailer-map";
 
 export const metadata: Metadata = {
   title: "Where to Buy Outlaw Feed — Texas Retailers & Store Locator",
@@ -14,106 +15,53 @@ const localBusinessSchema = {
   name: "Outlaw Feed Retail Locations",
   description: "Texas retailers carrying Outlaw Feed dog food",
   itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      item: {
-        "@type": "Store",
-        name: "Belton Farm & Ranch Supply",
-        address: { "@type": "PostalAddress", addressLocality: "Belton", addressRegion: "TX" },
-        telephone: "+12545550121",
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      item: {
-        "@type": "Store",
-        name: "Temple Feed & Seed",
-        address: { "@type": "PostalAddress", addressLocality: "Temple", addressRegion: "TX" },
-        telephone: "+12545550144",
-      },
-    },
+    { "@type": "ListItem", position: 1,  item: { "@type": "Store", name: "Belton Feed and Supply",           address: { "@type": "PostalAddress", streetAddress: "410 E 2nd Ave",             addressLocality: "Belton",         addressRegion: "TX", postalCode: "76513" }, telephone: "+12549393636" } },
+    { "@type": "ListItem", position: 2,  item: { "@type": "Store", name: "Keith Ace Hardware (Belton)",      address: { "@type": "PostalAddress", streetAddress: "525 N Main St",            addressLocality: "Belton",         addressRegion: "TX", postalCode: "76513" }, telephone: "+12546134235" } },
+    { "@type": "ListItem", position: 3,  item: { "@type": "Store", name: "Central Texas Feed and Supply",    address: { "@type": "PostalAddress", streetAddress: "5303 S Fort Hood St",       addressLocality: "Killeen",        addressRegion: "TX", postalCode: "76542" }, telephone: "+12546281002" } },
+    { "@type": "ListItem", position: 4,  item: { "@type": "Store", name: "D and D Feed Store",               address: { "@type": "PostalAddress", streetAddress: "2744 FM 3046",             addressLocality: "Copperas Cove",  addressRegion: "TX", postalCode: "76522" }, telephone: "+12545474812" } },
+    { "@type": "ListItem", position: 5,  item: { "@type": "Store", name: "Keith Ace Hardware (Salado)",      address: { "@type": "PostalAddress", streetAddress: "213 Mill Creek Dr",        addressLocality: "Salado",         addressRegion: "TX", postalCode: "76571" }, telephone: "+12549474008" } },
+    { "@type": "ListItem", position: 6,  item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "701 E Central TX Expressway", addressLocality: "Killeen",     addressRegion: "TX", postalCode: "76541" }, telephone: "+12543124300" } },
+    { "@type": "ListItem", position: 7,  item: { "@type": "Store", name: "Keith Ace Hardware (Troy)",        address: { "@type": "PostalAddress", streetAddress: "402 Church Ave.",          addressLocality: "Troy",           addressRegion: "TX", postalCode: "76579" }, telephone: "+12545669355" } },
+    { "@type": "ListItem", position: 8,  item: { "@type": "Store", name: "Florence Grain Co.",               address: { "@type": "PostalAddress", streetAddress: "600 E Main St.",           addressLocality: "Florence",       addressRegion: "TX", postalCode: "76527" }, telephone: "+12547932595" } },
+    { "@type": "ListItem", position: 9,  item: { "@type": "Store", name: "Niemeier Feed and Grain",          address: { "@type": "PostalAddress", streetAddress: "103 S. Main St.",          addressLocality: "McGregor",       addressRegion: "TX", postalCode: "76657" }, telephone: "+12548404106" } },
+    { "@type": "ListItem", position: 10, item: { "@type": "Store", name: "Expo Quik Stop",                   address: { "@type": "PostalAddress", streetAddress: "308 W Loop 121",           addressLocality: "Belton",         addressRegion: "TX", postalCode: "76513" }, telephone: "+12549333976" } },
+    { "@type": "ListItem", position: 11, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "4001 Sunset Dr. Ste 4200", addressLocality: "San Angelo",     addressRegion: "TX", postalCode: "76904" } } },
+    { "@type": "ListItem", position: 12, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "2500 S Bypass 35",         addressLocality: "Alvin",          addressRegion: "TX", postalCode: "77511" } } },
+    { "@type": "ListItem", position: 13, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "516 IH 10 E",              addressLocality: "Seguin",         addressRegion: "TX", postalCode: "78155" } } },
+    { "@type": "ListItem", position: 14, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "4200 IH 35 South",         addressLocality: "San Marcos",     addressRegion: "TX", postalCode: "78666" } } },
+    { "@type": "ListItem", position: 15, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "17975 IH 35 N Ste B200",   addressLocality: "Schertz",        addressRegion: "TX", postalCode: "78154" } } },
+    { "@type": "ListItem", position: 16, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "7508 N Navarro St.",       addressLocality: "Victoria",       addressRegion: "TX", postalCode: "77904" } } },
+    { "@type": "ListItem", position: 17, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "1502 Harvey Rd. Suite 200", addressLocality: "College Station", addressRegion: "TX", postalCode: "77840" } } },
+    { "@type": "ListItem", position: 18, item: { "@type": "Store", name: "Murdoch's Ranch and Home Supply",  address: { "@type": "PostalAddress", streetAddress: "311 S Bryan Rd. Suite 200A", addressLocality: "Mission",       addressRegion: "TX", postalCode: "78572" } } },
   ],
 };
 
 const retailers = [
-  {
-    name: "Belton Farm & Ranch Supply",
-    address: "1200 E Central Ave",
-    city: "Belton, TX 76513",
-    phone: "(254) 555-0121",
-    hours: "Mon–Sat 7am–6pm, Sun 10am–4pm",
-    note: "Carries Gold & Blue Formula",
-    county: "Bell County",
-  },
-  {
-    name: "Temple Feed & Seed",
-    address: "4310 S General Bruce Dr",
-    city: "Temple, TX 76502",
-    phone: "(254) 555-0144",
-    hours: "Mon–Fri 8am–5:30pm, Sat 8am–4pm",
-    note: "Carries Gold Formula",
-    county: "Bell County",
-  },
-  {
-    name: "Killeen Tractor Supply Co.",
-    address: "2702 E Central Texas Expy",
-    city: "Killeen, TX 76543",
-    phone: "(254) 555-0158",
-    hours: "Mon–Sat 8am–8pm, Sun 9am–7pm",
-    note: "Carries Gold & Blue Formula",
-    county: "Bell County",
-  },
-  {
-    name: "Waco Agri-Center",
-    address: "7120 Woodway Dr",
-    city: "Waco, TX 76712",
-    phone: "(254) 555-0167",
-    hours: "Mon–Fri 7:30am–5:30pm, Sat 8am–3pm",
-    note: "Carries Gold Formula",
-    county: "McLennan County",
-  },
-  {
-    name: "Georgetown Farm Store",
-    address: "501 S Austin Ave",
-    city: "Georgetown, TX 78626",
-    phone: "(512) 555-0182",
-    hours: "Mon–Sat 8am–6pm, Sun 10am–3pm",
-    note: "Carries Gold & Blue Formula",
-    county: "Williamson County",
-  },
-  {
-    name: "Salado Feed Co.",
-    address: "112 N Main St",
-    city: "Salado, TX 76571",
-    phone: "(254) 555-0199",
-    hours: "Mon–Fri 8am–5pm, Sat 8am–12pm",
-    note: "Carries Gold Formula",
-    county: "Bell County",
-  },
-  {
-    name: "Harker Heights Farm Supply",
-    address: "320 E Central Texas Expy",
-    city: "Harker Heights, TX 76548",
-    phone: "(254) 555-0211",
-    hours: "Mon–Sat 8am–6pm",
-    note: "Carries Gold & Blue Formula",
-    county: "Bell County",
-  },
-  {
-    name: "Copperas Cove Livestock Supply",
-    address: "1900 S Main St",
-    city: "Copperas Cove, TX 76522",
-    phone: "(254) 555-0228",
-    hours: "Mon–Fri 7:30am–5:30pm, Sat 8am–2pm",
-    note: "Carries Gold Formula",
-    county: "Coryell County",
-  },
+  // ── Bell County & immediate area ──────────────────────────────────────────
+  { name: "Belton Feed and Supply",          address: "410 E 2nd Ave",              city: "Belton, TX 76513",        phone: "(254) 939-3636", county: "Bell County" },
+  { name: "Keith Ace Hardware",              address: "525 N Main St",              city: "Belton, TX 76513",        phone: "(254) 613-4235", county: "Bell County" },
+  { name: "Expo Quik Stop",                  address: "308 W Loop 121",             city: "Belton, TX 76513",        phone: "(254) 933-3976", county: "Bell County" },
+  { name: "Keith Ace Hardware",              address: "213 Mill Creek Dr",          city: "Salado, TX 76571",        phone: "(254) 947-4008", county: "Bell County" },
+  { name: "Keith Ace Hardware",              address: "402 Church Ave.",            city: "Troy, TX 76579",          phone: "(254) 566-9355", county: "Bell County" },
+  { name: "Central Texas Feed and Supply",   address: "5303 S Fort Hood St",        city: "Killeen, TX 76542",       phone: "(254) 628-1002", county: "Bell County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "701 E Central TX Expressway",city: "Killeen, TX 76541",       phone: "(254) 312-4300", county: "Bell County" },
+  { name: "D and D Feed Store",              address: "2744 FM 3046",               city: "Copperas Cove, TX 76522", phone: "(254) 547-4812", county: "Coryell County" },
+  // ── Central Texas ────────────────────────────────────────────────────────
+  { name: "Florence Grain Co.",              address: "600 E Main St.",             city: "Florence, TX 76527",      phone: "(254) 793-2595", county: "Williamson County" },
+  { name: "Niemeier Feed and Grain",         address: "103 S. Main St.",            city: "McGregor, TX 76657",      phone: "(254) 840-4106", county: "McLennan County" },
+  // ── Murdoch's Statewide ───────────────────────────────────────────────────
+  { name: "Murdoch's Ranch and Home Supply", address: "4001 Sunset Dr. Ste 4200",  city: "San Angelo, TX 76904",    phone: "",              county: "Tom Green County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "2500 S Bypass 35",          city: "Alvin, TX 77511",         phone: "",              county: "Brazoria County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "516 IH 10 E",               city: "Seguin, TX 78155",        phone: "",              county: "Guadalupe County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "4200 IH 35 South",          city: "San Marcos, TX 78666",    phone: "",              county: "Hays County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "17975 IH 35 N Ste B200",    city: "Schertz, TX 78154",       phone: "",              county: "Guadalupe County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "7508 N Navarro St.",         city: "Victoria, TX 77904",      phone: "",              county: "Victoria County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "1502 Harvey Rd. Suite 200", city: "College Station, TX 77840", phone: "",            county: "Brazos County" },
+  { name: "Murdoch's Ranch and Home Supply", address: "311 S Bryan Rd. Suite 200A",city: "Mission, TX 78572",       phone: "",              county: "Hidalgo County" },
 ];
 
-const bellCounty = retailers.filter((r) => r.county === "Bell County");
-const surrounding = retailers.filter((r) => r.county !== "Bell County");
+const bellCounty = retailers.filter((r) => r.county === "Bell County" || r.county === "Coryell County");
+const surrounding = retailers.filter((r) => r.county !== "Bell County" && r.county !== "Coryell County");
 
 export default function WhereToBuyPage() {
   return (
@@ -145,21 +93,13 @@ export default function WhereToBuyPage() {
         </div>
       </section>
 
-      {/* Map embed */}
-      <section className="px-4 md:px-6 pb-16" aria-label="Store map">
+      {/* Interactive map */}
+      <section className="px-4 md:px-6 pb-16" aria-label="Store locator map">
         <div className="max-w-7xl mx-auto">
-          <div className="w-full h-64 md:h-80 rounded-lg overflow-hidden border border-[#2e2820]">
-            <iframe
-              title="Outlaw Feed retail locations in Central Texas"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d220000!2d-97.4641!3d31.056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-full"
-              aria-label="Map showing Outlaw Feed retail locations in Bell County and Central Texas"
-            />
-          </div>
+          <p className="text-[#9a8870] text-xs mb-3">
+            Click any pin to see store name, address, phone, and formula availability.
+          </p>
+          <RetailerMap />
         </div>
       </section>
 
@@ -189,12 +129,13 @@ export default function WhereToBuyPage() {
                   </div>
                 </div>
                 <div className="pl-7 flex flex-col gap-1">
-                  <a href={`tel:${r.phone.replace(/[^0-9+]/g, "")}`} className="text-[#9a8870] text-xs hover:text-[#c85a00] transition-colors">
-                    {r.phone}
-                  </a>
-                  <p className="text-[#9a8870] text-xs">{r.hours}</p>
+                  {r.phone && (
+                    <a href={`tel:${r.phone.replace(/[^0-9+]/g, "")}`} className="text-[#9a8870] text-xs hover:text-[#c85a00] transition-colors">
+                      {r.phone}
+                    </a>
+                  )}
                   <span className="mt-2 inline-block px-2 py-1 bg-[#1a1712] border border-[#2e2820] rounded text-[10px] uppercase tracking-wider text-[#e8a44a] font-semibold w-fit">
-                    {r.note}
+                    Gold &amp; Blue Formula
                   </span>
                 </div>
               </address>
@@ -215,7 +156,7 @@ export default function WhereToBuyPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {surrounding.map((r) => (
               <address
-                key={r.name}
+                key={r.address}
                 className="not-italic p-6 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/40 transition-colors"
               >
                 <div className="flex items-start gap-3 mb-3">
@@ -229,13 +170,9 @@ export default function WhereToBuyPage() {
                     <p className="text-[#9a8870] text-[10px] uppercase tracking-wider mt-0.5">{r.county}</p>
                   </div>
                 </div>
-                <div className="pl-7 flex flex-col gap-1">
-                  <a href={`tel:${r.phone.replace(/[^0-9+]/g, "")}`} className="text-[#9a8870] text-xs hover:text-[#c85a00] transition-colors">
-                    {r.phone}
-                  </a>
-                  <p className="text-[#9a8870] text-xs">{r.hours}</p>
+                <div className="pl-7">
                   <span className="mt-2 inline-block px-2 py-1 bg-[#0f0e0c] border border-[#2e2820] rounded text-[10px] uppercase tracking-wider text-[#e8a44a] font-semibold w-fit">
-                    {r.note}
+                    Gold &amp; Blue Formula
                   </span>
                 </div>
               </address>

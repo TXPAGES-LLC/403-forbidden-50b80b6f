@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Gold Formula — High-Performance Adult Dog Food | Texas-Made",
+  title: "Gold Formula — High-Performance Dog Food | Outlaw Feed Texas",
   description:
-    "Outlaw Feed Gold Formula: 32% protein, 18% fat, real chicken first ingredient. No corn, wheat, or soy. AAFCO certified Texas-made dog food for working dogs, hunting dogs, and active adults.",
+    "Outlaw Feed Gold Formula: 26% protein, 18% fat, zero fillers. Real chicken, brown rice, no corn, wheat, or soy. 3640 kcal/kg. Texas-made dog food for working dogs, hunting dogs, and every stage of life.",
   alternates: { canonical: "/products/gold-formula" },
 };
 
@@ -14,7 +14,7 @@ const productSchema = {
   name: "Outlaw Feed Gold Formula",
   brand: { "@type": "Brand", name: "Outlaw Feed" },
   description:
-    "High-performance adult dog food with 32% crude protein and 18% crude fat. No corn, wheat, or soy. Made in Bell County, Texas.",
+    "High-performance dog food with 26% crude protein and 18% crude fat. Zero fillers — no corn, wheat, or soy. Made in Bell County, Texas.",
   image: "https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=800&q=80",
   url: "/products/gold-formula",
   offers: {
@@ -25,25 +25,27 @@ const productSchema = {
 };
 
 const analysis = [
-  { label: "Crude Protein", value: "32%", note: "min" },
+  { label: "Crude Protein", value: "26%", note: "min" },
   { label: "Crude Fat", value: "18%", note: "min" },
   { label: "Crude Fiber", value: "4%", note: "max" },
-  { label: "Moisture", value: "10%", note: "max" },
-  { label: "Calcium", value: "1.2%", note: "min" },
-  { label: "Phosphorus", value: "0.9%", note: "min" },
+  { label: "Moisture", value: "12%", note: "max" },
+  { label: "Calories", value: "3640", note: "kcal/kg" },
+  { label: "Per Cup", value: "441", note: "kcal/cup" },
 ];
 
 const ingredients =
-  "Chicken, Chicken Meal, Brown Rice, Oatmeal, Chicken Fat (preserved with mixed tocopherols), Dried Beet Pulp, Natural Flavor, Flaxseed, Potassium Chloride, Salt, Choline Chloride, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement.";
+  "Chicken Rice, Brown Rice, Grain Sorghum, Chicken Fat (Preserved with Mixed Tocopherols), Pork Meal, Whole Barley, White Fish Meal, Dried Beet Pulp, Flax Seed, Natural Flavors, Salt, Potassium Chloride, Calcium Propionate, Beta Hydroxy Acid, Butylated Hydroxytoluene, Sodium Bentonite, Zinc Amino Acid Complex, Iron Amino Acid Complex, Manganese Amino Acid Complex, Vitamin E Supplement, Ferrous Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Copper Sulfate, Sodium Selenite, Niacin Supplement, Ethylenediamine Dihydriodide, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Folic Acid and Cobalt Carbonate.";
 
 const benefits = [
-  "Real chicken is the first and primary ingredient — no by-product meal",
-  "32% crude protein supports lean muscle and sustained energy for field work",
-  "18% fat delivers calorie-dense fuel for working and hunting dogs",
-  "No corn, wheat, or soy — cleaner digestion, better coat condition",
-  "AAFCO certified for adult maintenance",
-  "Brown rice and oatmeal provide slow-release complex carbohydrates",
-  "Omega-6 fatty acids from flaxseed for healthy skin and coat",
+  "Zero fillers — no corn, wheat, or soy in any form",
+  "26% crude protein supports lean muscle mass and sustained daily energy",
+  "18% crude fat delivers calorie-dense fuel for working and hunting dogs",
+  "Brown rice and grain sorghum provide digestible, slow-release carbohydrates",
+  "Chicken fat preserved with mixed tocopherols — no artificial preservatives",
+  "Flax seed provides omega fatty acids for healthy skin and coat condition",
+  "White fish meal adds a complementary protein and amino acid profile",
+  "Formulated for all life stages — from puppies to adult maintenance",
+  "3640 kcal/kg (441 kcal/cup) — energy-dense nutrition in every bite",
   "Manufactured in Bell County, Texas — never imported",
 ];
 
@@ -117,20 +119,20 @@ export default function GoldFormulaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#c85a00] font-semibold mb-3">
-                Best Seller
+                Outlaw Feed
               </p>
               <h1 className="font-serif text-5xl md:text-6xl font-extrabold text-[#f5f0e8] mb-4 text-balance">
                 Gold Formula
               </h1>
               <p className="text-[#e8a44a] font-serif text-xl font-semibold mb-4">
-                High-Performance Adult Dog Food
+                Zero Fillers. High-Quality Ingredients.
               </p>
               <p className="text-[#f5f0e8]/70 text-base leading-relaxed mb-8 max-w-xl">
-                Texas-made, AAFCO-certified adult dog food with real chicken as the first ingredient. No corn, wheat, or soy — ever. Built for working dogs, hunting dogs, and every dog that earns its keep.
+                Dogs help in so many ways — from serving as service animals to simply enriching our lives as our best friends. Outlaw Feed Gold Dog Food provides the nutrition to help them feel and perform their best, with zero fillers and high-quality ingredients at every stage of life.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                {["No Corn", "No Wheat", "No Soy", "32% Protein", "AAFCO Certified", "Made in Texas"].map((tag) => (
+                {["No Corn", "No Wheat", "No Soy", "26% Protein", "18% Fat", "Made in Texas"].map((tag) => (
                   <span key={tag} className="px-3 py-1.5 bg-[#1a1712] border border-[#2e2820] rounded text-xs font-semibold text-[#f5f0e8]/70 uppercase tracking-wider">
                     {tag}
                   </span>
@@ -163,9 +165,7 @@ export default function GoldFormulaPage() {
                 width={700}
                 height={525}
               />
-              <div className="absolute top-4 right-4 bg-[#c85a00] text-white text-xs font-bold uppercase tracking-wider px-3 py-2 rounded">
-                Best Seller
-              </div>
+
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function GoldFormulaPage() {
             <p className="text-[#f5f0e8]/80 text-sm leading-relaxed">{ingredients}</p>
           </div>
           <p className="text-[#9a8870] text-xs mt-4">
-            <strong className="text-[#f5f0e8]">AAFCO Statement:</strong> Outlaw Feed Gold Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for maintenance of adult dogs.
+            <strong className="text-[#f5f0e8]">Calorie Content:</strong> 3640 kcal/kg &nbsp;|&nbsp; 441 kcal/cup (calculated)
           </p>
         </div>
       </section>

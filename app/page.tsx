@@ -119,12 +119,12 @@ const blogPreviews = [
 ];
 
 const retailers = [
-  { name: "Belton Farm & Ranch Supply", city: "Belton, TX", phone: "(254) 555-0121" },
-  { name: "Temple Feed & Seed", city: "Temple, TX", phone: "(254) 555-0144" },
-  { name: "Killeen Tractor Supply", city: "Killeen, TX", phone: "(254) 555-0158" },
-  { name: "Waco Agri-Center", city: "Waco, TX", phone: "(254) 555-0167" },
-  { name: "Georgetown Farm Store", city: "Georgetown, TX", phone: "(512) 555-0182" },
-  { name: "Salado Feed Co.", city: "Salado, TX", phone: "(254) 555-0199" },
+  { name: "Belton Feed and Supply",          city: "Belton, TX",        phone: "(254) 939-3636" },
+  { name: "Keith Ace Hardware",              city: "Belton, TX",        phone: "(254) 613-4235" },
+  { name: "Central Texas Feed and Supply",   city: "Killeen, TX",       phone: "(254) 628-1002" },
+  { name: "D and D Feed Store",              city: "Copperas Cove, TX", phone: "(254) 547-4812" },
+  { name: "Niemeier Feed and Grain",         city: "McGregor, TX",      phone: "(254) 840-4106" },
+  { name: "Expo Quik Stop",                  city: "Belton, TX",        phone: "(254) 933-3976" },
 ];
 
 const homePageSchema = {

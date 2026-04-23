@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: undefined,
+  metadataBase: new URL(""),
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
       "No corn. No wheat. No soy. Real meat — first ingredient. Outlaw Feed is handcrafted in Bell County, Texas for dogs that work as hard as their owners.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&q=80",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Outlaw Feed Texas-made dog food for hunting and working dogs",
+        alt: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
       },
     ],
   },

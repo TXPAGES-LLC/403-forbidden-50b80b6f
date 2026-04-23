@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Our Story — Texas-Made Dog Food from Bell County | Outlaw Feed",
+  title: "Our Story — Travis Farr's Outlaw Feed Co. | Bell County, Texas",
   description:
-    "Outlaw Feed was founded in Bell County, Texas to solve a real problem: commercial dog food full of fillers failing working and hunting dogs. Read how we built a better formula.",
+    "Travis Farr created Outlaw Feed for the hunting and working dogs he loved — a no-filler, high-protein Texas-made dog food built for every stage of a dog's life. Read the story behind Outlaw Feed Co.",
   alternates: { canonical: "/why-outlaw/our-story" },
 };
 
@@ -27,7 +27,7 @@ export default function OurStoryPage() {
             Bell County, Texas
           </p>
           <h1 className="font-serif text-5xl md:text-6xl font-extrabold text-[#f5f0e8] mb-8 text-balance">
-            Built from a Problem We Lived
+            Born in the Field. Built for the Dog.
           </h1>
         </div>
         <div className="w-full">
@@ -46,20 +46,40 @@ export default function OurStoryPage() {
       {/* Story body */}
       <section className="py-16 md:py-24 px-4 md:px-6 bg-[#0f0e0c]" aria-labelledby="story-heading">
         <div className="max-w-3xl mx-auto">
-          <h2 id="story-heading" className="sr-only">Our founding story</h2>
-          <div className="prose-custom flex flex-col gap-6">
-            {[
-              "Outlaw Feed started the same way most good ideas do — with frustration. Working in Bell County, surrounded by ranchers, hunters, and livestock farmers who relied on their dogs every single day, we kept running into the same problem: the dog food on store shelves was not built for dogs that work.",
-              "Bags full of corn, wheat, and soy. Vague ingredient labels with by-products and mystery meal. Premium-priced products that delivered budget-quality nutrition while looking good in a display rack. Working dog owners deserve better than that, and so do their dogs.",
-              "We spent time building a formula that started with one rule: every ingredient must earn its place. Real chicken. Real chicken meal for concentrated protein. Brown rice and oatmeal — whole food carbohydrates with real fiber. No corn. No wheat. No soy. Full stop.",
-              "After developing and testing formulas with working dogs across Central Texas — bird dogs, cattle dogs, ranch hounds — we launched Outlaw Feed out of Bell County. We manufacture here. We sell here. We stand behind every bag.",
-              "The name is not accidental. Outlaw Feed is a rejection of the commercial dog food industry's standard playbook: hide the bad ingredients, market the bag, and hope the consumer does not read the label. We want you to read the label. We want you to ask questions. We want you to hold us to the same standard we hold ourselves.",
-              "If your dog works for a living, Outlaw Feed is the food they have earned.",
-            ].map((para, i) => (
-              <p key={i} className="text-[#f5f0e8]/75 text-base md:text-lg leading-relaxed">
-                {para}
-              </p>
-            ))}
+          <h2 id="story-heading" className="font-serif text-3xl md:text-4xl font-bold text-[#f5f0e8] mb-8">
+            The Story Behind Outlaw Feed
+          </h2>
+          <div className="flex flex-col gap-6">
+            <p className="text-[#f5f0e8]/75 text-base md:text-lg leading-relaxed">
+              Outlaw Feed was created out of necessity. Travis Farr spent many of his younger years in the field alongside his hunting dogs — and that time forged a deep passion for giving those dogs the nutrition they truly deserved. With a growing kennel and an uncompromising standard for his animals&apos; health, Travis began researching the most beneficial ingredients available for canines.
+            </p>
+            <p className="text-[#f5f0e8]/75 text-base md:text-lg leading-relaxed">
+              What he found on store shelves fell short. Bags full of corn, wheat, and soy. Vague labels hiding low-quality by-products. Feeds priced like a premium but formulated like a budget. Travis knew there was a better way — so he built it himself, right here in Bell County, Texas.
+            </p>
+
+            <h3 className="font-serif text-2xl font-bold text-[#f5f0e8] mt-4">
+              Real Ingredients for Every Stage of Life
+            </h3>
+            <p className="text-[#f5f0e8]/75 text-base md:text-lg leading-relaxed">
+              Today, Outlaw Feed takes great pride in delivering a genuinely healthy choice dog food — one built on energy-producing ingredients that let your dog eat a balanced diet with fewer fillers and more of what actually matters. Our product line is formulated to support all stages of a dog&apos;s life cycle, from the high-protein demands of active working dogs and hunting dogs to the sustained maintenance needs of healthy adults.
+            </p>
+            <p className="text-[#f5f0e8]/75 text-base md:text-lg leading-relaxed">
+              No corn. No wheat. No soy. Every ingredient earns its place in the bag, and every bag is made in Texas.
+            </p>
+
+            <h3 className="font-serif text-2xl font-bold text-[#f5f0e8] mt-4">
+              For Dogs That Work — and Dogs That Love
+            </h3>
+            <p className="text-[#f5f0e8]/75 text-base md:text-lg leading-relaxed">
+              Whether your dog is running birds in the field at dawn, working cattle on a Central Texas ranch, or simply providing loyalty and companionship to your family — your dog deserves the best. Travis Farr and his family hope you and your best friend will enjoy the benefits of Outlaw Feed for many years to come, as the primary source of healthy, honest nutrition for your dog.
+            </p>
+
+            {/* Signature block */}
+            <div className="mt-6 pt-6 border-t border-[#2e2820]">
+              <p className="text-[#f5f0e8]/75 text-base italic mb-4">Sincerely,</p>
+              <p className="font-serif text-xl font-bold text-[#e8a44a]">Travis Farr</p>
+              <p className="text-[#9a8870] text-sm">Founder, Outlaw Feed Co. &mdash; Bell County, Texas</p>
+            </div>
           </div>
         </div>
       </section>
@@ -68,13 +88,13 @@ export default function OurStoryPage() {
       <section className="py-16 md:py-20 px-4 md:px-6 bg-[#1a1712] border-y border-[#2e2820]">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#f5f0e8] mb-10 text-center">
-            What We Stand For
+            Why Texas Dog Owners Choose Outlaw Feed
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: "Transparency", desc: "Every ingredient named. Every nutrient disclosed. No marketing language to obscure bad decisions." },
-              { label: "Accountability", desc: "Made in Bell County, Texas. We know exactly who makes our food, how it is made, and what goes in it." },
-              { label: "Performance", desc: "Built to fuel dogs that work — not pets that commute. Real nutrition for real demands." },
+              { label: "No Fillers, Ever", desc: "No corn, wheat, or soy — in any formula, in any bag. What you see on the label is what your dog eats, and nothing else." },
+              { label: "Made in Texas", desc: "Manufactured in Bell County, TX. We know exactly who makes our food, how it is made, and what goes in every batch." },
+              { label: "All Life Stages", desc: "From high-protein formulas for hard-working hunting dogs to adult maintenance — Outlaw Feed is built to support your dog at every age." },
             ].map((v) => (
               <div key={v.label} className="p-8 bg-[#0f0e0c] border border-[#2e2820] rounded-lg text-center">
                 <h3 className="font-serif text-xl font-bold text-[#e8a44a] mb-3">{v.label}</h3>

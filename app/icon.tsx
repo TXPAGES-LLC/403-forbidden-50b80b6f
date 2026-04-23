@@ -35,10 +35,18 @@ export default function Icon() {
           {/* Hat band */}
           <rect x="24" y="60" width="52" height="8" rx="2" fill="#1a1712" />
           {/* O letter */}
-          <g transform="translate(50,58)">
-            <circle cx="0" cy="0" r="9" fill="#f5f0e8" />
-            <circle cx="0" cy="0" r="5" fill="#0f0e0c" />
-          </g>
+          <text
+            x="50"
+            y="58"
+            textAnchor="middle"
+            fontSize="22"
+            fontWeight="900"
+            fontFamily="serif"
+            fill="#f5f0e8"
+            letterSpacing="-1"
+          >
+            O
+          </text>
         </svg>
       </div>
     ),

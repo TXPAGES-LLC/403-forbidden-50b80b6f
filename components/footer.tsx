@@ -104,6 +104,15 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-xs">
             &copy; {new Date().getFullYear()} Outlaw Feed. All rights reserved. Made in Texas.
+            {" "}Powered by{" "}
+            <a
+              href="https://www.txpages.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#c85a00] transition-colors"
+            >
+              TXPAGES
+            </a>.
           </p>
           <div className="flex items-center gap-6">
             <a

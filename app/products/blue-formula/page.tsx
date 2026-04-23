@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blue Formula — Puppy & Active Lifestyle Dog Food | Texas-Made",
+  title: "Blue Formula — Adult Maintenance Dog Food | Outlaw Feed Texas",
   description:
-    "Outlaw Feed Blue Formula: 30% protein, 20% fat, real chicken first ingredient. No corn, wheat, or soy. AAFCO certified for all life stages including puppies. Texas-made dog food for active and growing dogs.",
+    "Outlaw Feed Blue Formula: 21% protein, 15% fat, zero fillers. Chicken meal, grain sorghum, brown rice — no corn, wheat, or soy. 3,170 kcal/kg. Texas-made dog food for everyday nutrition and adult maintenance.",
   alternates: { canonical: "/products/blue-formula" },
 };
 
@@ -14,7 +14,7 @@ const productSchema = {
   name: "Outlaw Feed Blue Formula",
   brand: { "@type": "Brand", name: "Outlaw Feed" },
   description:
-    "Puppy and active lifestyle dog food with 30% crude protein and 20% crude fat. AAFCO certified for all life stages. No corn, wheat, or soy. Made in Bell County, Texas.",
+    "Adult maintenance dog food with 21% crude protein and 15% crude fat. Zero fillers — no corn, wheat, or soy. 3,170 kcal/kg. Made in Bell County, Texas.",
   image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80",
   url: "/products/blue-formula",
   offers: {
@@ -25,33 +25,35 @@ const productSchema = {
 };
 
 const analysis = [
-  { label: "Crude Protein", value: "30%", note: "min" },
-  { label: "Crude Fat", value: "20%", note: "min" },
-  { label: "Crude Fiber", value: "3.5%", note: "max" },
-  { label: "Moisture", value: "10%", note: "max" },
-  { label: "Calcium", value: "1.4%", note: "min" },
-  { label: "Phosphorus", value: "1.1%", note: "min" },
+  { label: "Crude Protein", value: "21%", note: "min" },
+  { label: "Crude Fat", value: "15%", note: "min" },
+  { label: "Crude Fiber", value: "4%", note: "max" },
+  { label: "Moisture", value: "12%", note: "max" },
+  { label: "Calories", value: "3,170", note: "kcal/kg" },
+  { label: "Per Cup", value: "290", note: "kcal/cup" },
 ];
 
 const ingredients =
-  "Chicken, Chicken Meal, Oatmeal, Brown Rice, Chicken Fat (preserved with mixed tocopherols), Dried Egg Product, Natural Flavor, Dried Beet Pulp, Flaxseed, Salmon Oil, Potassium Chloride, Salt, Choline Chloride, Zinc Proteinate, Iron Proteinate, Vitamin E Supplement, Copper Proteinate, Manganese Proteinate, Niacin Supplement, Thiamine Mononitrate, Calcium Pantothenate, Riboflavin Supplement, Vitamin A Supplement, Biotin, Pyridoxine Hydrochloride, Vitamin B12 Supplement, Folic Acid, Vitamin D3 Supplement.";
+  "Chicken Meal, Grain Sorghum, Brown Rice, Whole Barley, Chicken Fat (Preserved with Mixed Tocopherols), Pork Meal, White Fish Meal, Flax Meal, Dried Beet Pulp, Natural Flavors, Salt, Potassium Chloride, Calcium Propionate, Beta Hydroxy Acid, Butylated Hydroxytoluene, Sodium Bentonite, Zinc Amino Acid Complex, Iron Amino Acid Complex, Manganese Amino Acid Complex, Vitamin E Supplement, Ferrous Sulfate, D-Calcium Pantothenate, Vitamin A Supplement, Vitamin D3 Supplement, Riboflavin Supplement, Vitamin B12 Supplement, Copper Sulfate, Sodium Selenite, Niacin Supplement, Ethylenediamine Dihydriodide, Pyridoxine Hydrochloride, Thiamine Mononitrate, Biotin, Folic Acid and Cobalt Carbonate.";
 
 const benefits = [
-  "Formulated for all life stages — AAFCO certified for puppies through adult maintenance",
-  "20% fat supports calorie-dense growth and peak athletic performance",
-  "Added salmon oil delivers DHA for brain and eye development in puppies",
-  "Dried egg product adds bioavailable protein for lean growth",
-  "No corn, wheat, or soy reduces common allergen exposure from day one",
-  "Higher calcium and phosphorus ratios support healthy bone development in puppies",
-  "Oatmeal base supports sensitive digestive systems without compromising nutrition",
-  "Made in Bell County, Texas — fresh and never imported",
+  "Zero fillers — no corn, wheat, or soy in any form",
+  "21% crude protein supports lean muscle maintenance in active adult dogs",
+  "15% fat provides steady, reliable energy for everyday activity",
+  "Chicken meal as the first ingredient — concentrated, high-quality protein source",
+  "Grain sorghum and brown rice deliver digestible, slow-release carbohydrates",
+  "Chicken fat preserved with mixed tocopherols — no artificial preservatives",
+  "Flax meal provides omega fatty acids for healthy skin and a shining coat",
+  "White fish meal and pork meal add complementary amino acid profiles",
+  "3,170 kcal/kg (290 kcal/cup) — balanced energy for adult maintenance",
+  "Manufactured in Bell County, Texas — never imported",
 ];
 
 const idealFor = [
-  { label: "Puppies (All Breeds)", desc: "From weaning through 12 months — high fat supports healthy growth" },
-  { label: "Pregnant & Nursing Dogs", desc: "Elevated protein and DHA support mom and developing puppies" },
-  { label: "Highly Active Adults", desc: "Dogs burning high calories through intense daily exercise or sport" },
-  { label: "Dogs Recovering from Work", desc: "Post-season or post-injury support for rebuilding condition" },
+  { label: "Adult Dogs", desc: "Balanced 21% protein and 15% fat for healthy adult maintenance without unnecessary excess" },
+  { label: "Service & Companion Dogs", desc: "Steady, reliable nutrition for dogs enriching lives every single day, whether working or at home" },
+  { label: "Dogs Transitioning from High-Performance", desc: "A clean step-down formula for dogs moving from demanding field work to a lower-activity routine" },
+  { label: "Multi-Dog Households", desc: "An easy everyday feed that meets the nutritional needs of a mixed pack at a consistent level" },
 ];
 
 const feedingGuide = [
@@ -117,20 +119,20 @@ export default function BlueFormulaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#c85a00] font-semibold mb-3">
-                All Life Stages
+                Outlaw Feed
               </p>
               <h1 className="font-serif text-5xl md:text-6xl font-extrabold text-[#f5f0e8] mb-4 text-balance">
                 Blue Formula
               </h1>
               <p className="text-[#e8a44a] font-serif text-xl font-semibold mb-4">
-                Puppy & Active Lifestyle Formula
+                Zero Fillers. High-Quality Ingredients.
               </p>
               <p className="text-[#f5f0e8]/70 text-base leading-relaxed mb-8 max-w-xl">
-                Texas-made, AAFCO-certified for all life stages — from puppies to high-performance adults. Higher fat for energy-dense nutrition, added DHA for developing minds, and zero corn, wheat, or soy.
+                Dogs help in so many ways — from serving as service animals to simply enriching our lives as our best friends. Outlaw Feed Blue Dog Food provides the nutrition to help them feel and perform their best, with zero fillers and high-quality ingredients.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                {["No Corn", "No Wheat", "No Soy", "30% Protein", "All Life Stages", "Made in Texas"].map((tag) => (
+                {["No Corn", "No Wheat", "No Soy", "21% Protein", "15% Fat", "Made in Texas"].map((tag) => (
                   <span key={tag} className="px-3 py-1.5 bg-[#1a1712] border border-[#2e2820] rounded text-xs font-semibold text-[#f5f0e8]/70 uppercase tracking-wider">
                     {tag}
                   </span>
@@ -163,9 +165,7 @@ export default function BlueFormulaPage() {
                 width={700}
                 height={525}
               />
-              <div className="absolute top-4 right-4 bg-[#5c3d22] text-[#f5f0e8] text-xs font-bold uppercase tracking-wider px-3 py-2 rounded">
-                For Puppies
-              </div>
+
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function BlueFormulaPage() {
             <p className="text-[#f5f0e8]/80 text-sm leading-relaxed">{ingredients}</p>
           </div>
           <p className="text-[#9a8870] text-xs mt-4">
-            <strong className="text-[#f5f0e8]">AAFCO Statement:</strong> Outlaw Feed Blue Formula is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for all life stages, including the growth of large-size dogs (70 lb or more as an adult).
+            <strong className="text-[#f5f0e8]">Calorie Content:</strong> 3,170 kcal/kg &nbsp;|&nbsp; 290 kcal/cup (calculated)
           </p>
         </div>
       </section>
