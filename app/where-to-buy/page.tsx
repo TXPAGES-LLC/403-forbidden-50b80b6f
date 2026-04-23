@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import RetailerMap from "@/components/retailer-map";
 
 export const metadata: Metadata = {
   title: "Where to Buy Outlaw Feed — Texas Retailers & Store Locator",
@@ -90,16 +89,6 @@ export default function WhereToBuyPage() {
           <p className="text-[#f5f0e8]/70 text-lg leading-relaxed max-w-2xl">
             Outlaw Feed is carried at farm supply stores and feed stores across Central Texas. Find your nearest retailer below — or call us direct for Bell County delivery.
           </p>
-        </div>
-      </section>
-
-      {/* Interactive map */}
-      <section className="px-4 md:px-6 pb-16" aria-label="Store locator map">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-[#9a8870] text-xs mb-3">
-            Click any pin to see store name, address, phone, and formula availability.
-          </p>
-          <RetailerMap />
         </div>
       </section>
 
