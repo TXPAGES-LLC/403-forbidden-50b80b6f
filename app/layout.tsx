@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: new URL(""),
+  metadataBase: undefined,
   openGraph: {
     type: "website",
     locale: "en_US",
