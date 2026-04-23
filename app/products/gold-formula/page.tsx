@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Gold Formula — High-Performance Adult Dog Food | Texas-Made",
   description:
     "Outlaw Feed Gold Formula: 32% protein, 18% fat, real chicken first ingredient. No corn, wheat, or soy. AAFCO certified Texas-made dog food for working dogs, hunting dogs, and active adults.",
-  alternates: { canonical: "https://outlawfeed.com/products/gold-formula" },
+  alternates: { canonical: "/products/gold-formula" },
 };
 
 const productSchema = {
@@ -16,7 +16,7 @@ const productSchema = {
   description:
     "High-performance adult dog food with 32% crude protein and 18% crude fat. No corn, wheat, or soy. Made in Bell County, Texas.",
   image: "https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=800&q=80",
-  url: "https://outlawfeed.com/products/gold-formula",
+  url: "/products/gold-formula",
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStoreOnly",
@@ -96,7 +96,7 @@ export default function GoldFormulaPage() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 px-4 md:px-6 bg-[#0f0e0c] overflow-hidden" aria-label="Gold Formula hero">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=1400&q=60"
+            src="/Gold-Package-Dog-Food-Dog-Food-Pet-Food.png"
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -155,13 +155,13 @@ export default function GoldFormulaPage() {
 
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=700&q=80"
-                alt="Outlaw Feed Gold Formula 50lb bag — high-protein Texas dog food for working and hunting dogs"
-                className="w-full rounded-lg object-cover aspect-square"
+                src="/Gold-Package-Dog-Food-Dog-Food-Pet-Food.png"
+                alt="Outlaw Feed Gold Formula 26/18 bag — high-protein Texas dog food for working and hunting dogs, no corn wheat or soy"
+                className="w-full rounded-lg object-contain bg-[#0f0e0c]"
                 fetchPriority="high"
                 decoding="async"
                 width={700}
-                height={700}
+                height={525}
               />
               <div className="absolute top-4 right-4 bg-[#c85a00] text-white text-xs font-bold uppercase tracking-wider px-3 py-2 rounded">
                 Best Seller

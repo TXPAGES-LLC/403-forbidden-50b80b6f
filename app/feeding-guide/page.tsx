@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Do you offer delivery?",
-    a: "We offer direct delivery within Bell County, Texas. Contact us at (254) 555-0100 to arrange a schedule. Outside Bell County, find our nearest retail partners on the Where to Buy page.",
+    a: "We offer direct delivery within Bell County, Texas. Contact us at (254) 534-5279 to arrange a schedule. Outside Bell County, find our nearest retail partners on the Where to Buy page.",
   },
   {
     q: "Where can I buy Outlaw Feed?",
@@ -231,8 +231,8 @@ export default function FeedingGuidePage() {
                 Contact us directly
               </Link>
               {" "}or call{" "}
-              <a href="tel:+12545550100" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors font-semibold">
-                (254) 555-0100
+              <a href="tel:+12543933957" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors font-semibold">
+                (254) 393-3957
               </a>.
             </p>
           </div>

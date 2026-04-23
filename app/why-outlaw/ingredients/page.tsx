@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Ingredients — No Corn, Wheat, or Soy Texas Dog Food | Outlaw Feed",
   description:
     "Outlaw Feed uses real named meat, whole grains, and no corn, wheat, or soy fillers. See exactly what is in our Gold and Blue formulas and why every ingredient earns its place.",
-  alternates: { canonical: "https://outlawfeed.com/why-outlaw/ingredients" },
+  alternates: { canonical: "/why-outlaw/ingredients" },
 };
 
 const principles = [
@@ -123,8 +123,8 @@ export default function IngredientsPage() {
       <section className="py-16 md:py-20 px-4 md:px-6 bg-[#1a1712] border-t border-[#2e2820]">
         <div className="max-w-3xl mx-auto text-center">
           <img
-            src="https://images.unsplash.com/photo-1597843786411-a7fa8ad44a95?auto=format&fit=crop&w=900&q=75"
-            alt="Fresh real meat and whole food ingredients used in Outlaw Feed Texas dog food"
+            src="/dog-food-that-dogs-love.png"
+            alt="English bulldog eating Outlaw Feed kibble from a bowl — real ingredients dogs love, no corn wheat or soy"
             className="w-full rounded-lg object-cover aspect-video mb-10"
             loading="lazy"
             decoding="async"

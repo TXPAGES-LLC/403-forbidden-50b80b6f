@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Blue Formula — Puppy & Active Lifestyle Dog Food | Texas-Made",
   description:
     "Outlaw Feed Blue Formula: 30% protein, 20% fat, real chicken first ingredient. No corn, wheat, or soy. AAFCO certified for all life stages including puppies. Texas-made dog food for active and growing dogs.",
-  alternates: { canonical: "https://outlawfeed.com/products/blue-formula" },
+  alternates: { canonical: "/products/blue-formula" },
 };
 
 const productSchema = {
@@ -16,7 +16,7 @@ const productSchema = {
   description:
     "Puppy and active lifestyle dog food with 30% crude protein and 20% crude fat. AAFCO certified for all life stages. No corn, wheat, or soy. Made in Bell County, Texas.",
   image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80",
-  url: "https://outlawfeed.com/products/blue-formula",
+  url: "/products/blue-formula",
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStoreOnly",
@@ -96,7 +96,7 @@ export default function BlueFormulaPage() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 px-4 md:px-6 bg-[#0f0e0c] overflow-hidden" aria-label="Blue Formula hero">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1400&q=60"
+            src="/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png"
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover"
@@ -155,13 +155,13 @@ export default function BlueFormulaPage() {
 
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=700&q=80"
-                alt="Outlaw Feed Blue Formula 50lb bag — puppy and active dog food made in Texas with no corn wheat or soy"
-                className="w-full rounded-lg object-cover aspect-square"
+                src="/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png"
+                alt="Outlaw Feed Blue Formula 21/15 bag — puppy and active dog food made in Texas with no corn wheat or soy"
+                className="w-full rounded-lg object-contain bg-[#0f0e0c]"
                 fetchPriority="high"
                 decoding="async"
                 width={700}
-                height={700}
+                height={525}
               />
               <div className="absolute top-4 right-4 bg-[#5c3d22] text-[#f5f0e8] text-xs font-bold uppercase tracking-wider px-3 py-2 rounded">
                 For Puppies

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Where to Buy Outlaw Feed — Texas Retailers & Store Locator",
   description:
     "Find Outlaw Feed dog food at retailers across Bell County and Central Texas. Store locator with addresses, phone numbers, and directions. Direct delivery available in Bell County, TX.",
-  alternates: { canonical: "https://outlawfeed.com/where-to-buy" },
+  alternates: { canonical: "/where-to-buy" },
 };
 
 const localBusinessSchema = {
@@ -256,10 +256,10 @@ export default function WhereToBuyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+12545550100"
+                href="tel:+12543933957"
                 className="px-7 py-4 bg-[#c85a00] text-white text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#a84800] transition-colors text-center"
               >
-                Call (254) 555-0100
+                Call (254) 393-3957
               </a>
               <Link
                 href="/contact"

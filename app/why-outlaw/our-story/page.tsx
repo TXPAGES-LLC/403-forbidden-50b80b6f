@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Our Story — Texas-Made Dog Food from Bell County | Outlaw Feed",
   description:
     "Outlaw Feed was founded in Bell County, Texas to solve a real problem: commercial dog food full of fillers failing working and hunting dogs. Read how we built a better formula.",
-  alternates: { canonical: "https://outlawfeed.com/why-outlaw/our-story" },
+  alternates: { canonical: "/why-outlaw/our-story" },
 };
 
 export default function OurStoryPage() {
@@ -32,8 +32,8 @@ export default function OurStoryPage() {
         </div>
         <div className="w-full">
           <img
-            src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=1400&q=80"
-            alt="Texas ranch landscape at sunset — the home of Outlaw Feed in Bell County Texas"
+            src="/working-dog-nutrition.png"
+            alt="Golden retriever working dog running across a rural field at sunset — Outlaw Feed, made in Texas for dogs that work"
             className="w-full h-72 md:h-96 object-cover"
             fetchPriority="high"
             decoding="async"

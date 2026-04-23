@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
   description:
     "Outlaw Feed is Texas-made dog food with no corn, wheat, or soy. Real meat first ingredient, AAFCO certified. Built for hunting dogs, ranch dogs, and working dogs in Bell County, TX.",
-  alternates: { canonical: "https://outlawfeed.com" },
+  alternates: { canonical: "" },
 };
 
 const proofItems = [
@@ -25,8 +25,8 @@ const products = [
     source: "Chicken & Brown Rice",
     ideal: "Adult working & hunting dogs",
     href: "/products/gold-formula",
-    img: "https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=600&q=80",
-    imgAlt: "Outlaw Feed Gold Formula 50lb bag — high-protein Texas dog food for working dogs",
+    img: "/Gold-Package-Dog-Food-Dog-Food-Pet-Food.png",
+    imgAlt: "Outlaw Feed Gold Formula 26/18 bag — high-protein Texas dog food for working dogs, no corn wheat or soy",
     badge: "Best Seller",
   },
   {
@@ -37,8 +37,8 @@ const products = [
     source: "Chicken & Oats",
     ideal: "Puppies & highly active dogs",
     href: "/products/blue-formula",
-    img: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=80",
-    imgAlt: "Outlaw Feed Blue Formula — puppy and active dog food made in Texas with no corn wheat or soy",
+    img: "/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png",
+    imgAlt: "Outlaw Feed Blue Formula 21/15 bag — puppy and active dog food made in Texas with no corn wheat or soy",
     badge: "For Puppies",
   },
 ];
@@ -111,8 +111,8 @@ const blogPreviews = [
     title: "Working Dog Nutrition: Fueling a Ranch Dog Through Demand Season",
     excerpt: "During peak work seasons, your ranch dog needs more than maintenance calories. We break down protein, fat, and feeding timing for hardworking dogs.",
     href: "/blog/working-dog-nutrition",
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=75",
-    imgAlt: "Ranch working dog in Texas — working dog nutrition and feeding guide",
+    img: "/working-dog-nutrition.png",
+    imgAlt: "Golden retriever working dog running across a rural field at sunset — working dog nutrition guide by Outlaw Feed",
     date: "February 2025",
     category: "Working Dogs",
   },
@@ -136,14 +136,14 @@ const homePageSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Outlaw Feed Gold Formula",
-      url: "https://outlawfeed.com/products/gold-formula",
+      url: "/products/gold-formula",
       description: "High-performance adult dog food with 32% protein, no corn wheat or soy, made in Texas.",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Outlaw Feed Blue Formula",
-      url: "https://outlawfeed.com/products/blue-formula",
+      url: "/products/blue-formula",
       description: "Puppy and active lifestyle dog food with 30% protein, no corn wheat or soy, made in Texas.",
     },
   ],
@@ -255,7 +255,7 @@ export default function HomePage() {
                   <img
                     src={p.img}
                     alt={p.imgAlt}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     decoding="async"
                     width={600}
@@ -348,8 +348,8 @@ export default function HomePage() {
       {/* ── Hero CTA band ── */}
       <section className="relative py-24 md:py-32 px-4 md:px-6 overflow-hidden" aria-label="Brand promise">
         <img
-          src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=1400&q=75"
-          alt="Texas ranch landscape at sunset — Outlaw Feed made in Texas"
+          src="/made-in-texas-made-to-work.png"
+          alt="Ranch dog sitting by a stone fireplace with Texas flag in a rustic ranch house — Outlaw Feed, made in Texas made to work"
           className="absolute inset-0 w-full h-full object-cover object-center"
           loading="lazy"
           decoding="async"
@@ -408,29 +408,30 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {retailers.map((r) => (
-              <Link
+              <div
                 key={r.name}
-                href="/where-to-buy"
                 className="flex items-start gap-4 p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group"
-                aria-label={`${r.name} in ${r.city}`}
               >
                 <div className="mt-0.5 text-[#c85a00] shrink-0">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-[#f5f0e8] text-sm group-hover:text-[#e8a44a] transition-colors">
+                  <Link
+                    href="/where-to-buy"
+                    className="font-semibold text-[#f5f0e8] text-sm group-hover:text-[#e8a44a] transition-colors hover:text-[#e8a44a]"
+                    aria-label={`${r.name} in ${r.city} — view on store locator`}
+                  >
                     {r.name}
-                  </p>
+                  </Link>
                   <p className="text-[#9a8870] text-xs mt-0.5">{r.city}</p>
                   <a
                     href={`tel:${r.phone.replace(/[^0-9+]/g, "")}`}
-                    onClick={(e) => e.stopPropagation()}
                     className="text-[#9a8870] text-xs hover:text-[#c85a00] transition-colors mt-0.5 block"
                   >
                     {r.phone}
                   </a>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
 
@@ -440,8 +441,8 @@ export default function HomePage() {
             </div>
             <p className="text-[#f5f0e8]/80 text-sm flex-1 text-center sm:text-left">
               <strong className="text-[#f5f0e8]">Bell County local?</strong> We offer direct delivery for orders in the county. Call us at{" "}
-              <a href="tel:+12545550100" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors">
-                (254) 555-0100
+              <a href="tel:+12543933957" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors">
+                (254) 393-3957
               </a>
             </p>
             <Link

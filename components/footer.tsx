@@ -31,72 +31,49 @@ const footerLinks = [
       { label: "Contact Us", href: "/contact" },
     ],
   },
+  {
+    heading: "Service Areas",
+    links: [
+      { label: "Belton, TX", href: "/where-to-buy/belton" },
+      { label: "Harker Heights, TX", href: "/where-to-buy/harker-heights" },
+      { label: "Gatesville, TX", href: "/where-to-buy/gatesville" },
+      { label: "Copperas Cove, TX", href: "/where-to-buy/copperas-cove" },
+      { label: "Hillsboro, TX", href: "/where-to-buy/hillsboro" },
+      { label: "Hamilton, TX", href: "/where-to-buy/hamilton" },
+      { label: "Lampasas, TX", href: "/where-to-buy/lampasas" },
+      { label: "Waco, TX", href: "/where-to-buy/waco" },
+    ],
+  },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0908] border-t border-[#2e2820]" role="contentinfo">
-      {/* Email capture band */}
-      <div className="border-b border-[#2e2820] py-12 px-4 md:px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#c85a00] font-semibold mb-2">
-            Join the Pack
-          </p>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#f5f0e8] mb-2">
-            Get $5 Off Your Next Bag
-          </h2>
-          <p className="text-[#9a8870] text-sm mb-6">
-            Sign up for ranch-dog nutrition tips, new product announcements, and exclusive member deals.
-          </p>
-          <form
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-            onSubmit={(e) => e.preventDefault()}
-            aria-label="Email signup form"
-          >
-            <label htmlFor="footer-email" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="footer-email"
-              type="email"
-              required
-              placeholder="your@email.com"
-              className="flex-1 px-4 py-3 rounded bg-[#1a1712] border border-[#2e2820] text-[#f5f0e8] placeholder-[#9a8870] text-sm focus:outline-none focus:border-[#c85a00] transition-colors"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-[#c85a00] text-white text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#a84800] transition-colors whitespace-nowrap"
-            >
-              Join the Pack
-            </button>
-          </form>
-        </div>
-      </div>
-
+    <footer className="bg-white border-t border-gray-200" role="contentinfo">
       {/* Main footer grid */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" aria-label="Outlaw Feed home" className="inline-block mb-4">
-              <span className="font-serif text-2xl font-bold tracking-widest uppercase text-[#f5f0e8] block">
-                OUTLAW
-              </span>
-              <span className="font-sans text-[10px] tracking-[0.35em] uppercase text-[#c85a00] font-semibold">
-                FEED
-              </span>
+              <img
+                src="/Logo.png"
+                alt="Travis Farr's Outlaw Feed Co."
+                width={420}
+                height={156}
+                className="h-36 w-auto object-contain"
+              />
             </Link>
-            <p className="text-[#9a8870] text-xs leading-relaxed mb-4">
+            <p className="text-gray-500 text-xs leading-relaxed mb-4">
               Made in Texas. Made to Work. No corn, wheat, or soy — ever.
             </p>
-            <p className="text-[#9a8870] text-xs">
+            <p className="text-gray-500 text-xs">
               Bell County, TX
               <br />
               <a
-                href="tel:+12545550100"
-                className="hover:text-[#e8a44a] transition-colors"
+                href="tel:+12543933957"
+                className="hover:text-[#c85a00] transition-colors"
               >
-                (254) 555-0100
+                (254) 393-3957
               </a>
             </p>
           </div>
@@ -104,7 +81,7 @@ export default function Footer() {
           {/* Nav columns */}
           {footerLinks.map((col) => (
             <div key={col.heading}>
-              <h3 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-[#f5f0e8] mb-4">
+              <h3 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gray-900 mb-4">
                 {col.heading}
               </h3>
               <ul className="flex flex-col gap-2">
@@ -112,7 +89,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-[#9a8870] hover:text-[#e8a44a] transition-colors"
+                      className="text-sm text-gray-500 hover:text-[#c85a00] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -124,8 +101,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-[#2e2820] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#9a8870] text-xs">
+        <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-400 text-xs">
             &copy; {new Date().getFullYear()} Outlaw Feed. All rights reserved. Made in Texas.
           </p>
           <div className="flex items-center gap-6">
@@ -133,7 +110,7 @@ export default function Footer() {
               href="https://www.instagram.com/outlawfeed"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#9a8870] hover:text-[#e8a44a] transition-colors text-xs uppercase tracking-wider"
+              className="text-gray-400 hover:text-[#c85a00] transition-colors text-xs uppercase tracking-wider"
               aria-label="Outlaw Feed on Instagram"
             >
               Instagram
@@ -142,14 +119,14 @@ export default function Footer() {
               href="https://www.facebook.com/outlawfeed"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#9a8870] hover:text-[#e8a44a] transition-colors text-xs uppercase tracking-wider"
+              className="text-gray-400 hover:text-[#c85a00] transition-colors text-xs uppercase tracking-wider"
               aria-label="Outlaw Feed on Facebook"
             >
               Facebook
             </a>
             <Link
               href="/contact"
-              className="text-[#9a8870] hover:text-[#e8a44a] transition-colors text-xs uppercase tracking-wider"
+              className="text-gray-400 hover:text-[#c85a00] transition-colors text-xs uppercase tracking-wider"
             >
               Contact
             </Link>

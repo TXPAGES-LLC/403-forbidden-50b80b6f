@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+import ScrollToTop from "@/components/scroll-to-top";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,11 +37,11 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: new URL("https://outlawfeed.com"),
+  metadataBase: new URL(""),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://outlawfeed.com",
+    url: "",
     siteName: "Outlaw Feed",
     title: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
     description:
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     description: "No corn. No wheat. No soy. Made in Texas for dogs that work hard.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://outlawfeed.com" },
+  alternates: { canonical: "" },
 };
 
 export const viewport: Viewport = {
@@ -73,9 +74,9 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Outlaw Feed",
-  url: "https://outlawfeed.com",
-  telephone: "+1-254-555-0100",
-  email: "info@outlawfeed.com",
+  url: "",
+  telephone: "+1-254-393-3957",
+  email: "fencesbyfarr@yahoo.com",
   description:
     "Texas-made, AAFCO-certified dog food with no corn, wheat, or soy. Real meat first ingredient for working and hunting dogs.",
   address: {
@@ -100,7 +101,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Outlaw Feed",
-  url: "https://outlawfeed.com",
+  url: "",
 };
 
 export default function RootLayout({
@@ -122,6 +123,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
+        <ScrollToTop />
         <Nav />
         <main id="main-content">{children}</main>
         <Footer />
