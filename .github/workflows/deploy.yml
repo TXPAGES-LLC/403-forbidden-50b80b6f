@@ -28,11 +28,22 @@ jobs:
           rm -rf node_modules package-lock.json
           npm install --include=optional --legacy-peer-deps
 
-      - name: Azure Login
-        uses: azure/login@v2
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-          allow-no-subscriptions: true
+      - name: Azure CLI manual login (service principal)
+        env:
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+        run: |
+          echo "$AZURE_CREDENTIALS" > /tmp/azcreds.json
+          # ensure correct cloud is selected (keeps behavior of original action)
+          az cloud set -n azurecloud
+          # extract required fields from the service principal JSON
+          CLIENT_ID=$(jq -r .clientId /tmp/azcreds.json)
+          CLIENT_SECRET=$(jq -r .clientSecret /tmp/azcreds.json)
+          TENANT_ID=$(jq -r .tenantId /tmp/azcreds.json)
+          if [ -z "$CLIENT_ID" ] || [ -z "$CLIENT_SECRET" ] || [ -z "$TENANT_ID" ]; then
+            echo "AZURE_CREDENTIALS is missing required fields (clientId, clientSecret, tenantId)"; exit 1
+          fi
+          # login without attempting to set a subscription (avoids subscription-in-cloud mismatch errors)
+          az login --service-principal -u "$CLIENT_ID" -p "$CLIENT_SECRET" --tenant "$TENANT_ID"
 
       - name: Resolve ACR login server
         run: |
