@@ -28,21 +28,10 @@ jobs:
           rm -rf node_modules package-lock.json
           npm install --include=optional --legacy-peer-deps
 
-      - name: Azure CLI login (service principal)
-        env:
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-        run: |
-          echo "$AZURE_CREDENTIALS" > /tmp/azurecreds.json
-          CLIENT_ID=$(jq -r '.clientId // .client_id' /tmp/azurecreds.json)
-          CLIENT_SECRET=$(jq -r '.clientSecret // .client_secret' /tmp/azurecreds.json)
-          TENANT=$(jq -r '.tenantId // .tenant' /tmp/azurecreds.json)
-          # Basic validation
-          if [ -z "$CLIENT_ID" ] || [ -z "$CLIENT_SECRET" ] || [ -z "$TENANT" ]; then
-            echo "AZURE_CREDENTIALS is missing required fields (clientId/clientSecret/tenantId)"
-            cat /tmp/azurecreds.json
-            exit 1
-          fi
-          az login --service-principal -u "$CLIENT_ID" -p "$CLIENT_SECRET" --tenant "$TENANT" --allow-no-subscriptions
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Resolve ACR login server
         run: |
