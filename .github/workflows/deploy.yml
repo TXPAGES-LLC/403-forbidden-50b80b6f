@@ -32,7 +32,6 @@ jobs:
         uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          environment: ${{ fromJson(secrets.AZURE_CREDENTIALS).environment || 'azurecloud' }}
 
       - name: Resolve ACR login server
         run: |
