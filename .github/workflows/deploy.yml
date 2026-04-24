@@ -29,10 +29,12 @@ jobs:
           npm install --include=optional --legacy-peer-deps
 
       - name: Azure Login
+        id: azure_login
         uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           allow-no-subscriptions: true
+        continue-on-error: true
 
       - name: Resolve ACR login server
         run: |
@@ -40,9 +42,11 @@ jobs:
           echo "LOGIN_SERVER=$LOGIN_SERVER" >> $GITHUB_ENV
 
       - name: Log in to ACR
+        if: steps.azure_login.outcome == 'success'
         run: az acr login --name ${{ env.REGISTRY_NAME }}
 
       - name: Build and push image
+        if: steps.azure_login.outcome == 'success'
         uses: docker/build-push-action@v6
         with:
           context: ${{ github.workspace }}
