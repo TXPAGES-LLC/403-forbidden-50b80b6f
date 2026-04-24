@@ -28,10 +28,39 @@ jobs:
           rm -rf node_modules package-lock.json
           npm install --include=optional --legacy-peer-deps
 
-      - name: Azure Login
-        uses: azure/login@v2
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Azure CLI Login (parsing credentials)
+        env:
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+        run: |
+          echo "$AZURE_CREDENTIALS" > /tmp/azcreds.json
+          # Try to detect cloud name from the credentials JSON (cloudName or cloud)
+          CLOUD=$(jq -r '.cloudName // .cloud // empty' /tmp/azcreds.json)
+          if [ -n "$CLOUD" ]; then
+            case "${CLOUD,,}" in
+              azureusgovernment|usgovernment|azuregov|azureusgov)
+                CLOUDNAME="AzureUSGovernment" ;;
+              azurechinacloud|china)
+                CLOUDNAME="AzureChinaCloud" ;;
+              azuregermanucloud|germany|azuregermanc|azuregermacloud)
+                CLOUDNAME="AzureGermanCloud" ;;
+              *)
+                CLOUDNAME="AzureCloud" ;;
+            esac
+            echo "Setting cloud: $CLOUDNAME"
+            az cloud set -n "$CLOUDNAME"
+          fi
+          CLIENT_ID=$(jq -r .clientId /tmp/azcreds.json)
+          CLIENT_SECRET=$(jq -r .clientSecret /tmp/azcreds.json)
+          TENANT_ID=$(jq -r .tenantId /tmp/azcreds.json)
+          SUBSCRIPTION_ID=$(jq -r .subscriptionId /tmp/azcreds.json)
+
+          # Login with service principal and allow no subscriptions to avoid failing when the subscription
+          # in the credentials isn't available in the current cloud. We still attempt to set the subscription
+          # if provided but don't fail the job on account set.
+          az login --service-principal -u "$CLIENT_ID" -p "$CLIENT_SECRET" --tenant "$TENANT_ID" --allow-no-subscriptions
+          if [ -n "$SUBSCRIPTION_ID" ] && [ "$SUBSCRIPTION_ID" != "null" ]; then
+            az account set -s "$SUBSCRIPTION_ID" || true
+          fi
 
       - name: Resolve ACR login server
         run: |
