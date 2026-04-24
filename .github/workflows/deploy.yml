@@ -46,6 +46,7 @@ jobs:
         run: az acr login --name ${{ env.REGISTRY_NAME }}
 
       - name: Build and push image
+        id: build_push
         if: steps.azure_login.outcome == 'success'
         uses: docker/build-push-action@v6
         with:
@@ -57,6 +58,7 @@ jobs:
             ${{ env.LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest
 
       - name: Deploy to Container App
+        if: steps.azure_login.outcome == 'success' && steps.build_push.outcome == 'success'
         run: |
           ACR_USERNAME=$(az acr credential show --name ${{ env.REGISTRY_NAME }} --query username -o tsv)
           ACR_PASSWORD=$(az acr credential show --name ${{ env.REGISTRY_NAME }} --query 'passwords[0].value' -o tsv)
