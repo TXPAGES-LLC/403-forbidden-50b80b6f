@@ -95,7 +95,7 @@ export default function BlueFormulaPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 px-4 md:px-6 bg-[#0f0e0c] overflow-hidden" aria-label="Blue Formula hero">
+      <section className="relative pt-20 pb-12 md:pt-24 md:pb-20 lg:pt-28 lg:pb-28 px-4 md:px-6 bg-[#0f0e0c] overflow-hidden" aria-label="Blue Formula hero">
         <div className="absolute inset-0 opacity-20">
           <img
             src="/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png"

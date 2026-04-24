@@ -12,7 +12,7 @@ export default function OurStoryPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-0 md:pt-40 overflow-hidden bg-[#0f0e0c]">
+      <section className="relative pt-20 pb-0 md:pt-24 lg:pt-28 overflow-hidden bg-[#0f0e0c]">
         <div className="max-w-4xl mx-auto px-4 md:px-6 pb-20 md:pb-28">
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 text-xs text-[#9a8870]">

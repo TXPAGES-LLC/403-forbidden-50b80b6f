@@ -33,7 +33,7 @@ export default function WhyOutlawPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 px-4 md:px-6 bg-[#0f0e0c]" aria-label="Why Outlaw hero">
+      <section className="pt-20 pb-12 md:pt-24 md:pb-20 lg:pt-28 lg:pb-28 px-4 md:px-6 bg-[#0f0e0c]" aria-label="Why Outlaw hero">
         <div className="max-w-4xl mx-auto">
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 text-xs text-[#9a8870]">

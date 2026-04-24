@@ -58,9 +58,9 @@ export default function Footer() {
               <img
                 src="/Logo.png"
                 alt="Travis Farr's Outlaw Feed Co."
-                width={420}
-                height={156}
-                className="h-36 w-auto object-contain"
+                width={200}
+                height={74}
+                className="h-14 w-auto object-contain"
               />
             </Link>
             <p className="text-gray-500 text-xs leading-relaxed mb-4">
