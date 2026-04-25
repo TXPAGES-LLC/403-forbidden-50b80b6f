@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Which formula is right for my dog?",
-    a: "Gold Formula is built for adult working and hunting dogs at maintenance or active levels. Blue Formula is formulated for all life stages — including puppies, pregnant or nursing females, and high-performance adults that need a higher fat-to-protein ratio.",
+    a: "Gold Formula (26% protein, 18% fat) is built for adult working and hunting dogs that need high-energy performance nutrition. Blue Formula (21% protein, 15% fat) is ideal for adult dogs at everyday maintenance levels, multi-dog households, or dogs transitioning off a high-performance diet.",
   },
   {
     q: "How do I transition my dog to Outlaw Feed?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Can I feed Blue Formula to my adult dog?",
-    a: "Yes. Blue Formula is AAFCO certified for all life stages, which includes adult maintenance. Some adult dogs with very high energy demands actually do better on Blue Formula's higher fat content.",
+    a: "Yes. Blue Formula is formulated for adult maintenance at 21% protein and 15% fat. It is a great everyday option for adult dogs with moderate activity levels, companion dogs, or any adult that does not require the higher energy output of Gold Formula.",
   },
   {
     q: "Do you offer delivery?",
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "Can puppies eat Outlaw Feed?",
-    a: "Yes — Blue Formula is certified for all life stages, including the growth of large-breed dogs (70 lbs or more as an adult). Feed Blue Formula from weaning through your puppy's first year, then transition to Gold Formula for adult maintenance.",
+    a: "Contact us directly for puppy-specific feeding guidance, as our current Gold and Blue formulas are designed for adult dogs. Reach us at (254) 393-3957 or through the Contact page and we will point you in the right direction for your pup.",
   },
 ];
 
@@ -125,12 +125,14 @@ export default function FeedingGuidePage() {
               </thead>
               <tbody>
                 {[
-                  ["Crude Protein", "32% min", "30% min"],
-                  ["Crude Fat", "18% min", "20% min"],
-                  ["Life Stage", "Adult Maintenance", "All Life Stages"],
-                  ["Best For", "Working & hunting dogs", "Puppies & high-energy adults"],
-                  ["Carb Source", "Brown Rice & Oatmeal", "Oatmeal & Brown Rice"],
-                  ["Added DHA", "No", "Yes (Salmon Oil)"],
+                  ["Crude Protein", "26% min", "21% min"],
+                  ["Crude Fat", "18% min", "15% min"],
+                  ["Moisture", "12% max", "12% max"],
+                  ["Calories", "3640 kcal/kg", "3,170 kcal/kg"],
+                  ["Per Cup", "441 kcal", "290 kcal"],
+                  ["Primary Protein", "Chicken Rice", "Chicken Meal"],
+                  ["Carb Source", "Brown Rice & Grain Sorghum", "Grain Sorghum & Brown Rice"],
+                  ["Best For", "Working & hunting dogs", "Adult dogs & everyday nutrition"],
                   ["Corn / Wheat / Soy", "Never", "Never"],
                 ].map(([label, gold, blue], i) => (
                   <tr key={label} className={`border-b border-[#2e2820] ${i % 2 === 0 ? "bg-[#1a1712]" : "bg-[#0f0e0c]"}`}>
@@ -176,14 +178,14 @@ export default function FeedingGuidePage() {
                 ],
               },
               {
-                title: "Blue Formula — Puppies & Active Adults",
+                title: "Blue Formula — Adult Maintenance",
                 rows: [
-                  ["Up to 10 lbs (puppy)", "½ – 1 cup/day"],
-                  ["10–25 lbs (puppy)", "1 – 2 cups/day"],
-                  ["25–50 lbs (puppy)", "2 – 3 cups/day"],
-                  ["50–75 lbs (active adult)", "3 – 4 cups/day"],
-                  ["75–100 lbs (active adult)", "4 – 5½ cups/day"],
-                  ["100+ lbs (active adult)", "5½ cups + ¼ per 10 lbs"],
+                  ["10–20 lbs", "½ – 1 cup/day"],
+                  ["20–40 lbs", "1 – 1¾ cups/day"],
+                  ["40–60 lbs", "1¾ – 2½ cups/day"],
+                  ["60–80 lbs", "2½ – 3¼ cups/day"],
+                  ["80–100 lbs", "3¼ – 4 cups/day"],
+                  ["100+ lbs", "4 cups + ¼ per 10 lbs"],
                 ],
               },
             ].map((table) => (

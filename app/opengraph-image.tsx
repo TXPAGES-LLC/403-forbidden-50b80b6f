@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
 export const alt = "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -13,7 +12,6 @@ export default function OGImage() {
           width: 1200,
           height: 630,
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           background: "#0f0e0c",
@@ -21,27 +19,25 @@ export default function OGImage() {
           overflow: "hidden",
         }}
       >
-        {/* Background hero image */}
-        <img
-          src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&q=80"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            opacity: 0.35,
-          }}
-          alt=""
-        />
-
-        {/* Dark overlay gradient */}
+        {/* Decorative background texture — diagonal stripes */}
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background:
-              "linear-gradient(to bottom, rgba(15,14,12,0.4) 0%, rgba(15,14,12,0.85) 100%)",
+            backgroundImage:
+              "repeating-linear-gradient(135deg, rgba(200,90,0,0.04) 0px, rgba(200,90,0,0.04) 1px, transparent 1px, transparent 60px)",
+          }}
+        />
+
+        {/* Left accent bar */}
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            bottom: 0,
+            width: 8,
+            background: "#c85a00",
           }}
         />
 
@@ -52,53 +48,49 @@ export default function OGImage() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: 16,
-            padding: "0 80px",
+            gap: 20,
+            padding: "0 100px",
             textAlign: "center",
           }}
         >
-          {/* Brand badge */}
+          {/* Location badge */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 10,
               background: "#c85a00",
               borderRadius: 4,
-              padding: "6px 20px",
-              marginBottom: 8,
+              padding: "5px 18px",
             }}
           >
             <span
               style={{
                 color: "#ffffff",
-                fontSize: 14,
+                fontSize: 13,
                 fontWeight: 700,
-                letterSpacing: "0.25em",
+                letterSpacing: "0.3em",
                 textTransform: "uppercase",
-                fontFamily: "serif",
               }}
             >
               Bell County, Texas
             </span>
           </div>
 
-          {/* Wordmark */}
+          {/* Main wordmark */}
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: 4,
+              gap: 6,
             }}
           >
             <span
               style={{
                 color: "#f5f0e8",
-                fontSize: 96,
+                fontSize: 100,
                 fontWeight: 900,
-                fontFamily: "serif",
-                letterSpacing: "-2px",
+                letterSpacing: "-3px",
                 lineHeight: 1,
                 textTransform: "uppercase",
               }}
@@ -108,47 +100,54 @@ export default function OGImage() {
             <span
               style={{
                 color: "#e8a44a",
-                fontSize: 28,
+                fontSize: 26,
                 fontWeight: 600,
-                letterSpacing: "0.3em",
+                letterSpacing: "0.35em",
                 textTransform: "uppercase",
-                fontFamily: "sans-serif",
               }}
             >
               TEXAS-MADE DOG FOOD
             </span>
           </div>
 
-          {/* Tagline */}
-          <p
+          {/* Divider */}
+          <div
             style={{
-              color: "rgba(245,240,232,0.75)",
-              fontSize: 22,
-              fontFamily: "sans-serif",
-              marginTop: 8,
-              maxWidth: 700,
-              lineHeight: 1.4,
+              width: 80,
+              height: 2,
+              background: "#c85a00",
+              borderRadius: 2,
+            }}
+          />
+
+          {/* Tagline */}
+          <span
+            style={{
+              color: "rgba(245,240,232,0.65)",
+              fontSize: 20,
+              lineHeight: 1.5,
+              maxWidth: 640,
             }}
           >
-            No Corn. No Wheat. No Soy. Real Meat — First Ingredient.
-          </p>
+            No Corn. No Wheat. No Soy. Zero Fillers. Real Meat First.
+          </span>
 
           {/* Proof pills */}
-          <div style={{ display: "flex", gap: 16, marginTop: 12 }}>
-            {["AAFCO Certified", "Made in Texas", "Real Meat First"].map((label) => (
+          <div style={{ display: "flex", gap: 14, marginTop: 4 }}>
+            {["Gold Formula", "Blue Formula", "Made in Texas", "Zero Fillers"].map((label) => (
               <div
                 key={label}
                 style={{
-                  background: "rgba(200,90,0,0.2)",
-                  border: "1px solid rgba(200,90,0,0.5)",
+                  display: "flex",
+                  background: "rgba(200,90,0,0.15)",
+                  border: "1px solid rgba(200,90,0,0.4)",
                   borderRadius: 4,
-                  padding: "6px 16px",
+                  padding: "6px 18px",
                   color: "#e8a44a",
-                  fontSize: 14,
-                  fontWeight: 600,
-                  letterSpacing: "0.1em",
+                  fontSize: 13,
+                  fontWeight: 700,
+                  letterSpacing: "0.12em",
                   textTransform: "uppercase",
-                  fontFamily: "sans-serif",
                 }}
               >
                 {label}
