@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: new URL(""),
+  metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "",
+    url: process.env.NEXT_PUBLIC_SITE_URL || undefined,
     siteName: "Outlaw Feed",
     title: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
     description:
