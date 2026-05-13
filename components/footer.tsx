@@ -77,7 +77,6 @@ export default function Footer() {
               </a>
             </p>
             {/* Google Business Profile CID */}
-            <meta itemProp="facebookProfile" content="https://www.facebook.com/outlawfeed" />
             <meta itemProp="google" content="5693377320952782312" />
           </div>
 
@@ -126,15 +125,6 @@ export default function Footer() {
               aria-label="Outlaw Feed on Instagram"
             >
               Instagram
-            </a>
-            <a
-              href="https://www.facebook.com/outlawfeed"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#c85a00] transition-colors text-xs uppercase tracking-wider"
-              aria-label="Outlaw Feed on Facebook"
-            >
-              Facebook
             </a>
             <Link
               href="/contact"

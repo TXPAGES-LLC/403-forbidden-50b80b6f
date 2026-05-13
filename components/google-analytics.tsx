@@ -2,7 +2,6 @@
 
 import Script from "next/script";
 
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
 export default function GoogleAnalytics() {
@@ -22,45 +21,6 @@ export default function GoogleAnalytics() {
           }}
         />
       )}
-
-      {/* GA4 Script */}
-      {GA_MEASUREMENT_ID && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}', {
-                page_path: window.location.pathname,
-              });
-            `}
-          </Script>
-        </>
-      )}
     </>
   );
 }
-
-// Helper function to track events
-export function trackEvent(action: string, category: string, label?: string, value?: number) {
-  if (typeof window !== "undefined" && (window as any).gtag) {
-    (window as any).gtag("event", action, {
-      event_category: category,
-      event_label: label,
-      value: value,
-    });
-  }
-}
-
-// Core conversion events
-export const GA_EVENTS = {
-  CLICK_CALL: () => trackEvent("click", "contact", "phone_call"),
-  CLICK_STORE: (store: string) => trackEvent("click", "where_to_buy", store),
-  VIEW_PRODUCT: (product: string) => trackEvent("view_item", "product", product),
-  CLICK_FIND_STORE: () => trackEvent("click", "cta", "find_store"),
-};
