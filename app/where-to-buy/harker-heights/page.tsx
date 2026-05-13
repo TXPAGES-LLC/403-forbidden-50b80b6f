@@ -42,7 +42,7 @@ export default function HarkerHeightsPage() {
         },
         {
           heading: "High-Protein Dog Food for Harker Heights and the Killeen Metro",
-          body: "The Harker Heights and Killeen area is one of the densest concentrations of working dog owners in Central Texas. Outlaw Feed formulas are designed to meet the caloric demands of dogs that are actually working — not just living in a backyard. The Gold Formula at 26% protein and 18% fat delivers the energy density serious dog owners need. Call (254) 393-3957 to confirm local availability.",
+          body: "The Harker Heights and Killeen area is one of the densest concentrations of working dog owners in Central Texas. Outlaw Feed formulas are designed to meet the caloric demands of dogs that are actually working — not just living in a backyard. The Gold Formula at 26% protein and 18% fat delivers the energy density serious dog owners need. Call (254) 939-3957 to confirm local availability.",
         },
       ]}
     />

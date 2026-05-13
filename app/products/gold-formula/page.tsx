@@ -95,7 +95,7 @@ export default function GoldFormulaPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-20 pb-12 md:pt-24 md:pb-20 lg:pt-28 lg:pb-28 px-4 md:px-6 bg-[#0f0e0c] overflow-hidden" aria-label="Gold Formula hero">
+      <section className="relative pt-28 pb-12 md:pt-36 md:pb-20 lg:pt-40 lg:pb-28 px-4 md:px-6 bg-[#0f0e0c] overflow-hidden" aria-label="Gold Formula hero">
         <div className="absolute inset-0 opacity-20">
           <img
             src="/Gold-Package-Dog-Food-Dog-Food-Pet-Food.png"

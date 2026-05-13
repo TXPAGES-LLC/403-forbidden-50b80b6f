@@ -6,7 +6,19 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        disallow: ["/api/", "/_next/", "/private/"],
+      },
+      {
+        userAgent: "GPTBot",
+        allow: ["/llms.txt", "/"],
+      },
+      {
+        userAgent: "ChatGPT-User",
+        allow: ["/llms.txt", "/"],
+      },
+      {
+        userAgent: "Claude-Web",
+        allow: ["/llms.txt", "/"],
       },
     ],
     sitemap: "/sitemap.xml",

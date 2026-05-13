@@ -4,7 +4,7 @@ import CityPage from "@/components/city-page";
 export const metadata: Metadata = {
   title: "Dog Food in Gatesville TX | Outlaw Feed — Coryell County Feed Store",
   description:
-    "Outlaw Feed is Texas-made working dog food available near Gatesville, TX in Coryell County. No corn, wheat, or soy. Real meat first ingredient. Call (254) 393-3957.",
+    "Outlaw Feed is Texas-made working dog food available near Gatesville, TX in Coryell County. No corn, wheat, or soy. Real meat first ingredient. Call (254) 939-3957.",
   alternates: { canonical: "/where-to-buy/gatesville" },
 };
 
@@ -42,7 +42,7 @@ export default function GatesvillePage() {
         },
         {
           heading: "Texas-Made Dog Food with No Corn, Wheat, or Soy",
-          body: "Every bag of Outlaw Feed is produced in Central Texas under quality-controlled conditions, with a full ingredients list and guaranteed analysis printed clearly on the label. There are no hidden blends or undisclosed by-products. For Gatesville area dog owners looking for a local, honest alternative to national brands, Outlaw Feed is the answer. Questions about availability? Call (254) 393-3957.",
+          body: "Every bag of Outlaw Feed is produced in Central Texas under quality-controlled conditions, with a full ingredients list and guaranteed analysis printed clearly on the label. There are no hidden blends or undisclosed by-products. For Gatesville area dog owners looking for a local, honest alternative to national brands, Outlaw Feed is the answer. Questions about availability? Call (254) 939-3957.",
         },
       ]}
     />

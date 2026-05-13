@@ -56,11 +56,11 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" aria-label="Outlaw Feed home" className="inline-block mb-4">
               <img
-                src="/Logo.png"
+                src="/logo-transparent-long.png"
                 alt="Travis Farr's Outlaw Feed Co."
-                width={200}
-                height={74}
-                className="h-14 w-auto object-contain"
+                width={240}
+                height={50}
+                className="h-36 w-auto object-contain"
               />
             </Link>
             <p className="text-gray-500 text-xs leading-relaxed mb-4">
@@ -70,12 +70,15 @@ export default function Footer() {
               Bell County, TX
               <br />
               <a
-                href="tel:+12543933957"
+                href="tel:+12549393957"
                 className="hover:text-[#c85a00] transition-colors"
               >
-                (254) 393-3957
+                (254) 939-3957
               </a>
             </p>
+            {/* Google Business Profile CID */}
+            <meta itemProp="facebookProfile" content="https://www.facebook.com/outlawfeed" />
+            <meta itemProp="google" content="5693377320952782312" />
           </div>
 
           {/* Nav columns */}

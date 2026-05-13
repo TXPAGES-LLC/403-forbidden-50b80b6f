@@ -66,7 +66,7 @@ export default function Nav() {
       className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm"
       role="banner"
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-16 md:h-20 lg:h-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-24 md:h-32 lg:h-36">
         {/* Logo */}
         <Link
           href="/"
@@ -75,11 +75,11 @@ export default function Nav() {
           onClick={closeMenu}
         >
           <img
-            src="/Logo.png"
+            src="/logo-transparent-long.png"
             alt="Travis Farr's Outlaw Feed Co."
-            width={220}
-            height={82}
-            className="h-10 md:h-14 lg:h-16 w-auto object-contain"
+            width={280}
+            height={60}
+            className="h-20 md:h-28 lg:h-32 w-auto object-contain"
             fetchPriority="high"
           />
         </Link>
@@ -132,10 +132,10 @@ export default function Nav() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="tel:+12543933957"
+            href="tel:+12549393957"
             className="text-xs text-gray-500 hover:text-[#c85a00] transition-colors font-medium hidden xl:block"
           >
-            (254) 393-3957
+            (254) 939-3957
           </a>
           <Link
             href="/where-to-buy"
@@ -165,7 +165,7 @@ export default function Nav() {
       {open && (
         <div
           id="mobile-menu"
-          className="lg:hidden fixed left-0 right-0 top-16 md:top-20 bottom-0 bg-white overflow-y-auto z-40 border-t border-gray-200"
+          className="lg:hidden fixed left-0 right-0 top-24 md:top-32 bottom-0 bg-white overflow-y-auto z-40 border-t border-gray-200"
         >
           <nav className="flex flex-col px-4 py-2" aria-label="Mobile navigation">
             {mobileNavLinks.map((link) => (
@@ -216,11 +216,11 @@ export default function Nav() {
             {/* CTA buttons — always visible on all mobile/tablet sizes */}
             <div className="flex flex-col gap-3 pt-5 pb-8">
               <a
-                href="tel:+12543933957"
+                href="tel:+12549393957"
                 className="flex items-center justify-center gap-2 py-3.5 text-sm font-semibold rounded bg-[#c85a00] text-white hover:bg-[#a84800] transition-colors"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 5.45 5.45l1.79-1.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg>
-                Call (254) 393-3957
+                Call (254) 939-3957
               </a>
               <Link
                 href="/where-to-buy"

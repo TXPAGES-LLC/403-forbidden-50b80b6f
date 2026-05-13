@@ -30,7 +30,7 @@ export default function HamiltonPage() {
       sections={[
         {
           heading: "Where to Find Dog Food Near Hamilton, Texas",
-          body: "Outlaw Feed is working its way into local feed and ranch supply stores throughout the Hamilton County area. Hamilton is surrounded by cedar and oak hill country that supports significant deer hunting and ranching operations — and those operations need dogs that can perform. Call (254) 393-3957 to get directed to the nearest retailer currently carrying Outlaw Feed near Hamilton.",
+          body: "Outlaw Feed is working its way into local feed and ranch supply stores throughout the Hamilton County area. Hamilton is surrounded by cedar and oak hill country that supports significant deer hunting and ranching operations — and those operations need dogs that can perform. Call (254) 939-3957 to get directed to the nearest retailer currently carrying Outlaw Feed near Hamilton.",
         },
         {
           heading: "Livestock Dog Food for Hamilton County Ranch Operations",

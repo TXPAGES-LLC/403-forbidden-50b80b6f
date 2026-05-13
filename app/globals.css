@@ -1,5 +1,4 @@
-@import 'tailwindcss';
-
+@import "tailwindcss" source("..");
 @custom-variant dark (&:is(.dark *));
 
 /* ── Outlaw Feed — Texas Ranch Brand Tokens ── */

@@ -30,7 +30,7 @@ export default function CopperasCovePage() {
       sections={[
         {
           heading: "Where to Find Outlaw Feed Dog Food Near Copperas Cove",
-          body: "Outlaw Feed is stocked at local feed retailers serving the Copperas Cove and Coryell County area. Located at the junction of Coryell and Bell counties, Copperas Cove sits within easy reach of multiple Outlaw Feed retail partners. Check our store locator for the nearest location, or call (254) 393-3957 to find out which retailer currently has your preferred formula in stock.",
+          body: "Outlaw Feed is stocked at local feed retailers serving the Copperas Cove and Coryell County area. Located at the junction of Coryell and Bell counties, Copperas Cove sits within easy reach of multiple Outlaw Feed retail partners. Check our store locator for the nearest location, or call (254) 939-3957 to find out which retailer currently has your preferred formula in stock.",
         },
         {
           heading: "Active and Working Dog Nutrition Near Fort Hood",

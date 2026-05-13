@@ -4,7 +4,7 @@ import CityPage from "@/components/city-page";
 export const metadata: Metadata = {
   title: "Dog Food in Belton TX | Outlaw Feed — Bell County Feed Store",
   description:
-    "Looking for high-protein dog food in Belton, TX? Outlaw Feed is Texas-made with no corn, wheat, or soy. Available at local feed stores in Bell County. Call (254) 393-3957.",
+    "Looking for high-protein dog food in Belton, TX? Outlaw Feed is Texas-made with no corn, wheat, or soy. Available at local feed stores in Bell County. Call (254) 939-3957.",
   alternates: { canonical: "/where-to-buy/belton" },
 };
 
@@ -43,7 +43,7 @@ export default function BeltonPage() {
         },
         {
           heading: "AAFCO Certified Dog Food Made in Central Texas",
-          body: "Outlaw Feed meets AAFCO nutritional standards for all life stages. Every bag is manufactured under controlled conditions in Central Texas, giving you the traceability you deserve when you are feeding an animal that works for you. Bell County delivery is available — call (254) 393-3957 Monday through Friday between 8am and 3pm to arrange a schedule.",
+          body: "Outlaw Feed meets AAFCO nutritional standards for all life stages. Every bag is manufactured under controlled conditions in Central Texas, giving you the traceability you deserve when you are feeding an animal that works for you. Bell County delivery is available — call (254) 939-3957 Monday through Friday between 8am and 3pm to arrange a schedule.",
         },
       ]}
     />

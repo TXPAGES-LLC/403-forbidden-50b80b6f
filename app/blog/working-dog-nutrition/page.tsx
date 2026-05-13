@@ -16,7 +16,7 @@ const articleSchema = {
   author: { "@type": "Organization", name: "Outlaw Feed" },
   publisher: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   url: "/blog/working-dog-nutrition",
-  image: "/working-dog-nutrition.png",
+  image: "https://outlawfeed.com/working-dog-nutrition.png",
   description: "Protein, fat ratios, and feeding timing for ranch dogs during demand season.",
 };
 

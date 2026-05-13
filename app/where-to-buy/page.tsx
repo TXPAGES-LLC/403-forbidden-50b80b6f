@@ -71,7 +71,7 @@ export default function WhereToBuyPage() {
       />
 
       {/* Hero */}
-      <section className="pt-20 pb-12 md:pt-24 md:pb-16 lg:pt-28 lg:pb-20 px-4 md:px-6 bg-[#0f0e0c]">
+      <section className="pt-28 pb-12 md:pt-36 md:pb-16 lg:pt-40 lg:pb-20 px-4 md:px-6 bg-[#0f0e0c]">
         <div className="max-w-4xl mx-auto">
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 text-xs text-[#9a8870]">
@@ -182,10 +182,10 @@ export default function WhereToBuyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+12543933957"
+                href="tel:+12549393957"
                 className="px-7 py-4 bg-[#c85a00] text-white text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#a84800] transition-colors text-center"
               >
-                Call (254) 393-3957
+                Call (254) 939-3957
               </a>
               <Link
                 href="/contact"

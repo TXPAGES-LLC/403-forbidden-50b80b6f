@@ -42,7 +42,7 @@ export default function WacoPage() {
         },
         {
           heading: "Supporting Central Texas Feed Stores, Not National Chains",
-          body: "Outlaw Feed is distributed through independently-owned farm supply and feed stores in Waco and surrounding McLennan County — not through national pet retail chains. This is a deliberate decision: it keeps money in local businesses, keeps the distribution chain short, and ensures the retailers selling Outlaw Feed are the kind of people who actually know what is in the bag. If you want to request Outlaw Feed at your Waco-area feed store, or if you have questions about the formulas, call (254) 393-3957 Monday through Friday, 8am to 3pm.",
+          body: "Outlaw Feed is distributed through independently-owned farm supply and feed stores in Waco and surrounding McLennan County — not through national pet retail chains. This is a deliberate decision: it keeps money in local businesses, keeps the distribution chain short, and ensures the retailers selling Outlaw Feed are the kind of people who actually know what is in the bag. If you want to request Outlaw Feed at your Waco-area feed store, or if you have questions about the formulas, call (254) 939-3957 Monday through Friday, 8am to 3pm.",
         },
       ]}
     />

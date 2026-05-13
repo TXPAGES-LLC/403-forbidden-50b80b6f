@@ -4,7 +4,7 @@ import CityPage from "@/components/city-page";
 export const metadata: Metadata = {
   title: "Dog Food in Lampasas TX | Outlaw Feed — Lampasas County Feed Store",
   description:
-    "Looking for high-protein dog food in Lampasas, TX? Outlaw Feed is Texas-made with no corn, wheat, or soy. Available at local feed stores in Lampasas County. Call (254) 393-3957.",
+    "Looking for high-protein dog food in Lampasas, TX? Outlaw Feed is Texas-made with no corn, wheat, or soy. Available at local feed stores in Lampasas County. Call (254) 939-3957.",
   alternates: { canonical: "/where-to-buy/lampasas" },
 };
 
@@ -30,7 +30,7 @@ export default function LampasasPage() {
       sections={[
         {
           heading: "Where to Buy Outlaw Feed Near Lampasas, Texas",
-          body: "Outlaw Feed is available through local feed retailers serving the Lampasas area. As we expand our retail network across the Hill Country region, Lampasas County has been a priority market given the density of working dog owners and hunting operations. Call (254) 393-3957 to get current retailer locations or to ask about direct delivery options in the area.",
+          body: "Outlaw Feed is available through local feed retailers serving the Lampasas area. As we expand our retail network across the Hill Country region, Lampasas County has been a priority market given the density of working dog owners and hunting operations. Call (254) 939-3957 to get current retailer locations or to ask about direct delivery options in the area.",
         },
         {
           heading: "Dog Food for Lampasas County Hill Country Ranch Dogs",

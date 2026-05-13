@@ -30,7 +30,7 @@ export default function HillsboroPage() {
       sections={[
         {
           heading: "Where to Buy Outlaw Feed Near Hillsboro, Texas",
-          body: "Outlaw Feed is distributed to local farm and feed retail partners in the Hillsboro and Hill County area. Hillsboro sits along the I-35 corridor between Waco and Dallas, making it a natural distribution point for Central Texas-made products. Ask your local feed store about stocking Outlaw Feed, or call (254) 393-3957 to find the current retailer closest to you.",
+          body: "Outlaw Feed is distributed to local farm and feed retail partners in the Hillsboro and Hill County area. Hillsboro sits along the I-35 corridor between Waco and Dallas, making it a natural distribution point for Central Texas-made products. Ask your local feed store about stocking Outlaw Feed, or call (254) 939-3957 to find the current retailer closest to you.",
         },
         {
           heading: "High-Protein Kibble for Hill County Ranch and Farm Dogs",

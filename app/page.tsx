@@ -348,7 +348,7 @@ export default function HomePage() {
       {/* ── Hero CTA band ── */}
       <section className="relative py-24 md:py-32 px-4 md:px-6 overflow-hidden" aria-label="Brand promise">
         <img
-          src="/made-in-texas-made-to-work.png"
+          src="/made-in-texas,-made-to-work.png"
           alt="Ranch dog sitting by a stone fireplace with Texas flag in a rustic ranch house — Outlaw Feed, made in Texas made to work"
           className="absolute inset-0 w-full h-full object-cover object-center"
           loading="lazy"
@@ -441,8 +441,8 @@ export default function HomePage() {
             </div>
             <p className="text-[#f5f0e8]/80 text-sm flex-1 text-center sm:text-left">
               <strong className="text-[#f5f0e8]">Bell County local?</strong> We offer direct delivery for orders in the county. Call us at{" "}
-              <a href="tel:+12543933957" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors">
-                (254) 393-3957
+              <a href="tel:+12549393957" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors">
+                (254) 939-3957
               </a>
             </p>
             <Link
