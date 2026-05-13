@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Contact | Outlaw Feed",
   description:
     "Contact Outlaw Feed by phone. Available Monday through Friday, 8am to 3pm. Call (254) 939-3957 for product questions, Bell County delivery, or retailer inquiries.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
