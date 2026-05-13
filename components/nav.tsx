@@ -236,3 +236,5 @@ export default function Nav() {
     </header>
   );
 }
+
+export { Nav };
