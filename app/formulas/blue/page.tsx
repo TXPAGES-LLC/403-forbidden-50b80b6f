@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Nav } from '@/components/nav'
-import { Footer } from '@/components/footer'
+import Nav from '@/components/nav'
+import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Outlaw Blue Formula | All Life Stages Dog Food — Texas-Made, No Corn No Soy',
