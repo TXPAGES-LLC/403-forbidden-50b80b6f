@@ -83,7 +83,7 @@ export default function WorkingDogNutritionPost() {
               The Role of Protein in Working Dogs
             </h2>
             <p>
-              Protein is the building block for muscle repair and recovery. A ranch dog putting in long days needs adequate protein to maintain muscle mass and recover overnight. At minimum, a working dog formula should hit 30% crude protein from a named animal source.
+              Protein is the building block for muscle repair and recovery. A ranch dog putting in long days needs adequate protein to maintain muscle mass and recover overnight. At minimum, a working dog formula should hit 26% crude protein from a named animal source — Gold Formula delivers exactly that.
             </p>
             <p>
               The key word is recovery. If your dog is not getting enough protein, you will see muscle condition fade over the course of a long season — even if they appear to be eating enough volume. Crude protein percentage and protein quality together determine whether the dog is actually building and maintaining muscle.
@@ -93,7 +93,7 @@ export default function WorkingDogNutritionPost() {
               Fat: Sustained Energy Over Long Days
             </h2>
             <p>
-              Fat metabolism is slower and more sustained than carbohydrate metabolism. For a dog working 6–8 hours through a Texas pasture in summer heat, fat-based energy is what keeps them going past the first hour. A quality working dog formula needs 18–22% crude fat from named sources.
+              Fat metabolism is slower and more sustained than carbohydrate metabolism. For a dog working 6–8 hours through a Texas pasture in summer heat, fat-based energy is what keeps them going past the first hour. A quality working dog formula needs 15–18% crude fat from named sources — Gold Formula provides 18%.
             </p>
             <p>
               During extreme heat — a Texas August during cattle work — fat digestion produces metabolic heat as a byproduct. In those conditions, some experienced ranchers slightly reduce fat intake and increase caloric density through higher protein. Watch your dog&apos;s hydration and body condition as the primary guide.
@@ -159,7 +159,7 @@ export default function WorkingDogNutritionPost() {
               <Link href="/products/gold-formula" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
                 <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Product</p>
                 <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Gold Formula — Built for Working Dogs</p>
-                <p className="text-[#9a8870] text-xs mt-1">32% protein, 18% fat, no fillers</p>
+                <p className="text-[#9a8870] text-xs mt-1">26% protein, 18% fat, no fillers</p>
               </Link>
             </div>
           </div>

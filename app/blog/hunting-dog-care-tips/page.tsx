@@ -149,7 +149,7 @@ export default function HuntingDogCareTipsPost() {
               Joint Health: The Quiet Issue in Older Hunting Dogs
             </h2>
             <p>
-              Hard-working hunting dogs put significant stress on joints over the course of a career. Omega-3 fatty acids (from salmon oil and similar sources) play a meaningful role in reducing inflammation and supporting joint tissue. This is one reason the Blue Formula includes salmon oil for DHA support — useful for puppies building joint structure and older dogs maintaining it.
+              Hard-working hunting dogs put significant stress on joints over the course of a career. Omega-3 fatty acids play a meaningful role in reducing inflammation and supporting joint tissue. The Blue Formula includes flax meal which provides omega fatty acids for healthy skin, coat, and joint support in adult dogs.
             </p>
             <p>
               For working dogs over age 6, consider a veterinary joint supplement alongside their baseline diet. Catching joint issues early extends a hunting dog&apos;s useful career by years.
@@ -173,8 +173,8 @@ export default function HuntingDogCareTipsPost() {
               </Link>
               <Link href="/products/blue-formula" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
                 <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Product</p>
-                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Blue Formula — With DHA Support</p>
-                <p className="text-[#9a8870] text-xs mt-1">For puppies and high-performance adults</p>
+                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Blue Formula — 21% Protein</p>
+                <p className="text-[#9a8870] text-xs mt-1">For adult maintenance and everyday nutrition</p>
               </Link>
             </div>
           </div>

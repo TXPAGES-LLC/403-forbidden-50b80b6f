@@ -78,14 +78,14 @@ export default function HuntingDogFoodPost() {
               The first ingredient on any hunting dog formula should be a named meat — chicken, beef, turkey, or fish. Not &ldquo;meat meal,&rdquo; not &ldquo;poultry by-product meal,&rdquo; and certainly not a grain or legume. The protein source quality directly affects muscle repair, recovery speed, and sustained output in the field.
             </p>
             <p>
-              A minimum of 30% crude protein is the baseline for a hardworking hunting dog. Dogs running all-day quail or pheasant hunts can benefit from 32–34%. Outlaw Gold Formula delivers 32% crude protein with real chicken as the first ingredient.
+              A minimum of 26% crude protein is the baseline for a hardworking hunting dog. Dogs running all-day quail or pheasant hunts benefit from formulas in the 26–30% range. Outlaw Gold Formula delivers 26% crude protein with chicken rice as the first ingredient.
             </p>
 
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#f5f0e8] mt-10 mb-3">
               Fat: The Primary Energy Fuel for Field Work
             </h2>
             <p>
-              Dogs are fat-adapted athletes. Unlike humans who rely heavily on carbohydrates for quick energy, working dogs draw most of their sustained energy from dietary fat. A hunting dog formula needs a minimum of 18% crude fat — with 20%+ for dogs working in cold weather or extreme terrain.
+              Dogs are fat-adapted athletes. Unlike humans who rely heavily on carbohydrates for quick energy, working dogs draw most of their sustained energy from dietary fat. A hunting dog formula needs a minimum of 15–18% crude fat — Gold Formula provides 18% for high-performance dogs.
             </p>
             <p>
               Chicken fat preserved with mixed tocopherols (natural vitamin E) is the ideal fat source — stable, calorie-dense, and palatable. Avoid formulas relying on generic &ldquo;animal fat&rdquo; without a named source.
@@ -106,8 +106,8 @@ export default function HuntingDogFoodPost() {
               <ul className="flex flex-col gap-3">
                 {[
                   "Named meat (chicken, beef, turkey) as first ingredient",
-                  "32%+ crude protein minimum for working dogs",
-                  "18%+ crude fat — higher for extreme conditions",
+                  "26%+ crude protein minimum for working dogs",
+                  "18% crude fat for high-performance formulas",
                   "No corn, wheat, or soy",
                   "No unnamed by-product meal",
                   "AAFCO certified for adult maintenance",
@@ -128,7 +128,7 @@ export default function HuntingDogFoodPost() {
               Feed your hunting dog at least 2–3 hours before field work to allow digestion and prevent bloat risk, especially in larger breeds. Post-hunt, a recovery meal within 60–90 minutes aids muscle repair. During multi-day hunts, increase daily intake by 25–50% above maintenance amounts.
             </p>
             <p>
-              A 60-lb bird dog running 6+ hours in the field may need 4–5 cups of a 32% protein formula per day. Monitor body condition weekly during season — you should feel ribs easily without a visible rib outline.
+              A 60-lb bird dog running 6+ hours in the field may need 4–5 cups of Gold Formula per day. Monitor body condition weekly during season — you should feel ribs easily without a visible rib outline.
             </p>
 
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#f5f0e8] mt-10 mb-3">
@@ -145,7 +145,7 @@ export default function HuntingDogFoodPost() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link href="/products/gold-formula" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
                 <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Product</p>
-                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Gold Formula — 32% Protein</p>
+                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Gold Formula — 26% Protein</p>
                 <p className="text-[#9a8870] text-xs mt-1">Built for working and hunting dogs</p>
               </Link>
               <Link href="/feeding-guide" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">

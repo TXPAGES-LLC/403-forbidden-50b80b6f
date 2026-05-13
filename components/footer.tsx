@@ -148,5 +148,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-export { Footer };
