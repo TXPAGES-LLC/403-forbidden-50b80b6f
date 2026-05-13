@@ -20,6 +20,8 @@ const robotoSlab = Roboto_Slab({
   weight: ["400", "600", "700", "800"],
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
+
 export const metadata: Metadata = {
   title: {
     default: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
@@ -38,11 +40,13 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: new URL(""),
+  // Use metadataBase only when SITE_URL is set to avoid constructing an invalid URL
+  metadataBase: SITE_URL ? new URL(SITE_URL) : undefined,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "",
+    // prefer SITE_URL; if not provided, omit (undefined) so Next doesn't validate an empty URL
+    url: SITE_URL ?? undefined,
     siteName: "Outlaw Feed",
     title: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
     description:
@@ -62,7 +66,7 @@ export const metadata: Metadata = {
     description: "No corn. No wheat. No soy. Made in Texas for dogs that work hard.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "" },
+  alternates: { canonical: SITE_URL ?? undefined },
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
   },
@@ -71,17 +75,12 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  themeColor: "#0f0e0c",
-};
-
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Outlaw Feed",
-  url: "",
+  // include URL only when SITE_URL is provided; otherwise omit the property by assigning undefined
+  url: SITE_URL ?? undefined,
   telephone: "+1-254-939-3957",
   email: "fencesbyfarr@yahoo.com",
   description:
@@ -108,7 +107,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Outlaw Feed",
-  url: "",
+  url: SITE_URL ?? undefined,
 };
 
 export default function RootLayout({
