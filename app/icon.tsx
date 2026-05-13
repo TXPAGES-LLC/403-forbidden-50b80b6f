@@ -34,19 +34,8 @@ export default function Icon() {
           />
           {/* Hat band */}
           <rect x="24" y="60" width="52" height="8" rx="2" fill="#1a1712" />
-          {/* O letter */}
-          <text
-            x="50"
-            y="58"
-            textAnchor="middle"
-            fontSize="22"
-            fontWeight="900"
-            fontFamily="serif"
-            fill="#f5f0e8"
-            letterSpacing="-1"
-          >
-            O
-          </text>
+          {/* O letter (replaced text with circle because next/og does not support <text> nodes) */}
+          <circle cx="50" cy="54" r="7" stroke="#f5f0e8" strokeWidth="3" fill="none" />
         </svg>
       </div>
     ),
