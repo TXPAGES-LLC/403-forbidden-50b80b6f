@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: new URL(""),
+  metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "",
+    url: process.env.NEXT_PUBLIC_SITE_URL || undefined,
     siteName: "Outlaw Feed",
     title: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
     description:
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description: "No corn. No wheat. No soy. Made in Texas for dogs that work hard.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "" },
+  alternates: { canonical: process.env.NEXT_PUBLIC_SITE_URL || undefined },
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
   },
@@ -81,7 +81,7 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Outlaw Feed",
-  url: "",
+  url: process.env.NEXT_PUBLIC_SITE_URL || undefined,
   telephone: "+1-254-939-3957",
   email: "fencesbyfarr@yahoo.com",
   description:
@@ -108,7 +108,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Outlaw Feed",
-  url: "",
+  url: process.env.NEXT_PUBLIC_SITE_URL || undefined,
 };
 
 export default function RootLayout({
