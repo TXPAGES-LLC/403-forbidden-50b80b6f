@@ -10,12 +10,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: ${{ github.repository }}-a403forbidden
+  group: ${{ github.repository }}-a403forbidden2
   cancel-in-progress: true
 
 env:
   REGISTRY_NAME: websitesRegistry
-  IMAGE_NAME: a403forbidden
+  IMAGE_NAME: a403forbidden2
 
 jobs:
   build-and-deploy:
@@ -55,4 +55,4 @@ jobs:
         run: |
           ACR_USERNAME=$(az acr credential show --name ${{ env.REGISTRY_NAME }} --query username -o tsv)
           ACR_PASSWORD=$(az acr credential show --name ${{ env.REGISTRY_NAME }} --query 'passwords[0].value' -o tsv)
-          az containerapp up             --name a403forbidden             --resource-group Websites             --environment websites-prod             --image ${{ env.LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ github.sha }}             --registry-server ${{ env.LOGIN_SERVER }}             --registry-username $ACR_USERNAME             --registry-password $ACR_PASSWORD             --target-port 3000             --ingress external
+          az containerapp up             --name a403forbidden2             --resource-group Websites             --environment websites-prod             --image ${{ env.LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ github.sha }}             --registry-server ${{ env.LOGIN_SERVER }}             --registry-username $ACR_USERNAME             --registry-password $ACR_PASSWORD             --target-port 3000             --ingress external
