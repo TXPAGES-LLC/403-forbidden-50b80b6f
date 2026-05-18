@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
   description:
     "Outlaw Feed is Texas-made dog food with no corn, wheat, or soy. Real meat first ingredient, AAFCO certified. Built for hunting dogs, ranch dogs, and working dogs in Bell County, TX.",
   alternates: { canonical: "" },
