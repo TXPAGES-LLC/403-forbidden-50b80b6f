@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'Outlaw Gold Formula | High-Protein Dog Food for Working & Hunting Dogs',
   description:
     'Outlaw Gold Formula — 32% crude protein, chicken & pork meal first ingredient. No corn, no wheat, no soy. Texas-made, AAFCO-certified dog food for active, working, and hunting dogs.',
-  alternates: { canonical: 'https://www.outlawfeed.com/formulas/gold' },
+  alternates: { canonical: '/products/gold-formula' },
+  robots: { index: false, follow: false },
 }
 
 const benefits = [

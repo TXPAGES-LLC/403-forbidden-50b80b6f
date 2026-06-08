@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'Our Story | Outlaw Feed — Texas-Made Dog Food, Built by Working Dog Owners',
   description:
     'Outlaw Feed was founded in Temple, TX by working dog owners who couldn\'t find a clean, Texas-made dog food worth feeding their animals. Learn the story behind the brand.',
-  alternates: { canonical: 'https://www.outlawfeed.com/our-story' },
+  alternates: { canonical: '/why-outlaw/our-story' },
+  robots: { index: false, follow: false },
 }
 
 const jsonLd = {

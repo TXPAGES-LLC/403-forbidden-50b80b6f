@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'Outlaw Blue Formula | All Life Stages Dog Food — Texas-Made, No Corn No Soy',
   description:
     'Outlaw Blue Formula — 30% crude protein, beef & chicken meal first ingredient. No corn, no wheat, no soy. Texas-made, AAFCO-certified for puppies, adults, and all life stages.',
-  alternates: { canonical: 'https://www.outlawfeed.com/formulas/blue' },
+  alternates: { canonical: '/products/blue-formula' },
+  robots: { index: false, follow: false },
 }
 
 const benefits = [

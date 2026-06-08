@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'Best Dog Food for Hunting Dogs: What to Look For | Outlaw Feed Blog',
   description:
     'Protein percentage, fat ratios, and ingredient quality — what actually matters when you\'re feeding a hunting dog. A practical guide for bird dog, retriever, and hound owners.',
-  alternates: { canonical: 'https://www.outlawfeed.com/blog/best-dog-food-for-hunting-dogs' },
+  alternates: { canonical: '/blog/best-dog-food-hunting-dogs' },
+  robots: { index: false, follow: false },
 }
 
 const jsonLd = {
@@ -147,7 +148,7 @@ export default function HuntingDogFoodArticle() {
                 </p>
               </div>
               <Link
-                href="/formulas/gold"
+                href="/products/gold-formula"
                 className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors"
               >
                 View Gold Formula

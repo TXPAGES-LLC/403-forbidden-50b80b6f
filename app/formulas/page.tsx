@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'Dog Food Formulas | Outlaw Feed — Gold & Blue Formula Texas Dog Food',
   description:
     'Compare Outlaw Feed Gold and Blue formulas. Texas-made dog food with real meat first, no corn, no wheat, no soy. Built for working dogs, hunting dogs, and all life stages.',
-  alternates: { canonical: 'https://www.outlawfeed.com/formulas' },
+  alternates: { canonical: '/products/gold-formula' },
+  robots: { index: false, follow: false },
 }
 
 const formulas = [

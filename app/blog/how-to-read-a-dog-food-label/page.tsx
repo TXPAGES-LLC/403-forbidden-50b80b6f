@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'How to Read a Dog Food Label Without Getting Fooled | Outlaw Feed Blog',
   description:
     'The guaranteed analysis, ingredients list, AAFCO statement — what each means and how to use them to separate real nutrition from marketing language on a dog food bag.',
-  alternates: { canonical: 'https://www.outlawfeed.com/blog/how-to-read-a-dog-food-label' },
+  alternates: { canonical: '/blog/how-to-read-a-dog-food-label' },
 }
 
 const jsonLd = {
@@ -17,10 +17,10 @@ const jsonLd = {
   description:
     'The guaranteed analysis, ingredients list, and AAFCO statement explained clearly for dog owners.',
   author: { '@type': 'Organization', name: 'Outlaw Feed' },
-  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: 'https://www.outlawfeed.com' },
+  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   datePublished: '2025-03-17',
   image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1200&q=80',
-  url: 'https://www.outlawfeed.com/blog/how-to-read-a-dog-food-label',
+  url: '/blog/how-to-read-a-dog-food-label',
 }
 
 export default function LabelReadingArticle() {
@@ -146,7 +146,7 @@ export default function LabelReadingArticle() {
                 </p>
               </div>
               <Link
-                href="/ingredients"
+                href="/why-outlaw/ingredients"
                 className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors"
               >
                 Read Ingredients Guide

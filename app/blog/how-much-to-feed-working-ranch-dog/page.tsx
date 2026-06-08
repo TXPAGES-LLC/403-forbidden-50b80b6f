@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'How Much to Feed a Working Ranch Dog | Outlaw Feed Blog',
   description:
     'Ranch dogs burn significantly more calories than pet dogs. Learn how activity level changes feeding requirements and how to use body condition scoring to dial in the right amount.',
-  alternates: { canonical: 'https://www.outlawfeed.com/blog/how-much-to-feed-working-ranch-dog' },
+  alternates: { canonical: '/blog/how-much-to-feed-working-ranch-dog' },
 }
 
 const jsonLd = {
@@ -16,9 +16,9 @@ const jsonLd = {
   headline: 'How Much to Feed a Working Ranch Dog',
   description: 'Activity-based feeding guide for ranch dogs, cattle dogs, and working farm dogs.',
   author: { '@type': 'Organization', name: 'Outlaw Feed' },
-  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: 'https://www.outlawfeed.com' },
+  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   datePublished: '2025-04-07',
-  url: 'https://www.outlawfeed.com/blog/how-much-to-feed-working-ranch-dog',
+  url: '/blog/how-much-to-feed-working-ranch-dog',
 }
 
 export default function RanchDogFeedingArticle() {

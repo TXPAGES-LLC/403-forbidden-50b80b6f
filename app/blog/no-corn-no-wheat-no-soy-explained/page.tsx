@@ -18,7 +18,7 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'Outlaw Feed' },
   publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   datePublished: '2025-03-31',
-  url: 'https://www.outlawfeed.com/blog/no-corn-no-wheat-no-soy-explained',
+  url: '/blog/no-corn-no-wheat-no-soy-explained',
 }
 
 export default function NoCornArticle() {
@@ -91,7 +91,7 @@ export default function NoCornArticle() {
                 <h3 className="font-serif text-xl font-bold text-charcoal text-balance">Our Full Ingredient Philosophy</h3>
                 <p className="font-sans text-sm text-muted-foreground mt-1 leading-relaxed">What we use, what we skip, and why — on the Ingredients page.</p>
               </div>
-              <Link href="/ingredients" className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors">
+              <Link href="/why-outlaw/ingredients" className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors">
                 Read Ingredients Guide
               </Link>
             </div>

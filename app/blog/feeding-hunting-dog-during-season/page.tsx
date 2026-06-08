@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Feeding Your Hunting Dog During Season: What Changes and Why | Outlaw Feed Blog',
   description:
     'In-season hunting dogs burn significantly more calories than the bag\'s feeding chart accounts for. What to adjust, when, and how to monitor body condition throughout the season.',
-  alternates: { canonical: 'https://www.outlawfeed.com/blog/feeding-hunting-dog-during-season' },
+  alternates: { canonical: '/blog/feeding-hunting-dog-during-season' },
 }
 
 const jsonLd = {
@@ -16,9 +16,9 @@ const jsonLd = {
   headline: 'Feeding Your Hunting Dog During Season: What Changes and Why',
   description: 'In-season caloric adjustments, meal timing, and body condition monitoring for hunting dogs.',
   author: { '@type': 'Organization', name: 'Outlaw Feed' },
-  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: 'https://www.outlawfeed.com' },
+  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   datePublished: '2025-04-14',
-  url: 'https://www.outlawfeed.com/blog/feeding-hunting-dog-during-season',
+  url: '/blog/feeding-hunting-dog-during-season',
 }
 
 export default function InSeasonFeedingArticle() {
@@ -98,7 +98,7 @@ export default function InSeasonFeedingArticle() {
                 <h3 className="font-serif text-xl font-bold text-charcoal text-balance">Outlaw Gold Formula</h3>
                 <p className="font-sans text-sm text-muted-foreground mt-1 leading-relaxed">32% protein &middot; 18% fat — built specifically for working and hunting dogs.</p>
               </div>
-              <Link href="/formulas/gold" className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors">
+              <Link href="/products/gold-formula" className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors">
                 View Gold Formula
               </Link>
             </div>

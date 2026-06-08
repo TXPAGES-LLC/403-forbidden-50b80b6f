@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'Dog Food Ingredients | Outlaw Feed — No Corn, No Wheat, No Soy Texas Dog Food',
   description:
     'Outlaw Feed\'s ingredient philosophy explained. Learn why we skip corn, wheat, and soy, what we use instead, and how to read a dog food label to spot the difference between real nutrition and filler.',
-  alternates: { canonical: 'https://www.outlawfeed.com/ingredients' },
+  alternates: { canonical: '/why-outlaw/ingredients' },
+  robots: { index: false, follow: false },
 }
 
 const ingredientTable = [

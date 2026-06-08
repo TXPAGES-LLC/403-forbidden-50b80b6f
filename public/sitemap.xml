@@ -111,6 +111,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://outlawfeed.com/blog/feeding-hunting-dog-during-season</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://outlawfeed.com/blog/how-much-to-feed-working-ranch-dog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://outlawfeed.com/blog/how-to-read-a-dog-food-label</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://outlawfeed.com/blog/pre-season-conditioning-hunting-dog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://outlawfeed.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

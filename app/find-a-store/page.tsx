@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'Find Outlaw Feed Near You | Dog Food Temple TX & Central Texas Retailers',
   description:
     'Find Outlaw Feed dog food at feed stores and farm & ranch retailers across Central Texas. Local delivery available in Bell County, TX. Call 254-773-1231 to order.',
-  alternates: { canonical: 'https://www.outlawfeed.com/find-a-store' },
+  alternates: { canonical: '/where-to-buy' },
+  robots: { index: false, follow: false },
 }
 
 const retailers = [
