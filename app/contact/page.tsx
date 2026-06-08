@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-12 md:pt-36 md:pb-16 lg:pt-40 lg:pb-20 px-4 md:px-6 bg-[#0f0e0c]">
+      <section className="pt-20 pb-12 md:pt-24 md:pb-16 lg:pt-28 lg:pb-20 px-4 md:px-6 bg-[#0f0e0c]">
         <div className="max-w-4xl mx-auto">
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 text-xs text-[#9a8870]">

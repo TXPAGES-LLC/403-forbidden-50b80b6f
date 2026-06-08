@@ -60,7 +60,7 @@ export default function Footer() {
                 alt="Travis Farr's Outlaw Feed Co."
                 width={240}
                 height={50}
-                className="h-36 w-auto object-contain"
+                className="h-72 w-auto object-contain"
               />
             </Link>
             <p className="text-gray-500 text-xs leading-relaxed mb-4">

@@ -96,6 +96,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://outlawfeed.com/blog/no-corn-no-wheat-no-soy-explained</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://outlawfeed.com/blog/working-dog-nutrition</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

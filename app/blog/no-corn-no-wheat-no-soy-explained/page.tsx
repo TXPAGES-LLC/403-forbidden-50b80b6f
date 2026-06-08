@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'What Does "No Corn, No Wheat, No Soy" Actually Mean? | Outlaw Feed Blog',
   description:
     'Why corn, wheat, and soy dominate mass-market dog food, what allergen load means for your dog, and what clean alternatives look like on a label.',
-  alternates: { canonical: 'https://www.outlawfeed.com/blog/no-corn-no-wheat-no-soy-explained' },
+  alternates: { canonical: '/blog/no-corn-no-wheat-no-soy-explained' },
 }
 
 const jsonLd = {
@@ -16,7 +16,7 @@ const jsonLd = {
   headline: 'What Does "No Corn, No Wheat, No Soy" Actually Mean?',
   description: 'Why these three grains dominate dog food, what allergen load means, and what alternatives look like.',
   author: { '@type': 'Organization', name: 'Outlaw Feed' },
-  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: 'https://www.outlawfeed.com' },
+  publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   datePublished: '2025-03-31',
   url: 'https://www.outlawfeed.com/blog/no-corn-no-wheat-no-soy-explained',
 }

@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Roboto_Slab } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import ScrollToTop from "@/components/scroll-to-top";
-import GoogleAnalytics from "@/components/google-analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: undefined,
+  metadataBase: new URL(""),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: undefined,
+    url: "",
     siteName: "Outlaw Feed",
     title: "Outlaw Feed | Texas-Made Dog Food for Working & Hunting Dogs",
     description:
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description: "No corn. No wheat. No soy. Made in Texas for dogs that work hard.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: undefined },
+  alternates: { canonical: "" },
 };
 
 export const viewport: Viewport = {
@@ -75,7 +75,7 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Outlaw Feed",
-  url: undefined,
+  url: "",
   telephone: "+1-254-939-3957",
   email: "fencesbyfarr@yahoo.com",
   description:
@@ -102,7 +102,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Outlaw Feed",
-  url: undefined,
+  url: "",
 };
 
 export default function RootLayout({
@@ -123,8 +123,20 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm-head"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T7BHPVKG');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
       <body className="font-sans antialiased">
-        <GoogleAnalytics />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
