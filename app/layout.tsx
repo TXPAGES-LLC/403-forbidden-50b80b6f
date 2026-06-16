@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "ranch dog food",
     "real meat dog food",
   ],
-  metadataBase: undefined,
+  metadataBase: new URL(""),
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -74,6 +74,7 @@ export const viewport: Viewport = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "/#organization",
   name: "Outlaw Feed",
   url: "",
   telephone: "+1-254-939-3957",
@@ -94,15 +95,18 @@ const orgSchema = {
   areaServed: "Texas",
   sameAs: [
     "https://www.instagram.com/outlawfeed",
+    "https://maps.google.com/?cid=5693377320952782312",
+    "https://www.yelp.com/biz/outlaw-feed-temple-2",
   ],
-  identifier: "5693377320952782312",
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "/#website",
   name: "Outlaw Feed",
   url: "",
+  publisher: { "@id": "/#organization" },
 };
 
 export default function RootLayout({

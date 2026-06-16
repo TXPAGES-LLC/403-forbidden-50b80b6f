@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Belton TX | Outlaw Feed — Bell County Feed Store",
+  title: "Dog Food in Belton TX — Bell County Feed Store | Outlaw Feed",
   description:
     "Looking for high-protein dog food in Belton, TX? Outlaw Feed is Texas-made with no corn, wheat, or soy. Available at local feed stores in Bell County. Call (254) 939-3957.",
   alternates: { canonical: "/where-to-buy/belton" },
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "/where-to-buy/belton#webpage",
   name: "Dog Food in Belton TX — Outlaw Feed",
   description:
     "Find Outlaw Feed Texas-made dog food at local feed stores in Belton, TX. No corn, wheat, or soy. High-protein formulas for working and hunting dogs in Bell County.",

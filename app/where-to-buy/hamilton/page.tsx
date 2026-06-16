@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Hamilton TX | Outlaw Feed — Hamilton County Feed Store",
+  title: "Dog Food in Hamilton TX — Hamilton County | Outlaw Feed",
   description:
     "Outlaw Feed working dog food is available near Hamilton, TX. No corn, wheat, or soy. Made in Texas for ranch dogs, hunting dogs, and livestock working dogs in Hamilton County.",
   alternates: { canonical: "/where-to-buy/hamilton" },
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "/where-to-buy/hamilton#webpage",
   name: "Dog Food in Hamilton TX — Outlaw Feed",
   description:
     "Find Outlaw Feed near Hamilton, TX. Texas-made high-protein dog food with no corn, wheat, or soy. Built for Hamilton County working ranch dogs and hunting dogs.",

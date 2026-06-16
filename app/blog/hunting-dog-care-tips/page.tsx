@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Hunting Dog Care Tips: Keeping Your Field Dog in Peak Condition Year-Round",
+  title: "Hunting Dog Care Tips: Peak Condition Year-Round | Outlaw Feed",
   description:
     "From pre-season conditioning to off-season maintenance, learn how experienced hunters keep their dogs performing at the highest level. Nutrition, fitness, and recovery tips.",
   alternates: { canonical: "/blog/hunting-dog-care-tips" },
@@ -11,10 +11,13 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": "/blog/hunting-dog-care-tips#article",
   headline: "Hunting Dog Care Tips: Keeping Your Field Dog in Peak Condition Year-Round",
   datePublished: "2025-01-30",
-  author: { "@type": "Organization", name: "Outlaw Feed" },
+  dateModified: "2025-01-30",
+  author: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   publisher: { "@type": "Organization", name: "Outlaw Feed", url: "" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "/blog/hunting-dog-care-tips" },
   url: "/blog/hunting-dog-care-tips",
   image: "https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=1200&q=80",
   description: "Year-round hunting dog care: pre-season conditioning, in-season nutrition, and off-season recovery.",

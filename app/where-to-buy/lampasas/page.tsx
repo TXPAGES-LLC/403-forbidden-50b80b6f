@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Lampasas TX | Outlaw Feed — Lampasas County Feed Store",
+  title: "Dog Food in Lampasas TX — Lampasas County | Outlaw Feed",
   description:
     "Looking for high-protein dog food in Lampasas, TX? Outlaw Feed is Texas-made with no corn, wheat, or soy. Available at local feed stores in Lampasas County. Call (254) 939-3957.",
   alternates: { canonical: "/where-to-buy/lampasas" },
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "/where-to-buy/lampasas#webpage",
   name: "Dog Food in Lampasas TX — Outlaw Feed",
   description:
     "Find Outlaw Feed near Lampasas, TX. Texas-made dog food with no corn, wheat, or soy. High-protein formulas for working, ranch, and hunting dogs in Lampasas County.",

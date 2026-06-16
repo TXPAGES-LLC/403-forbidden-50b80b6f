@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'How to Read a Dog Food Label Without Getting Fooled | Outlaw Feed Blog',
+  title: 'How to Read a Dog Food Label Without Getting Fooled | Outlaw Feed',
   description:
     'The guaranteed analysis, ingredients list, AAFCO statement — what each means and how to use them to separate real nutrition from marketing language on a dog food bag.',
   alternates: { canonical: '/blog/how-to-read-a-dog-food-label' },
@@ -13,12 +13,15 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
+  '@id': '/blog/how-to-read-a-dog-food-label#article',
   headline: 'How to Read a Dog Food Label (Without Getting Fooled)',
   description:
     'The guaranteed analysis, ingredients list, and AAFCO statement explained clearly for dog owners.',
-  author: { '@type': 'Organization', name: 'Outlaw Feed' },
+  author: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/how-to-read-a-dog-food-label' },
   datePublished: '2025-03-17',
+  dateModified: '2025-03-17',
   image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1200&q=80',
   url: '/blog/how-to-read-a-dog-food-label',
 }

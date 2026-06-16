@@ -2,25 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Gold Formula — High-Performance Dog Food | Outlaw Feed Texas",
+  title: "Gold Formula Dog Food — 26% Protein | Outlaw Feed",
   description:
-    "Outlaw Feed Gold Formula: 26% protein, 18% fat, zero fillers. Real chicken, brown rice, no corn, wheat, or soy. 3640 kcal/kg. Texas-made dog food for working dogs, hunting dogs, and every stage of life.",
+    "Outlaw Feed Gold Formula: 26% protein, 18% fat, zero fillers. Real chicken, brown rice, no corn, wheat, or soy. 3,640 kcal/kg. Texas-made for working and hunting dogs.",
   alternates: { canonical: "/products/gold-formula" },
 };
 
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
+  "@id": "/products/gold-formula#product",
   name: "Outlaw Feed Gold Formula",
   brand: { "@type": "Brand", name: "Outlaw Feed" },
   description:
     "High-performance dog food with 26% crude protein and 18% crude fat. Zero fillers — no corn, wheat, or soy. Made in Bell County, Texas.",
-  image: "https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=800&q=80",
+  image: "https://outlawfeed.com/opengraph-image.png",
   url: "/products/gold-formula",
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStoreOnly",
-    seller: { "@type": "Organization", name: "Outlaw Feed" },
+    priceCurrency: "USD",
+    seller: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   },
 };
 

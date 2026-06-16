@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Working Dog Nutrition: Fueling a Ranch Dog Through Demand Season",
+  title: "Working Dog Nutrition: Fueling Ranch Dogs in Demand Season",
   description:
     "During peak work seasons, ranch dogs need more than maintenance calories. Protein, fat ratios, and feeding timing for hardworking Texas ranch and cattle dogs.",
   alternates: { canonical: "/blog/working-dog-nutrition" },
@@ -11,10 +11,13 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": "/blog/working-dog-nutrition#article",
   headline: "Working Dog Nutrition: Fueling a Ranch Dog Through Demand Season",
   datePublished: "2025-02-22",
-  author: { "@type": "Organization", name: "Outlaw Feed" },
+  dateModified: "2025-02-22",
+  author: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   publisher: { "@type": "Organization", name: "Outlaw Feed", url: "" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "/blog/working-dog-nutrition" },
   url: "/blog/working-dog-nutrition",
   image: "https://outlawfeed.com/working-dog-nutrition.png",
   description: "Protein, fat ratios, and feeding timing for ranch dogs during demand season.",

@@ -2,19 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Dog Food for Hunting Dogs: What to Look For in a Field Formula",
+  title: "Best Dog Food for Hunting Dogs: Field Formula Guide | Outlaw Feed",
   description:
-    "Not all high-protein dog foods deliver what hunting dogs actually need in the field. Learn the key markers of a true hunting dog formula — protein source, fat ratios, and what to avoid.",
+    "Not all high-protein dog foods deliver what hunting dogs need in the field. Learn the key markers of a true hunting dog formula — protein source, fat ratios, and what to avoid.",
   alternates: { canonical: "/blog/best-dog-food-hunting-dogs" },
 };
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": "/blog/best-dog-food-hunting-dogs#article",
   headline: "Best Dog Food for Hunting Dogs: What to Look For in a Field Formula",
   datePublished: "2025-04-10",
-  author: { "@type": "Organization", name: "Outlaw Feed" },
+  dateModified: "2025-04-10",
+  author: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   publisher: { "@type": "Organization", name: "Outlaw Feed", url: "" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "/blog/best-dog-food-hunting-dogs" },
   url: "/blog/best-dog-food-hunting-dogs",
   image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&q=80",
   description:

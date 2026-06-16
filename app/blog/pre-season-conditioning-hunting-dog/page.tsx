@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Pre-Season Conditioning: Getting Your Hunting Dog Field Ready | Outlaw Feed Blog',
+  title: 'Pre-Season Conditioning: Get Your Hunting Dog Field Ready | Outlaw Feed',
   description:
     'A six-week pre-season conditioning and nutrition timeline for hunting dogs. Get your bird dog, retriever, or hound to peak physical condition before opening day.',
   alternates: { canonical: '/blog/pre-season-conditioning-hunting-dog' },
@@ -40,11 +40,14 @@ const timeline = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
+  '@id': '/blog/pre-season-conditioning-hunting-dog#article',
   headline: 'Pre-Season Conditioning: Getting Your Hunting Dog Field Ready',
   description: 'A six-week pre-season conditioning and nutrition timeline for bird dogs, retrievers, and hounds.',
-  author: { '@type': 'Organization', name: 'Outlaw Feed' },
+  author: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/pre-season-conditioning-hunting-dog' },
   datePublished: '2025-03-24',
+  dateModified: '2025-03-24',
   image: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1200&q=80',
   url: '/blog/pre-season-conditioning-hunting-dog',
 }

@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'What Does "No Corn, No Wheat, No Soy" Actually Mean? | Outlaw Feed Blog',
+  title: 'What "No Corn, No Wheat, No Soy" Means for Your Dog | Outlaw Feed',
   description:
     'Why corn, wheat, and soy dominate mass-market dog food, what allergen load means for your dog, and what clean alternatives look like on a label.',
   alternates: { canonical: '/blog/no-corn-no-wheat-no-soy-explained' },
@@ -13,11 +13,14 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
+  '@id': '/blog/no-corn-no-wheat-no-soy-explained#article',
   headline: 'What Does "No Corn, No Wheat, No Soy" Actually Mean?',
   description: 'Why these three grains dominate dog food, what allergen load means, and what alternatives look like.',
-  author: { '@type': 'Organization', name: 'Outlaw Feed' },
+  author: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/no-corn-no-wheat-no-soy-explained' },
   datePublished: '2025-03-31',
+  dateModified: '2025-03-31',
   url: '/blog/no-corn-no-wheat-no-soy-explained',
 }
 

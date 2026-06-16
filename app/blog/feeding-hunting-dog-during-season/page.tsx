@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Feeding Your Hunting Dog During Season: What Changes and Why | Outlaw Feed Blog',
+  title: 'Feeding Your Hunting Dog During Season: What Changes | Outlaw Feed',
   description:
     'In-season hunting dogs burn significantly more calories than the bag\'s feeding chart accounts for. What to adjust, when, and how to monitor body condition throughout the season.',
   alternates: { canonical: '/blog/feeding-hunting-dog-during-season' },
@@ -13,11 +13,14 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
+  '@id': '/blog/feeding-hunting-dog-during-season#article',
   headline: 'Feeding Your Hunting Dog During Season: What Changes and Why',
   description: 'In-season caloric adjustments, meal timing, and body condition monitoring for hunting dogs.',
-  author: { '@type': 'Organization', name: 'Outlaw Feed' },
+  author: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
   publisher: { '@type': 'Organization', name: 'Outlaw Feed', url: '' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/feeding-hunting-dog-during-season' },
   datePublished: '2025-04-14',
+  dateModified: '2025-04-14',
   url: '/blog/feeding-hunting-dog-during-season',
 }
 

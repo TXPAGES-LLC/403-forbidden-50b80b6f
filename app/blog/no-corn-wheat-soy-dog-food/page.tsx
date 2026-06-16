@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "No Corn, Wheat, or Soy Dog Food: Why It Matters for Your Dog",
+  title: "No Corn, Wheat, or Soy Dog Food: Why It Matters | Outlaw Feed",
   description:
     "Corn, wheat, and soy are cheap fillers that compromise digestion, coat quality, and long-term health. Here is exactly why Outlaw Feed cuts them out of every formula.",
   alternates: { canonical: "/blog/no-corn-wheat-soy-dog-food" },
@@ -11,10 +11,13 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": "/blog/no-corn-wheat-soy-dog-food#article",
   headline: "No Corn, Wheat, or Soy: Why It Matters for Your Dog",
   datePublished: "2025-03-18",
-  author: { "@type": "Organization", name: "Outlaw Feed" },
+  dateModified: "2025-03-18",
+  author: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   publisher: { "@type": "Organization", name: "Outlaw Feed", url: "" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "/blog/no-corn-wheat-soy-dog-food" },
   url: "/blog/no-corn-wheat-soy-dog-food",
   image: "https://images.unsplash.com/photo-1597843786411-a7fa8ad44a95?auto=format&fit=crop&w=1200&q=80",
   description: "Why corn, wheat, and soy are problematic for dogs and what Outlaw Feed uses instead.",

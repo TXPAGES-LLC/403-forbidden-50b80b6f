@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ingredients — No Corn, Wheat, or Soy Texas Dog Food | Outlaw Feed",
+  title: "Dog Food Ingredients — No Corn, Wheat, or Soy | Outlaw Feed",
   description:
-    "Outlaw Feed uses real named meat, whole grains, and no corn, wheat, or soy fillers. See exactly what is in our Gold and Blue formulas and why every ingredient earns its place.",
+    "Outlaw Feed uses real named meats and whole grains — no corn, wheat, or soy. See exactly what goes into our Gold and Blue formulas and why every ingredient earns its place.",
   alternates: { canonical: "/why-outlaw/ingredients" },
 };
 

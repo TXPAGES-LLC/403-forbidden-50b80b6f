@@ -2,25 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blue Formula — Adult Maintenance Dog Food | Outlaw Feed Texas",
+  title: "Blue Formula Dog Food — Adult Maintenance | Outlaw Feed",
   description:
-    "Outlaw Feed Blue Formula: 21% protein, 15% fat, zero fillers. Chicken meal, grain sorghum, brown rice — no corn, wheat, or soy. 3,170 kcal/kg. Texas-made dog food for everyday nutrition and adult maintenance.",
+    "Outlaw Feed Blue Formula: 21% protein, 15% fat, zero fillers. Chicken meal, grain sorghum, brown rice — no corn, wheat, or soy. 3,170 kcal/kg. Texas-made for adult dogs.",
   alternates: { canonical: "/products/blue-formula" },
 };
 
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
+  "@id": "/products/blue-formula#product",
   name: "Outlaw Feed Blue Formula",
   brand: { "@type": "Brand", name: "Outlaw Feed" },
   description:
     "Adult maintenance dog food with 21% crude protein and 15% crude fat. Zero fillers — no corn, wheat, or soy. 3,170 kcal/kg. Made in Bell County, Texas.",
-  image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80",
+  image: "https://outlawfeed.com/opengraph-image.png",
   url: "/products/blue-formula",
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStoreOnly",
-    seller: { "@type": "Organization", name: "Outlaw Feed" },
+    priceCurrency: "USD",
+    seller: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   },
 };
 

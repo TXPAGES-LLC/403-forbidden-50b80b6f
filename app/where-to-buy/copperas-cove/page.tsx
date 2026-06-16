@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Copperas Cove TX | Outlaw Feed — No Fillers, Made in Texas",
+  title: "Dog Food in Copperas Cove TX — No Fillers | Outlaw Feed",
   description:
     "Outlaw Feed is high-protein dog food available near Copperas Cove, TX. No corn, wheat, or soy. Texas-made, AAFCO certified for working dogs, hunting dogs, and active breeds.",
   alternates: { canonical: "/where-to-buy/copperas-cove" },
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "/where-to-buy/copperas-cove#webpage",
   name: "Dog Food in Copperas Cove TX — Outlaw Feed",
   description:
     "Find Outlaw Feed near Copperas Cove, TX. High-protein Texas-made dog food with no corn, wheat, or soy. Available at local feed stores in Coryell and Bell County.",

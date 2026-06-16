@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Waco TX | Outlaw Feed — McLennan County Feed Store",
+  title: "Dog Food in Waco TX — McLennan County | Outlaw Feed",
   description:
     "Find Outlaw Feed dog food in Waco, TX. Texas-made, AAFCO certified, no corn wheat or soy. High-protein formulas for working dogs, hunting dogs, and active breeds in McLennan County.",
   alternates: { canonical: "/where-to-buy/waco" },
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "/where-to-buy/waco#webpage",
   name: "Dog Food in Waco TX — Outlaw Feed",
   description:
     "Outlaw Feed is available in and around Waco, TX. Texas-made high-protein dog food with no corn, wheat, or soy. Available at local McLennan County feed and ranch supply stores.",

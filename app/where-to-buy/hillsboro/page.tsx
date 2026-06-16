@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Hillsboro TX | Outlaw Feed — Hill County Feed Store",
+  title: "Dog Food in Hillsboro TX — Hill County | Outlaw Feed",
   description:
     "Find Outlaw Feed working dog food near Hillsboro, TX in Hill County. No corn, wheat, or soy. Texas-made, AAFCO certified high-protein kibble for ranch and hunting dogs.",
   alternates: { canonical: "/where-to-buy/hillsboro" },
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "/where-to-buy/hillsboro#webpage",
   name: "Dog Food in Hillsboro TX — Outlaw Feed",
   description:
     "Outlaw Feed is available near Hillsboro, TX. Texas-made working dog food with no corn, wheat, or soy. Real meat first ingredient for Hill County ranch and hunting dogs.",
