@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   description:
     'A six-week pre-season conditioning and nutrition timeline for hunting dogs. Get your bird dog, retriever, or hound to peak physical condition before opening day.',
   alternates: { canonical: '/blog/pre-season-conditioning-hunting-dog' },
+  openGraph: {
+    type: 'article',
+    title: 'Pre-Season Conditioning: Get Your Hunting Dog Field Ready',
+    description: 'A six-week conditioning and nutrition plan to get your bird dog, retriever, or hound to peak condition before opening day.',
+    url: '/blog/pre-season-conditioning-hunting-dog',
+    siteName: 'Outlaw Feed',
+    images: [{ url: 'https://outlawfeed.com/opengraph-image.png', width: 1200, height: 630, alt: 'Pre-season conditioning for hunting dogs — Outlaw Feed' }],
+  },
+  twitter: { card: 'summary_large_image', title: 'Pre-Season Conditioning for Hunting Dogs', description: 'Six-week plan to get your hunting dog to peak condition before opening day.', images: ['https://outlawfeed.com/opengraph-image.png'] },
 }
 
 const timeline = [
@@ -61,7 +70,7 @@ export default function PreSeasonConditioningArticle() {
       />
       <Nav />
       <main id="main-content">
-        <section aria-labelledby="article-heading" className="relative bg-charcoal pt-32 pb-0 overflow-hidden">
+        <section aria-labelledby="article-heading" className="relative bg-[#0f0e0c] pt-16 md:pt-20 pb-0 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1920&q=80"
@@ -71,6 +80,7 @@ export default function PreSeasonConditioningArticle() {
               loading="eager"
               fetchPriority="high"
               decoding="async"
+              sizes="100vw"
               className="w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(24,18,12,1) 0%, rgba(24,18,12,0.3) 60%)' }} aria-hidden="true" />

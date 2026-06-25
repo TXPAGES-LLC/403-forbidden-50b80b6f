@@ -6,6 +6,28 @@ export const metadata: Metadata = {
   description:
     "Outlaw Feed uses real named meats and whole grains — no corn, wheat, or soy. See exactly what goes into our Gold and Blue formulas and why every ingredient earns its place.",
   alternates: { canonical: "/why-outlaw/ingredients" },
+  openGraph: {
+    type: "website",
+    title: "Outlaw Feed Ingredients — No Corn, Wheat, or Soy",
+    description:
+      "Real named meats, whole grains, no fillers. See exactly what goes into Outlaw Feed Gold and Blue formulas.",
+    url: "/why-outlaw/ingredients",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/Why-Outlaw-Feed-Dog-Food-Product.png",
+        width: 800,
+        height: 600,
+        alt: "Outlaw Feed ingredients — real named meats, no corn wheat or soy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Outlaw Feed Ingredients — No Corn, Wheat, or Soy",
+    description: "Real named meats. No corn, wheat, or soy. See what is in every bag.",
+    images: ["https://outlawfeed.com/Why-Outlaw-Feed-Dog-Food-Product.png"],
+  },
 };
 
 const principles = [

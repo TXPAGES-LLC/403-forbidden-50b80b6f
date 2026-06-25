@@ -1,11 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import GtmCtaLink from "@/components/gtm-cta-link";
 
 export const metadata: Metadata = {
   title: "Blue Formula Dog Food — Adult Maintenance | Outlaw Feed",
   description:
     "Outlaw Feed Blue Formula: 21% protein, 15% fat, zero fillers. Chicken meal, grain sorghum, brown rice — no corn, wheat, or soy. 3,170 kcal/kg. Texas-made for adult dogs.",
   alternates: { canonical: "/products/blue-formula" },
+  openGraph: {
+    type: "website",
+    title: "Blue Formula — 21% Protein, Adult Maintenance | Outlaw Feed",
+    description:
+      "Texas-made adult maintenance dog food. 21% protein, 15% fat, no corn wheat or soy. Chicken meal first ingredient. 3,170 kcal/kg.",
+    url: "/products/blue-formula",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png",
+        width: 700,
+        height: 525,
+        alt: "Outlaw Feed Blue Formula bag — 21% protein 15% fat, Texas-made adult dog food, no corn wheat or soy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blue Formula — 21% Protein | Outlaw Feed",
+    description: "Adult maintenance dog food. 21% protein, 15% fat, no fillers. Made in Texas.",
+    images: ["https://outlawfeed.com/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png"],
+  },
 };
 
 const productSchema = {
@@ -16,7 +39,7 @@ const productSchema = {
   brand: { "@type": "Brand", name: "Outlaw Feed" },
   description:
     "Adult maintenance dog food with 21% crude protein and 15% crude fat. Zero fillers — no corn, wheat, or soy. 3,170 kcal/kg. Made in Bell County, Texas.",
-  image: "https://outlawfeed.com/opengraph-image.png",
+  image: "https://outlawfeed.com/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png",
   url: "/products/blue-formula",
   offers: {
     "@type": "Offer",
@@ -24,6 +47,16 @@ const productSchema = {
     priceCurrency: "USD",
     seller: { "@type": "Organization", name: "Outlaw Feed", url: "" },
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home",     item: "" },
+    { "@type": "ListItem", position: 2, name: "Products", item: "/products/blue-formula" },
+    { "@type": "ListItem", position: 3, name: "Blue Formula" },
+  ],
 };
 
 const analysis = [
@@ -95,6 +128,10 @@ export default function BlueFormulaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Hero */}
       <section className="relative pt-20 pb-12 md:pt-24 md:pb-20 lg:pt-28 lg:pb-28 px-4 md:px-6 bg-[#0f0e0c] overflow-hidden" aria-label="Blue Formula hero">
@@ -142,12 +179,13 @@ export default function BlueFormulaPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
+                <GtmCtaLink
                   href="/where-to-buy"
+                  location="product_blue_hero"
                   className="px-7 py-4 bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors text-center"
                 >
                   Find a Store Near You
-                </Link>
+                </GtmCtaLink>
                 <Link
                   href="/contact"
                   className="px-7 py-4 border border-[#2e2820] text-[#f5f0e8]/70 font-semibold text-sm uppercase tracking-widest rounded hover:border-[#c85a00] hover:text-[#c85a00] transition-colors text-center"
@@ -310,9 +348,9 @@ export default function BlueFormulaPage() {
             Find a Texas retailer near you or contact us directly for Bell County delivery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/where-to-buy" className="px-8 py-4 bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors">
+            <GtmCtaLink href="/where-to-buy" location="product_blue_bottom" className="px-8 py-4 bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors">
               Find a Store
-            </Link>
+            </GtmCtaLink>
             <Link href="/products/gold-formula" className="px-8 py-4 border border-[#2e2820] text-[#f5f0e8]/70 font-semibold text-sm uppercase tracking-widest rounded hover:border-[#c85a00] hover:text-[#c85a00] transition-colors">
               Compare Gold Formula
             </Link>

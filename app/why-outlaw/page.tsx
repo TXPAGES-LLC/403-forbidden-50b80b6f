@@ -6,6 +6,48 @@ export const metadata: Metadata = {
   description:
     "Learn why Outlaw Feed is different. No corn, wheat, or soy. Real meat first ingredient. AAFCO certified. Made in Bell County, Texas for hunting dogs, ranch dogs, and working dogs.",
   alternates: { canonical: "/why-outlaw" },
+  openGraph: {
+    type: "website",
+    title: "Why Outlaw Feed — No Fillers, Real Meat, Made in Texas",
+    description:
+      "No corn, wheat, or soy — ever. Real named meats. Manufactured in Bell County, TX. See the difference you can read on the bag.",
+    url: "/why-outlaw",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/Why-Outlaw-Feed-Dog-Food-Product.png",
+        width: 800,
+        height: 600,
+        alt: "Outlaw Feed dog food — why Outlaw Feed, no fillers, real ingredients, made in Texas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Outlaw Feed — No Fillers, Real Meat, Made in Texas",
+    description: "No corn, wheat, or soy. Real meat first. Made in Bell County, TX.",
+    images: ["https://outlawfeed.com/Why-Outlaw-Feed-Dog-Food-Product.png"],
+  },
+};
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "/why-outlaw#webpage",
+  name: "Why Outlaw Feed — Real Ingredients, Texas-Made Working Dog Food",
+  url: "/why-outlaw",
+  description:
+    "No corn, wheat, or soy. Real meat first ingredient. AAFCO certified. Made in Bell County, Texas for hunting dogs, ranch dogs, and working dogs.",
+  isPartOf: { "@id": "/#website" },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home",        item: "" },
+    { "@type": "ListItem", position: 2, name: "Why Outlaw" },
+  ],
 };
 
 const pillars = [
@@ -32,6 +74,8 @@ const pillars = [
 export default function WhyOutlawPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="pt-20 pb-12 md:pt-24 md:pb-20 lg:pt-28 lg:pb-28 px-4 md:px-6 bg-[#0f0e0c]" aria-label="Why Outlaw hero">
         <div className="max-w-4xl mx-auto">

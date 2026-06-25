@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   description:
     'Why corn, wheat, and soy dominate mass-market dog food, what allergen load means for your dog, and what clean alternatives look like on a label.',
   alternates: { canonical: '/blog/no-corn-no-wheat-no-soy-explained' },
+  openGraph: {
+    type: 'article',
+    title: 'What "No Corn, No Wheat, No Soy" Actually Means for Your Dog',
+    description: 'Why these three grains dominate dog food, what allergen load means, and what clean alternatives look like on a label.',
+    url: '/blog/no-corn-no-wheat-no-soy-explained',
+    siteName: 'Outlaw Feed',
+    images: [{ url: 'https://outlawfeed.com/opengraph-image.png', width: 1200, height: 630, alt: 'No corn, no wheat, no soy dog food — Outlaw Feed' }],
+  },
+  twitter: { card: 'summary_large_image', title: 'What "No Corn, No Wheat, No Soy" Means', description: 'The real reason fillers dominate dog food and what to look for instead.', images: ['https://outlawfeed.com/opengraph-image.png'] },
 }
 
 const jsonLd = {
@@ -30,12 +39,13 @@ export default function NoCornArticle() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Nav />
       <main id="main-content">
-        <section className="bg-charcoal pt-32 pb-0 overflow-hidden">
+        <section className="bg-[#0f0e0c] pt-16 md:pt-20 pb-0 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=1920&q=80"
               alt="Dog food ingredients — no corn no wheat no soy explained"
               width={1920} height={800} loading="eager" fetchPriority="high" decoding="async"
+              sizes="100vw"
               className="w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(24,18,12,1) 0%, rgba(24,18,12,0.3) 60%)' }} aria-hidden="true" />

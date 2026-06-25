@@ -1,11 +1,34 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import GtmCallLink from "@/components/gtm-call-link";
 
 export const metadata: Metadata = {
-  title: "Contact | Outlaw Feed",
+  title: "Contact Outlaw Feed — (254) 939-3957 | Bell County, TX",
   description:
-    "Contact Outlaw Feed by phone. Available Monday through Friday, 8am to 3pm. Call (254) 939-3957 for product questions, Bell County delivery, or retailer inquiries.",
+    "Contact Outlaw Feed by phone: (254) 939-3957. Available Monday–Friday, 8am–3pm. Product questions, Bell County delivery, and Texas retailer inquiries.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    type: "website",
+    title: "Contact Outlaw Feed — (254) 939-3957",
+    description:
+      "Call (254) 939-3957 for product questions, Bell County delivery, or retailer inquiries. Mon–Fri, 8am–3pm.",
+    url: "/contact",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Outlaw Feed — Bell County, Texas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Outlaw Feed — (254) 939-3957",
+    description: "Call for product questions, Bell County delivery, or retailer info. Mon–Fri 8am–3pm.",
+    images: ["https://outlawfeed.com/opengraph-image.png"],
+  },
 };
 
 export default function ContactPage() {
@@ -48,19 +71,19 @@ export default function ContactPage() {
             <p className="text-[#9a8870] text-sm mb-2">
               Monday &ndash; Friday &nbsp;&bull;&nbsp; 8:00 AM &ndash; 3:00 PM
             </p>
-            <a
-              href="tel:+12549393957"
+            <GtmCallLink
+              location="contact_hero_number"
               className="font-serif text-4xl md:text-5xl font-bold text-[#c85a00] hover:text-[#e8a44a] transition-colors block my-6"
             >
               (254) 939-3957
-            </a>
-            <a
-              href="tel:+12549393957"
+            </GtmCallLink>
+            <GtmCallLink
+              location="contact_hero_button"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 5.45 5.45l1.79-1.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg>
               Tap to Call
-            </a>
+            </GtmCallLink>
           </div>
 
           {/* Info cards */}
@@ -144,7 +167,7 @@ export default function ContactPage() {
                 {
                   label: "Yellow Pages",
                   description: "Local business listing",
-                  href: "http://www.yellowpages.com/temple-tx/mip/outlaw-feed-496387658",
+                  href: "https://www.yellowpages.com/temple-tx/mip/outlaw-feed-496387658",
                   icon: (
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
                       <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h10v2H4z"/>

@@ -114,7 +114,7 @@ export default function GoldFormulaPage() {
         {/* Product hero */}
         <section
           aria-labelledby="gold-heading"
-          className="bg-charcoal pt-32 pb-16"
+          className="bg-[#0f0e0c] pt-20 md:pt-24 pb-16"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-sm overflow-hidden aspect-square max-w-lg mx-auto w-full">

@@ -1,11 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import GtmCallLink from "@/components/gtm-call-link";
 
 export const metadata: Metadata = {
   title: "Where to Buy Outlaw Feed — Texas Retailers & Store Locator",
   description:
     "Find Outlaw Feed dog food at retailers across Bell County and Central Texas. Store locator with addresses, phone numbers, and directions. Direct delivery available in Bell County, TX.",
   alternates: { canonical: "/where-to-buy" },
+  openGraph: {
+    type: "website",
+    title: "Where to Buy Outlaw Feed — Central Texas Store Locator",
+    description:
+      "Find Outlaw Feed at local feed stores and ranch supply retailers across Bell County and Central Texas. Addresses and phone numbers included.",
+    url: "/where-to-buy",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Outlaw Feed Central Texas store locator — find a retailer near you",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Where to Buy Outlaw Feed — Central Texas",
+    description: "Find Outlaw Feed at feed stores and ranch supply retailers across Bell County, TX.",
+    images: ["https://outlawfeed.com/opengraph-image.png"],
+  },
 };
 
 const localBusinessSchema = {
@@ -181,12 +204,12 @@ export default function WhereToBuyPage() {
               Live in Bell County? We deliver direct to your ranch, farm, or home. Call us to set up a regular delivery schedule and never run out of feed again.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="tel:+12549393957"
+              <GtmCallLink
+                location="where_to_buy_delivery"
                 className="px-7 py-4 bg-[#c85a00] text-white text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#a84800] transition-colors text-center"
               >
                 Call (254) 939-3957
-              </a>
+              </GtmCallLink>
               <Link
                 href="/contact"
                 className="px-7 py-4 border border-[#2e2820] text-[#f5f0e8]/70 text-sm font-semibold uppercase tracking-wider rounded hover:border-[#c85a00] hover:text-[#c85a00] transition-colors text-center"

@@ -6,6 +6,26 @@ export const metadata: Metadata = {
   description:
     "During peak work seasons, ranch dogs need more than maintenance calories. Protein, fat ratios, and feeding timing for hardworking Texas ranch and cattle dogs.",
   alternates: { canonical: "/blog/working-dog-nutrition" },
+  openGraph: {
+    type: "article",
+    title: "Working Dog Nutrition: Fueling Ranch Dogs in Demand Season",
+    description: "How to fuel a ranch dog through high-demand work seasons. Protein needs, fat ratios, and feeding timing.",
+    url: "/blog/working-dog-nutrition",
+    siteName: "Outlaw Feed",
+    publishedTime: "2025-02-22",
+    images: [{ url: "https://outlawfeed.com/working-dog-nutrition.png", width: 1200, height: 800, alt: "Golden retriever working dog running in a rural field at sunset — working dog nutrition guide" }],
+  },
+  twitter: { card: "summary_large_image", title: "Working Dog Nutrition: Fueling Ranch Dogs", description: "Protein needs, fat ratios, and feeding timing for high-demand ranch dogs.", images: ["https://outlawfeed.com/working-dog-nutrition.png"] },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "/blog" },
+    { "@type": "ListItem", position: 3, name: "Working Dog Nutrition" },
+  ],
 };
 
 const articleSchema = {
@@ -30,6 +50,10 @@ export default function WorkingDogNutritionPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <article className="bg-[#0f0e0c]">
         <header className="relative pt-16 md:pt-20 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
@@ -41,6 +65,7 @@ export default function WorkingDogNutritionPost() {
               decoding="async"
               width={1400}
               height={384}
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f0e0c] via-[#0f0e0c]/40 to-transparent" />
           </div>

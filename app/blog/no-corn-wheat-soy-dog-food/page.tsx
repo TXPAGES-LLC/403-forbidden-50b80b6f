@@ -6,6 +6,27 @@ export const metadata: Metadata = {
   description:
     "Corn, wheat, and soy are cheap fillers that compromise digestion, coat quality, and long-term health. Here is exactly why Outlaw Feed cuts them out of every formula.",
   alternates: { canonical: "/blog/no-corn-wheat-soy-dog-food" },
+  openGraph: {
+    type: "article",
+    title: "No Corn, Wheat, or Soy Dog Food: Why It Matters",
+    description:
+      "Why corn, wheat, and soy compromise your dog's digestion, coat, and long-term health — and what Outlaw Feed uses instead.",
+    url: "/blog/no-corn-wheat-soy-dog-food",
+    siteName: "Outlaw Feed",
+    publishedTime: "2025-03-18",
+    images: [{ url: "https://images.unsplash.com/photo-1597843786411-a7fa8ad44a95?auto=format&fit=crop&w=1200&q=80", width: 1200, height: 800, alt: "Real meat ingredients — no corn wheat or soy dog food" }],
+  },
+  twitter: { card: "summary_large_image", title: "No Corn, Wheat, or Soy: Why It Matters", description: "Why fillers compromise your dog's health — and what Outlaw Feed uses instead.", images: ["https://images.unsplash.com/photo-1597843786411-a7fa8ad44a95?auto=format&fit=crop&w=1200&q=80"] },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "/blog" },
+    { "@type": "ListItem", position: 3, name: "No Corn, Wheat, or Soy: Why It Matters" },
+  ],
 };
 
 const articleSchema = {
@@ -48,6 +69,10 @@ export default function NoCornWheatSoyPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <article className="bg-[#0f0e0c]">
         <header className="relative pt-16 md:pt-20 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
@@ -59,6 +84,7 @@ export default function NoCornWheatSoyPost() {
               decoding="async"
               width={1400}
               height={384}
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f0e0c] via-[#0f0e0c]/40 to-transparent" />
           </div>

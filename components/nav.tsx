@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import GtmCallLink from "@/components/gtm-call-link";
+import GtmCtaLink from "@/components/gtm-cta-link";
 
 const navLinks = [
   {
@@ -55,16 +57,16 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm" role="banner">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-24 md:h-28">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-16 md:h-20">
 
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0" aria-label="Outlaw Feed — Home" onClick={closeMenu}>
           <img
             src="/logo-transparent-long.png"
             alt="Travis Farr's Outlaw Feed Co."
-            width={200}
-            height={44}
-            className="h-20 md:h-24 w-auto object-contain"
+            width={160}
+            height={36}
+            className="h-10 md:h-12 w-auto object-contain"
             fetchPriority="high"
           />
         </Link>
@@ -118,23 +120,24 @@ export default function Nav() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <a
-            href="tel:+12549393957"
+          <GtmCallLink
+            location="nav"
             className="text-xs text-gray-500 hover:text-[#c85a00] transition-colors font-medium hidden xl:block"
           >
             (254) 939-3957
-          </a>
-          <Link
+          </GtmCallLink>
+          <GtmCtaLink
             href="/where-to-buy"
+            location="nav"
             className="px-4 py-2 text-xs xl:text-sm font-semibold uppercase tracking-wider rounded bg-[#c85a00] text-white hover:bg-[#a84800] transition-colors whitespace-nowrap"
           >
             Find a Store
-          </Link>
+          </GtmCtaLink>
         </div>
 
         {/* Mobile hamburger */}
         <button
-          className="flex lg:hidden flex-col justify-center gap-[5px] p-2 rounded hover:bg-gray-100 transition-colors"
+          className="flex lg:hidden flex-col justify-center gap-[5px] p-3 min-w-[44px] min-h-[44px] rounded hover:bg-gray-100 transition-colors"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
@@ -150,7 +153,7 @@ export default function Nav() {
       {open && (
         <div
           id="mobile-menu"
-          className="lg:hidden fixed left-0 right-0 top-24 md:top-28 bottom-0 bg-white overflow-y-auto z-40 border-t border-gray-200"
+          className="lg:hidden fixed left-0 right-0 top-16 md:top-20 bottom-0 bg-white overflow-y-auto z-40 border-t border-gray-200"
         >
           <nav className="flex flex-col px-4 py-2" aria-label="Mobile navigation">
             {navLinks.map((link) => (
@@ -159,7 +162,7 @@ export default function Nav() {
                   <>
                     <button
                       onClick={() => setMobileExpanded(mobileExpanded === link.label ? null : link.label)}
-                      className="w-full flex items-center justify-between py-4 text-sm font-semibold uppercase tracking-wider text-gray-800 hover:text-[#c85a00] transition-colors"
+                      className="w-full flex items-center justify-between py-4 min-h-[48px] text-sm font-semibold uppercase tracking-wider text-gray-800 hover:text-[#c85a00] transition-colors"
                       aria-expanded={mobileExpanded === link.label}
                     >
                       {link.label}
@@ -178,7 +181,7 @@ export default function Nav() {
                             key={child.href}
                             href={child.href}
                             onClick={closeMenu}
-                            className="block py-2.5 text-sm text-gray-500 hover:text-[#c85a00] transition-colors border-b border-gray-50 last:border-0"
+                            className="block py-3 min-h-[44px] flex items-center text-sm text-gray-500 hover:text-[#c85a00] transition-colors border-b border-gray-50 last:border-0"
                           >
                             {child.label}
                           </Link>
@@ -190,7 +193,7 @@ export default function Nav() {
                   <Link
                     href={link.href}
                     onClick={closeMenu}
-                    className="block py-4 text-sm font-semibold uppercase tracking-wider text-gray-800 hover:text-[#c85a00] transition-colors"
+                    className="block py-4 min-h-[48px] flex items-center text-sm font-semibold uppercase tracking-wider text-gray-800 hover:text-[#c85a00] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -199,22 +202,22 @@ export default function Nav() {
             ))}
 
             <div className="flex flex-col gap-3 pt-5 pb-8">
-              <a
-                href="tel:+12549393957"
-                className="flex items-center justify-center gap-2 py-3.5 text-sm font-semibold rounded bg-[#c85a00] text-white hover:bg-[#a84800] transition-colors"
+              <GtmCallLink
+                location="nav_mobile"
+                className="flex items-center justify-center gap-2 py-4 min-h-[52px] text-sm font-semibold rounded bg-[#c85a00] text-white hover:bg-[#a84800] transition-colors"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 5.45 5.45l1.79-1.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.01z"/>
                 </svg>
                 Call (254) 939-3957
-              </a>
-              <Link
+              </GtmCallLink>
+              <GtmCtaLink
                 href="/where-to-buy"
-                onClick={closeMenu}
-                className="py-3.5 text-center text-sm font-semibold uppercase tracking-wider rounded border border-gray-300 text-gray-700 hover:border-[#c85a00] hover:text-[#c85a00] transition-colors"
+                location="nav_mobile"
+                className="py-4 min-h-[52px] text-center text-sm font-semibold uppercase tracking-wider rounded border border-gray-300 text-gray-700 hover:border-[#c85a00] hover:text-[#c85a00] transition-colors"
               >
                 Find a Store
-              </Link>
+              </GtmCtaLink>
             </div>
           </nav>
         </div>

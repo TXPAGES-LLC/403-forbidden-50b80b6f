@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   description:
     'The guaranteed analysis, ingredients list, AAFCO statement — what each means and how to use them to separate real nutrition from marketing language on a dog food bag.',
   alternates: { canonical: '/blog/how-to-read-a-dog-food-label' },
+  openGraph: {
+    type: 'article',
+    title: 'How to Read a Dog Food Label Without Getting Fooled',
+    description: 'Guaranteed analysis, ingredient order, AAFCO statements — how to decode a dog food bag and separate real nutrition from marketing.',
+    url: '/blog/how-to-read-a-dog-food-label',
+    siteName: 'Outlaw Feed',
+    images: [{ url: 'https://outlawfeed.com/opengraph-image.png', width: 1200, height: 630, alt: 'How to read a dog food label — Outlaw Feed guide' }],
+  },
+  twitter: { card: 'summary_large_image', title: 'How to Read a Dog Food Label', description: 'Decode guaranteed analysis, ingredient lists, and AAFCO statements.', images: ['https://outlawfeed.com/opengraph-image.png'] },
 }
 
 const jsonLd = {
@@ -35,7 +44,7 @@ export default function LabelReadingArticle() {
       />
       <Nav />
       <main id="main-content">
-        <section aria-labelledby="article-heading" className="relative bg-charcoal pt-32 pb-0 overflow-hidden">
+        <section aria-labelledby="article-heading" className="relative bg-[#0f0e0c] pt-16 md:pt-20 pb-0 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1920&q=80"
@@ -45,6 +54,7 @@ export default function LabelReadingArticle() {
               loading="eager"
               fetchPriority="high"
               decoding="async"
+              sizes="100vw"
               className="w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(24,18,12,1) 0%, rgba(24,18,12,0.3) 60%)' }} aria-hidden="true" />

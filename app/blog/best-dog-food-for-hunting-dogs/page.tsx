@@ -34,7 +34,7 @@ export default function HuntingDogFoodArticle() {
       <Nav />
       <main id="main-content">
         {/* Article hero */}
-        <section aria-labelledby="article-heading" className="relative bg-charcoal pt-32 pb-0 overflow-hidden">
+        <section aria-labelledby="article-heading" className="relative bg-[#0f0e0c] pt-16 md:pt-20 pb-0 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80"
@@ -44,6 +44,7 @@ export default function HuntingDogFoodArticle() {
               loading="eager"
               fetchPriority="high"
               decoding="async"
+              sizes="100vw"
               className="w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(24,18,12,1) 0%, rgba(24,18,12,0.3) 60%)' }} aria-hidden="true" />
@@ -137,10 +138,10 @@ export default function HuntingDogFoodArticle() {
             </div>
 
             {/* Internal CTA */}
-            <div className="mt-12 bg-cream-dark border border-border rounded-sm p-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+            <div className="mt-12 bg-[#1a1712] border border-[#2e2820] rounded-sm p-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
               <div>
-                <p className="font-sans text-xs font-bold tracking-widest uppercase text-orange mb-1">Related</p>
-                <h3 className="font-serif text-xl font-bold text-charcoal text-balance">
+                <p className="font-sans text-xs font-bold tracking-widest uppercase text-[#c85a00] mb-1">Related</p>
+                <h3 className="font-serif text-xl font-bold text-[#f5f0e8] text-balance">
                   See Outlaw Gold Formula
                 </h3>
                 <p className="font-sans text-sm text-muted-foreground mt-1 leading-relaxed">

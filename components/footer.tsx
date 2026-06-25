@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GtmCallLink from "@/components/gtm-call-link";
 
 const footerLinks = [
   {
@@ -51,16 +52,16 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-200" role="contentinfo">
       {/* Main footer grid */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" aria-label="Outlaw Feed home" className="inline-block mb-4">
               <img
                 src="/logo-transparent-long.png"
                 alt="Travis Farr's Outlaw Feed Co."
-                width={240}
-                height={50}
-                className="h-72 w-auto object-contain"
+                width={160}
+                height={36}
+                className="h-10 w-auto object-contain"
               />
             </Link>
             <p className="text-gray-500 text-xs leading-relaxed mb-4">
@@ -69,12 +70,12 @@ export default function Footer() {
             <p className="text-gray-500 text-xs">
               Bell County, TX
               <br />
-              <a
-                href="tel:+12549393957"
+              <GtmCallLink
+                location="footer"
                 className="hover:text-[#c85a00] transition-colors"
               >
                 (254) 939-3957
-              </a>
+              </GtmCallLink>
             </p>
             {/* Google Business Profile CID */}
             <meta itemProp="google" content="5693377320952782312" />
@@ -103,7 +104,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-xs">
             &copy; {new Date().getFullYear()} Outlaw Feed. All rights reserved. Made in Texas.
             {" "}Powered by{" "}

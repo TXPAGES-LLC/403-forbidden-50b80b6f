@@ -88,7 +88,7 @@ export default function FormulasPage() {
         {/* Page hero */}
         <section
           aria-labelledby="formulas-page-heading"
-          className="bg-charcoal pt-32 pb-16 md:pb-20"
+          className="bg-[#0f0e0c] pt-20 md:pt-24 pb-16 md:pb-20"
         >
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="font-sans text-xs font-bold tracking-[0.22em] uppercase text-orange mb-4">

@@ -6,6 +6,26 @@ export const metadata: Metadata = {
   description:
     "From pre-season conditioning to off-season maintenance, learn how experienced hunters keep their dogs performing at the highest level. Nutrition, fitness, and recovery tips.",
   alternates: { canonical: "/blog/hunting-dog-care-tips" },
+  openGraph: {
+    type: "article",
+    title: "Hunting Dog Care Tips: Peak Condition Year-Round",
+    description: "Pre-season conditioning, in-season nutrition, and off-season recovery for hunting dogs.",
+    url: "/blog/hunting-dog-care-tips",
+    siteName: "Outlaw Feed",
+    publishedTime: "2025-01-30",
+    images: [{ url: "https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=1200&q=80", width: 1200, height: 800, alt: "Hunting dog running in field — hunting dog care tips" }],
+  },
+  twitter: { card: "summary_large_image", title: "Hunting Dog Care Tips: Year-Round Peak Condition", description: "Pre-season conditioning to off-season recovery for hunting dogs.", images: ["https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?auto=format&fit=crop&w=1200&q=80"] },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "/blog" },
+    { "@type": "ListItem", position: 3, name: "Hunting Dog Care Tips" },
+  ],
 };
 
 const articleSchema = {
@@ -67,6 +87,10 @@ export default function HuntingDogCareTipsPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <article className="bg-[#0f0e0c]">
         <header className="relative pt-16 md:pt-20 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
@@ -78,6 +102,7 @@ export default function HuntingDogCareTipsPost() {
               decoding="async"
               width={1400}
               height={384}
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f0e0c] via-[#0f0e0c]/40 to-transparent" />
           </div>

@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import GtmCallLink from "@/components/gtm-call-link";
+import GtmCtaLink from "@/components/gtm-cta-link";
 
 export interface CityPageProps {
   city: string;
@@ -120,12 +122,12 @@ export default function CityPage({
               <p className="text-[#9a8870] text-sm leading-relaxed mb-2">
                 Monday &ndash; Friday &nbsp;&bull;&nbsp; 8am &ndash; 3pm
               </p>
-              <a
-                href="tel:+12549393957"
+              <GtmCallLink
+                location="city_page"
                 className="font-serif text-2xl font-bold text-[#c85a00] hover:text-[#e8a44a] transition-colors block mb-4"
               >
                 (254) 939-3957
-              </a>
+              </GtmCallLink>
               <Link
                 href="/contact"
                 className="block text-center px-5 py-3 border border-[#2e2820] text-[#f5f0e8]/70 text-sm font-semibold uppercase tracking-wider rounded hover:border-[#c85a00] hover:text-[#c85a00] transition-colors"
@@ -179,12 +181,13 @@ export default function CityPage({
             Find the nearest retailer carrying Outlaw Feed in {county}, or call us to ask about delivery options and availability near {city}.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <GtmCtaLink
               href="/where-to-buy"
+              location="city_page_bottom"
               className="px-7 py-4 bg-[#c85a00] text-white text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#a84800] transition-colors"
             >
               Find a Store Near You
-            </Link>
+            </GtmCtaLink>
             <Link
               href="/feeding-guide"
               className="px-7 py-4 border border-[#2e2820] text-[#f5f0e8]/70 text-sm font-semibold uppercase tracking-wider rounded hover:border-[#c85a00] hover:text-[#c85a00] transition-colors"

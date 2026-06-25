@@ -6,6 +6,28 @@ export const metadata: Metadata = {
   description:
     "Outlaw Feed: Texas-made, AAFCO-certified dog food with no corn, wheat, or soy. Real meat first ingredient for hunting dogs, ranch dogs, and working dogs in Bell County, TX.",
   alternates: { canonical: "" },
+  openGraph: {
+    type: "website",
+    title: "Outlaw Feed — Texas-Made Dog Food for Working & Hunting Dogs",
+    description:
+      "No corn. No wheat. No soy. Real meat — first ingredient, every time. AAFCO-certified and made in Bell County, Texas for dogs that work as hard as their owners.",
+    url: "",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Outlaw Feed — Texas-Made Dog Food for Working and Hunting Dogs",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Outlaw Feed — Texas-Made Dog Food",
+    description: "No corn, no wheat, no soy. Real meat first. Made in Bell County, TX for working and hunting dogs.",
+    images: ["https://outlawfeed.com/opengraph-image.png"],
+  },
 };
 
 const proofItems = [
@@ -159,7 +181,7 @@ export default function HomePage() {
 
       {/* ── Hero ── */}
       <section
-        className="relative min-h-screen flex items-end pb-20 md:pb-28 overflow-hidden"
+        className="relative min-h-[100svh] flex items-end pb-16 md:pb-28 overflow-hidden"
         aria-label="Hero"
       >
         {/* Background image */}
@@ -168,7 +190,10 @@ export default function HomePage() {
           alt="Texas hunting dog in field — Outlaw Feed working dog food made in Texas"
           className="absolute inset-0 w-full h-full object-cover object-center"
           fetchPriority="high"
-          decoding="async"
+          decoding="sync"
+          width={1600}
+          height={900}
+          sizes="100vw"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f0e0c] via-[#0f0e0c]/60 to-[#0f0e0c]/10" />
@@ -177,27 +202,27 @@ export default function HomePage() {
           <p className="font-sans text-xs uppercase tracking-[0.4em] text-[#c85a00] font-semibold mb-4">
             Made in Bell County, Texas
           </p>
-          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-[#f5f0e8] mb-6 text-balance max-w-3xl">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-[#f5f0e8] mb-5 text-balance max-w-3xl leading-tight">
             No Fillers.
             <br />
             No Compromise.
             <br />
             <span className="text-[#e8a44a]">No Apologies.</span>
           </h1>
-          <p className="text-[#f5f0e8]/80 text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
+          <p className="text-[#f5f0e8]/80 text-base md:text-xl max-w-xl mb-8 leading-relaxed">
             Texas-made dog food built for dogs that work as hard as their owners.
             No corn, wheat, or soy. Real meat — first ingredient, every time.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href="/where-to-buy"
-              className="inline-flex items-center justify-center px-7 py-4 bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors"
+              className="inline-flex items-center justify-center px-7 py-4 min-h-[52px] bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors"
             >
               Find a Store Near You
             </Link>
             <Link
               href="/products/gold-formula"
-              className="inline-flex items-center justify-center px-7 py-4 border border-[#f5f0e8]/40 text-[#f5f0e8] font-semibold text-sm uppercase tracking-widest rounded hover:border-[#e8a44a] hover:text-[#e8a44a] transition-colors"
+              className="inline-flex items-center justify-center px-7 py-4 min-h-[52px] border border-[#f5f0e8]/40 text-[#f5f0e8] font-semibold text-sm uppercase tracking-widest rounded hover:border-[#e8a44a] hover:text-[#e8a44a] transition-colors"
             >
               See Our Formulas
             </Link>
@@ -211,11 +236,11 @@ export default function HomePage() {
         aria-label="Key brand proof points"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <ul className="flex flex-wrap divide-x divide-[#2e2820]">
-            {proofItems.map((item) => (
+          <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+            {proofItems.map((item, i) => (
               <li
                 key={item.stat}
-                className="flex-1 min-w-[140px] flex flex-col items-center justify-center py-5 px-4 text-center"
+                className={`flex flex-col items-center justify-center py-5 px-4 text-center border-[#2e2820] ${i % 2 === 0 ? "" : "border-l"} sm:border-l sm:first:border-l-0`}
               >
                 <span className="font-serif text-base md:text-lg font-bold text-[#e8a44a] whitespace-nowrap">
                   {item.stat}
@@ -260,6 +285,7 @@ export default function HomePage() {
                     decoding="async"
                     width={600}
                     height={256}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1a1712] to-transparent" />
                   {p.badge && (
@@ -366,16 +392,16 @@ export default function HomePage() {
           <p className="text-[#f5f0e8]/70 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
             From bird dogs in the brush to cattle dogs on the caliche — if your dog works for a living, Outlaw Feed is the only food built for their demands.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link
               href="/where-to-buy"
-              className="px-8 py-4 bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 min-h-[52px] bg-[#c85a00] text-white font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#a84800] transition-colors"
             >
               Find a Retailer
             </Link>
             <Link
               href="/why-outlaw"
-              className="px-8 py-4 border border-[#e8a44a] text-[#e8a44a] font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#e8a44a]/10 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 min-h-[52px] border border-[#e8a44a] text-[#e8a44a] font-semibold text-sm uppercase tracking-widest rounded hover:bg-[#e8a44a]/10 transition-colors"
             >
               Our Story
             </Link>
@@ -532,6 +558,7 @@ export default function HomePage() {
                     decoding="async"
                     width={600}
                     height={192}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-6">

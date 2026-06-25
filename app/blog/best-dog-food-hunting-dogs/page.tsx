@@ -6,6 +6,26 @@ export const metadata: Metadata = {
   description:
     "Not all high-protein dog foods deliver what hunting dogs need in the field. Learn the key markers of a true hunting dog formula — protein source, fat ratios, and what to avoid.",
   alternates: { canonical: "/blog/best-dog-food-hunting-dogs" },
+  openGraph: {
+    type: "article",
+    title: "Best Dog Food for Hunting Dogs: Field Formula Guide",
+    description: "What separates a true hunting dog formula from marketing — protein sources, fat ratios, and fillers to avoid.",
+    url: "/blog/best-dog-food-hunting-dogs",
+    siteName: "Outlaw Feed",
+    publishedTime: "2025-04-10",
+    images: [{ url: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&q=80", width: 1200, height: 800, alt: "Pointer hunting dog in Texas field — best dog food for hunting dogs" }],
+  },
+  twitter: { card: "summary_large_image", title: "Best Dog Food for Hunting Dogs", description: "Protein sources, fat ratios, and fillers to avoid in a hunting dog formula.", images: ["https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&q=80"] },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "/blog" },
+    { "@type": "ListItem", position: 3, name: "Best Dog Food for Hunting Dogs" },
+  ],
 };
 
 const articleSchema = {
@@ -31,6 +51,10 @@ export default function HuntingDogFoodPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <article className="bg-[#0f0e0c]">
         {/* Hero image */}
         <header className="relative pt-16 md:pt-20 overflow-hidden">
@@ -43,6 +67,7 @@ export default function HuntingDogFoodPost() {
               decoding="async"
               width={1400}
               height={384}
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f0e0c] via-[#0f0e0c]/40 to-transparent" />
           </div>

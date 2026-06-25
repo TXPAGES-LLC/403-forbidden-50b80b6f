@@ -6,6 +6,28 @@ export const metadata: Metadata = {
   description:
     "Travis Farr created Outlaw Feed for the hunting and working dogs he loved — a no-filler, high-protein Texas-made dog food built for every stage of a dog's life. Read the story behind Outlaw Feed Co.",
   alternates: { canonical: "/why-outlaw/our-story" },
+  openGraph: {
+    type: "website",
+    title: "Our Story — Travis Farr's Outlaw Feed Co.",
+    description:
+      "Travis Farr built Outlaw Feed for the hunting and working dogs he loved. Made in Bell County, Texas. No fillers, no compromise.",
+    url: "/why-outlaw/our-story",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Outlaw Feed — founded by Travis Farr in Bell County, Texas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Story — Travis Farr's Outlaw Feed Co.",
+    description: "Built in Bell County, TX for hunting and working dogs. The story behind Outlaw Feed.",
+    images: ["https://outlawfeed.com/opengraph-image.png"],
+  },
 };
 
 export default function OurStoryPage() {

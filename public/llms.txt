@@ -1,45 +1,57 @@
 # Outlaw Feed — Texas-Made Dog Food
 
-> Outlaw Feed is a Bell County, Texas dog food company founded by Travis Farr. We manufacture high-protein, no-filler dog food for working dogs, hunting dogs, and active companions. No corn, wheat, or soy — ever.
+> Outlaw Feed is a Bell County, Texas dog food company founded by Travis Farr. We manufacture high-protein, no-filler dog food for working dogs, hunting dogs, and active companions. No corn, wheat, or soy — ever. AAFCO certified, made in Texas.
 
 ## Company Information
 
 - **Business Name:** Travis Farr's Outlaw Feed Co.
-- **Location:** Bell County, Texas
+- **Location:** Bell County, Texas (ships and retails across Central Texas)
 - **Phone:** (254) 939-3957
 - **Email:** fencesbyfarr@yahoo.com
 - **Website:** https://outlawfeed.com
 
 ## Products
 
-### Gold Formula
-High-performance adult dog food. 26% protein, 18% fat, 3640 kcal/kg. Primary ingredients: Chicken Rice, Brown Rice, Grain Sorghum. For working and hunting dogs.
+### Gold Formula — High Performance
+26% crude protein, 18% crude fat, 3,640 kcal/kg. Primary ingredients: Chicken, Brown Rice, Grain Sorghum. Formulated for working dogs, hunting dogs, and active breeds at all life stages.
 
-### Blue Formula
-Adult maintenance dog food. 21% protein, 15% fat, 3,170 kcal/kg. Primary ingredients: Chicken Meal, Grain Sorghum, Brown Rice. For everyday adult nutrition.
+### Blue Formula — Adult Maintenance
+21% crude protein, 15% crude fat, 3,170 kcal/kg. Primary ingredients: Chicken Meal, Grain Sorghum, Brown Rice. Formulated for everyday adult nutrition and less-active dogs.
 
-## Key Pages
+## Canonical Pages
 
-- https://outlawfeed.com — Homepage with product overview and brand story
-- https://outlawfeed.com/products/gold-formula — Gold Formula product page with full ingredients and guaranteed analysis
-- https://outlawfeed.com/products/blue-formula — Blue Formula product page with full ingredients and guaranteed analysis
-- https://outlawfeed.com/why-outlaw — Why choose Outlaw Feed over commercial dog food
-- https://outlawfeed.com/why-outlaw/ingredients — Detailed ingredient breakdown and sourcing
-- https://outlawfeed.com/why-outlaw/our-story — Travis Farr's founding story
-- https://outlawfeed.com/where-to-buy — Store locator for Central Texas retailers
-- https://outlawfeed.com/feeding-guide — Feeding recommendations by dog weight and formula
-- https://outlawfeed.com/contact — Phone, email, and business hours
+- https://outlawfeed.com — Homepage: brand overview, product lineup, and core value proposition
+- https://outlawfeed.com/products/gold-formula — Gold Formula product page with full guaranteed analysis, ingredient list, and feeding chart
+- https://outlawfeed.com/products/blue-formula — Blue Formula product page with full guaranteed analysis, ingredient list, and feeding chart
+- https://outlawfeed.com/why-outlaw — Why choose Outlaw Feed: no-filler philosophy vs. commercial dog food brands
+- https://outlawfeed.com/why-outlaw/ingredients — Detailed ingredient sourcing, what each ingredient does, and what is excluded
+- https://outlawfeed.com/why-outlaw/our-story — Travis Farr's founding story and the Bell County origin of Outlaw Feed
+- https://outlawfeed.com/feeding-guide — Feeding charts by dog weight for both Gold and Blue formulas; transition tips
+- https://outlawfeed.com/where-to-buy — Central Texas retail store locator with city-level pages
+- https://outlawfeed.com/contact — Phone, email, and business hours for product and retailer inquiries
+
+## Blog Articles
+
+- https://outlawfeed.com/blog/best-dog-food-hunting-dogs — What separates a real hunting dog formula from marketing: protein sources, fat ratios, and filler avoidance
+- https://outlawfeed.com/blog/no-corn-wheat-soy-dog-food — Why corn, wheat, and soy are excluded from Outlaw Feed and what they are replaced with
+- https://outlawfeed.com/blog/working-dog-nutrition — How to fuel a ranch dog through high-demand seasons: caloric needs, fat ratios, feeding timing
+- https://outlawfeed.com/blog/hunting-dog-care-tips — Year-round hunting dog care: pre-season conditioning, in-season nutrition, off-season recovery
+- https://outlawfeed.com/blog/no-corn-no-wheat-no-soy-explained — Plain-language explanation of allergen load and what "grain-free adjacent" actually means on a label
+- https://outlawfeed.com/blog/feeding-hunting-dog-during-season — In-season caloric adjustments, meal timing, and body-condition scoring for hunting dogs
+- https://outlawfeed.com/blog/how-much-to-feed-working-ranch-dog — Activity-based feeding guide for cattle dogs, herding dogs, and working farm dogs
+- https://outlawfeed.com/blog/how-to-read-a-dog-food-label — Guaranteed analysis, ingredient list order, and AAFCO statement explained for dog owners
+- https://outlawfeed.com/blog/pre-season-conditioning-hunting-dog — Six-week pre-season conditioning and nutrition timeline for bird dogs, retrievers, and hounds
 
 ## Brand Positioning
 
 - Zero fillers: No corn, wheat, or soy in any formula
 - Texas-made: Manufactured in Bell County, TX
-- Real meat first: Chicken-based protein as primary ingredient
+- Real meat first: Named chicken-based protein as primary ingredient
 - Working dog focus: Formulated for hunting, ranch, and active dogs
-- All life stages support: Products for high-performance and maintenance needs
+- AAFCO certified: Complete and balanced for all life stages (Gold Formula)
 
 ## Contact
 
 For product questions, retailer inquiries, or Bell County delivery:
-- Phone: (254) 939-3957 (Mon–Fri, 8am–3pm)
+- Phone: (254) 939-3957 (Mon–Fri, 8am–3pm CST)
 - Email: fencesbyfarr@yahoo.com

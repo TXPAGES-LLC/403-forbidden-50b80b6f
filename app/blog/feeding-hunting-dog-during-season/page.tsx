@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   description:
     'In-season hunting dogs burn significantly more calories than the bag\'s feeding chart accounts for. What to adjust, when, and how to monitor body condition throughout the season.',
   alternates: { canonical: '/blog/feeding-hunting-dog-during-season' },
+  openGraph: {
+    type: 'article',
+    title: 'Feeding Your Hunting Dog During Season: What Changes and Why',
+    description: 'In-season caloric adjustments, meal timing, and body condition monitoring to keep your hunting dog performing all season.',
+    url: '/blog/feeding-hunting-dog-during-season',
+    siteName: 'Outlaw Feed',
+    images: [{ url: 'https://outlawfeed.com/opengraph-image.png', width: 1200, height: 630, alt: 'Feeding your hunting dog during season — Outlaw Feed' }],
+  },
+  twitter: { card: 'summary_large_image', title: 'Feeding Your Hunting Dog During Season', description: 'Caloric adjustments and body condition monitoring for in-season hunting dogs.', images: ['https://outlawfeed.com/opengraph-image.png'] },
 }
 
 const jsonLd = {
@@ -30,12 +39,13 @@ export default function InSeasonFeedingArticle() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Nav />
       <main id="main-content">
-        <section className="bg-charcoal pt-32 pb-0 overflow-hidden">
+        <section className="bg-[#0f0e0c] pt-16 md:pt-20 pb-0 overflow-hidden">
           <div className="relative h-72 md:h-96 overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1920&q=80"
               alt="Hunting dog in the field — in-season feeding guide for hunting dogs"
               width={1920} height={800} loading="eager" fetchPriority="high" decoding="async"
+              sizes="100vw"
               className="w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(24,18,12,1) 0%, rgba(24,18,12,0.3) 60%)' }} aria-hidden="true" />

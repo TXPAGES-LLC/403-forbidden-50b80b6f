@@ -82,7 +82,7 @@ export default function FindAStorePage() {
       <Nav />
       <main id="main-content">
         {/* Page hero */}
-        <section aria-labelledby="store-heading" className="bg-charcoal pt-32 pb-16">
+        <section aria-labelledby="store-heading" className="bg-[#0f0e0c] pt-20 md:pt-24 pb-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="font-sans text-xs font-bold tracking-[0.22em] uppercase text-orange mb-4">Retail Locations</p>
             <h1 id="store-heading" className="font-serif text-4xl sm:text-5xl font-bold text-cream leading-tight text-balance">
