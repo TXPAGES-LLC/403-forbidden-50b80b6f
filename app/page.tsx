@@ -138,6 +138,24 @@ const blogPreviews = [
     date: "February 2025",
     category: "Working Dogs",
   },
+  {
+    title: "Feeding Your Hunting Dog During Season: What Changes and Why",
+    excerpt: "In-season energy demands can double. Learn how to adjust calories, meal timing, and watch body condition so your dog finishes the season as strong as it started.",
+    href: "/blog/feeding-hunting-dog-during-season",
+    img: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=600&q=75",
+    imgAlt: "Hunting dog in field during bird season — feeding guide for hunting dogs during season",
+    date: "April 2025",
+    category: "Hunting Dogs",
+  },
+  {
+    title: "Pre-Season Conditioning: Getting Your Hunting Dog Field Ready",
+    excerpt: "A six-week nutrition and conditioning timeline for bird dogs, retrievers, and hounds. Start here before opening day.",
+    href: "/blog/pre-season-conditioning-hunting-dog",
+    img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=75",
+    imgAlt: "Bird dog in Texas field — pre-season conditioning guide for hunting dogs",
+    date: "March 2025",
+    category: "Hunting Dogs",
+  },
 ];
 
 const retailers = [
@@ -541,8 +559,9 @@ export default function HomePage() {
               All Articles
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogPreviews.map((post) => (
+          {/* Row 1: first 3 posts */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            {blogPreviews.slice(0, 3).map((post) => (
               <Link
                 key={post.href}
                 href={post.href}
@@ -559,6 +578,44 @@ export default function HomePage() {
                     width={600}
                     height={192}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#c85a00]">
+                      {post.category}
+                    </span>
+                    <span className="text-[#9a8870] text-xs">{post.date}</span>
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-[#f5f0e8] mb-2 group-hover:text-[#e8a44a] transition-colors text-balance leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="text-[#9a8870] text-sm leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          {/* Row 2: last 2 posts — centered on large screens */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:max-w-[66%] md:mx-auto lg:max-w-none lg:grid-cols-2">
+            {blogPreviews.slice(3).map((post) => (
+              <Link
+                key={post.href}
+                href={post.href}
+                className="group bg-[#1a1712] border border-[#2e2820] rounded-lg overflow-hidden hover:border-[#c85a00]/50 transition-colors block"
+                aria-label={`Read: ${post.title}`}
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={post.img}
+                    alt={post.imgAlt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
+                    width={600}
+                    height={192}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
                 <div className="p-6">

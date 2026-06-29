@@ -109,10 +109,20 @@ export default function InSeasonFeedingArticle() {
               <div>
                 <p className="font-sans text-xs font-bold tracking-widest uppercase text-orange mb-1">Related</p>
                 <h3 className="font-serif text-xl font-bold text-charcoal text-balance">Outlaw Gold Formula</h3>
-                <p className="font-sans text-sm text-muted-foreground mt-1 leading-relaxed">32% protein &middot; 18% fat — built specifically for working and hunting dogs.</p>
+                <p className="font-sans text-sm text-muted-foreground mt-1 leading-relaxed">26% protein &middot; 18% fat — built specifically for working and hunting dogs.</p>
               </div>
               <Link href="/products/gold-formula" className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors">
                 View Gold Formula
+              </Link>
+            </div>
+            <div className="mt-8 bg-cream-dark border border-border rounded-sm p-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+              <div>
+                <p className="font-sans text-xs font-bold tracking-widest uppercase text-orange mb-1">Previous Article</p>
+                <h3 className="font-serif text-xl font-bold text-charcoal text-balance">Pre-Season Conditioning for Hunting Dogs</h3>
+                <p className="font-sans text-sm text-muted-foreground mt-1 leading-relaxed">The six-week nutrition and fitness timeline to get your dog field-ready before opening day.</p>
+              </div>
+              <Link href="/blog/pre-season-conditioning-hunting-dog" className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors">
+                Read Article
               </Link>
             </div>
             <div className="mt-10 pt-8 border-t border-border">

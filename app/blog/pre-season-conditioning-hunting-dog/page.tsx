@@ -188,19 +188,19 @@ export default function PreSeasonConditioningArticle() {
             {/* Internal CTA */}
             <div className="mt-12 bg-cream-dark border border-border rounded-sm p-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
               <div>
-                <p className="font-sans text-xs font-bold tracking-widest uppercase text-orange mb-1">Related</p>
+                <p className="font-sans text-xs font-bold tracking-widest uppercase text-orange mb-1">Up Next</p>
                 <h3 className="font-serif text-xl font-bold text-charcoal text-balance">
-                  Feeding Guide for Working Dogs
+                  Feeding Your Hunting Dog During Season
                 </h3>
                 <p className="font-sans text-sm text-muted-foreground mt-1 leading-relaxed">
-                  Full feeding charts, transition schedules, and FAQ for active and working dogs.
+                  In-season energy demands can double. Learn how to adjust calories and timing once opening day arrives.
                 </p>
               </div>
               <Link
-                href="/feeding-guide"
+                href="/blog/feeding-hunting-dog-during-season"
                 className="shrink-0 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-sm uppercase tracking-wider hover:bg-orange/90 transition-colors"
               >
-                View Feeding Guide
+                Read Article
               </Link>
             </div>
 

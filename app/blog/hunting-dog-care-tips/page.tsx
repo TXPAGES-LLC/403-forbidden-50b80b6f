@@ -199,10 +199,10 @@ export default function HuntingDogCareTipsPost() {
                 <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Best Dog Food for Hunting Dogs</p>
                 <p className="text-[#9a8870] text-xs mt-1">What to look for in a field formula</p>
               </Link>
-              <Link href="/products/blue-formula" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
-                <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Product</p>
-                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Blue Formula — 21% Protein</p>
-                <p className="text-[#9a8870] text-xs mt-1">For adult maintenance and everyday nutrition</p>
+              <Link href="/blog/pre-season-conditioning-hunting-dog" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
+                <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Article</p>
+                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Pre-Season Conditioning Guide</p>
+                <p className="text-[#9a8870] text-xs mt-1">Six-week timeline to get your dog field ready</p>
               </Link>
             </div>
           </div>

@@ -179,10 +179,10 @@ export default function WorkingDogNutritionPost() {
           <div className="mt-12 pt-8 border-t border-[#2e2820]">
             <h2 className="font-serif text-xl font-bold text-[#f5f0e8] mb-5">Related Resources</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/feeding-guide" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
-                <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Guide</p>
-                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Feeding Guide & Daily Amounts</p>
-                <p className="text-[#9a8870] text-xs mt-1">Feeding charts by weight and activity level</p>
+              <Link href="/blog/feeding-hunting-dog-during-season" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
+                <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Article</p>
+                <p className="font-serif font-bold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors">Feeding During Hunting Season</p>
+                <p className="text-[#9a8870] text-xs mt-1">In-season caloric and timing adjustments</p>
               </Link>
               <Link href="/products/gold-formula" className="p-5 bg-[#1a1712] border border-[#2e2820] rounded-lg hover:border-[#c85a00]/50 transition-colors group">
                 <p className="text-xs uppercase tracking-wider text-[#c85a00] mb-1">Product</p>
