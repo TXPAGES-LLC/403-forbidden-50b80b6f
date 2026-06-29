@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow internal/utility pages
+Disallow: /seo-audit
+
+Sitemap: https://outlawfeed.com/sitemap.xml

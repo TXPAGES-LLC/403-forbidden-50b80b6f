@@ -8,9 +8,9 @@ import {
 } from "@/lib/blog/source";
 
 export const metadata: Metadata = {
-  title: "Blog — Dog Nutrition, Hunting Dog Care & Working Dog Tips",
+  title: "Blog — Working Dog Nutrition & Hunting Dog Tips",
   description:
-    "Outlaw Feed's resource library for working dog owners. Dog nutrition articles, hunting dog care tips, feeding guides, and ranch dog health advice from Bell County, Texas.",
+    "Dog nutrition articles, hunting dog care tips, and feeding guides for working and hunting dogs from Outlaw Feed — made in Bell County, Texas.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",

@@ -1,8 +1,35 @@
-"use client";
-
 import type { Metadata } from "next";
 import Link from "next/link";
-import { useState } from "react";
+import FeedingGuideFAQ from "@/components/feeding-guide-faq";
+
+export const metadata: Metadata = {
+  title: "Dog Feeding Guide & FAQ — Gold & Blue Formula | Outlaw Feed",
+  description:
+    "How much to feed your working or hunting dog. Daily feeding amounts for Gold and Blue formulas by weight, plus answers to the most common Outlaw Feed questions.",
+  alternates: { canonical: "/feeding-guide" },
+  openGraph: {
+    type: "website",
+    title: "Dog Feeding Guide & FAQ | Outlaw Feed",
+    description:
+      "Daily feeding charts for Gold and Blue formulas plus FAQ — how much to feed, how to transition, and which formula fits your dog.",
+    url: "/feeding-guide",
+    siteName: "Outlaw Feed",
+    images: [
+      {
+        url: "https://outlawfeed.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Outlaw Feed Dog Feeding Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dog Feeding Guide | Outlaw Feed",
+    description: "Daily feeding charts and FAQ for Gold and Blue formulas. Texas-made dog food for working dogs.",
+    images: ["https://outlawfeed.com/opengraph-image.png"],
+  },
+};
 
 const faqs = [
   {
@@ -35,7 +62,7 @@ const faqs = [
   },
   {
     q: "Do you offer delivery?",
-    a: "We offer direct delivery within Bell County, Texas. Contact us at (254) 534-5279 to arrange a schedule. Outside Bell County, find our nearest retail partners on the Where to Buy page.",
+    a: "We offer direct delivery within Bell County, Texas. Contact us at (254) 939-3957 to arrange a schedule. Outside Bell County, find our nearest retail partners on the Where to Buy page.",
   },
   {
     q: "Where can I buy Outlaw Feed?",
@@ -46,27 +73,6 @@ const faqs = [
     a: "Contact us directly for puppy-specific feeding guidance, as our current Gold and Blue formulas are designed for adult dogs. Reach us at (254) 939-3957 or through the Contact page and we will point you in the right direction for your pup.",
   },
 ];
-
-function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border-b border-[#2e2820]">
-      <button
-        className="w-full flex items-center justify-between py-5 text-left gap-4"
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-      >
-        <span className="font-serif text-base md:text-lg font-semibold text-[#f5f0e8]">{q}</span>
-        <span className={`text-[#c85a00] shrink-0 transition-transform duration-200 ${open ? "rotate-45" : ""}`}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </span>
-      </button>
-      {open && (
-        <p className="pb-5 text-[#f5f0e8]/70 text-sm leading-relaxed">{a}</p>
-      )}
-    </div>
-  );
-}
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -114,8 +120,8 @@ export default function FeedingGuidePage() {
           <h2 id="formula-heading" className="font-serif text-3xl font-bold text-[#f5f0e8] mb-10">
             Which Formula Is Right for My Dog?
           </h2>
-          <div className="overflow-hidden border border-[#2e2820] rounded-lg">
-            <table className="w-full text-sm" aria-label="Formula comparison chart">
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border border-[#2e2820] rounded-lg overflow-hidden" aria-label="Formula comparison chart">
               <thead>
                 <tr className="bg-[#0f0e0c] border-b border-[#2e2820]">
                   <th className="px-5 py-4 text-left text-[#9a8870] text-xs uppercase tracking-wider" />
@@ -128,9 +134,9 @@ export default function FeedingGuidePage() {
                   ["Crude Protein", "26% min", "21% min"],
                   ["Crude Fat", "18% min", "15% min"],
                   ["Moisture", "12% max", "12% max"],
-                  ["Calories", "3640 kcal/kg", "3,170 kcal/kg"],
+                  ["Calories", "3,640 kcal/kg", "3,170 kcal/kg"],
                   ["Per Cup", "441 kcal", "290 kcal"],
-                  ["Primary Protein", "Chicken Rice", "Chicken Meal"],
+                  ["Primary Protein", "Chicken & Brown Rice", "Chicken Meal"],
                   ["Carb Source", "Brown Rice & Grain Sorghum", "Grain Sorghum & Brown Rice"],
                   ["Best For", "Working & hunting dogs", "Adult dogs & everyday nutrition"],
                   ["Corn / Wheat / Soy", "Never", "Never"],
@@ -145,10 +151,10 @@ export default function FeedingGuidePage() {
             </table>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <Link href="/products/gold-formula" className="px-6 py-3 bg-[#c85a00] text-white text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#a84800] transition-colors text-center">
+            <Link href="/products/gold-formula" className="inline-flex items-center justify-center px-6 py-3 bg-[#c85a00] text-white text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#a84800] transition-colors">
               Gold Formula Details
             </Link>
-            <Link href="/products/blue-formula" className="px-6 py-3 border border-[#2e2820] text-[#f5f0e8]/70 text-sm font-semibold uppercase tracking-wider rounded hover:border-[#c85a00] hover:text-[#c85a00] transition-colors text-center">
+            <Link href="/products/blue-formula" className="inline-flex items-center justify-center px-6 py-3 border border-[#2e2820] text-[#f5f0e8]/70 text-sm font-semibold uppercase tracking-wider rounded hover:border-[#c85a00] hover:text-[#c85a00] transition-colors">
               Blue Formula Details
             </Link>
           </div>
@@ -161,7 +167,7 @@ export default function FeedingGuidePage() {
           <h2 id="amounts-heading" className="font-serif text-3xl font-bold text-[#f5f0e8] mb-4">
             Daily Feeding Amounts
           </h2>
-          <p className="text-[#9a8870] text-sm mb-8 leading-relaxed">
+          <p className="text-[#9a8870] text-sm mb-8 leading-relaxed max-w-2xl">
             Amounts below are starting guidelines for dogs at moderate activity. Active working and hunting dogs typically require 25–50% more. Always adjust based on body condition — you want to easily feel ribs without seeing them.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -195,7 +201,7 @@ export default function FeedingGuidePage() {
                   <table className="w-full text-sm" aria-label={table.title}>
                     <thead>
                       <tr className="bg-[#1a1712] border-b border-[#2e2820]">
-                        <th className="px-4 py-3 text-left text-[#9a8870] text-xs uppercase tracking-wider">Weight / Stage</th>
+                        <th className="px-4 py-3 text-left text-[#9a8870] text-xs uppercase tracking-wider">Weight</th>
                         <th className="px-4 py-3 text-left text-[#9a8870] text-xs uppercase tracking-wider">Per Day</th>
                       </tr>
                     </thead>
@@ -221,11 +227,7 @@ export default function FeedingGuidePage() {
           <h2 id="faq-heading" className="font-serif text-3xl md:text-4xl font-bold text-[#f5f0e8] mb-10">
             Frequently Asked Questions
           </h2>
-          <div>
-            {faqs.map((faq) => (
-              <FAQItem key={faq.q} q={faq.q} a={faq.a} />
-            ))}
-          </div>
+          <FeedingGuideFAQ faqs={faqs} />
           <div className="mt-10 p-6 bg-[#0f0e0c] border border-[#2e2820] rounded-lg">
             <p className="text-[#f5f0e8]/70 text-sm">
               Have a question not answered here?{" "}

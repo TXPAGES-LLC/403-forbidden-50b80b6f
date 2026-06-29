@@ -3,7 +3,7 @@ import Link from "next/link";
 import GtmCallLink from "@/components/gtm-call-link";
 
 export const metadata: Metadata = {
-  title: "Where to Buy Outlaw Feed — Texas Retailers & Store Locator",
+  title: "Where to Buy Outlaw Feed — Central Texas Retailers",
   description:
     "Find Outlaw Feed dog food at retailers across Bell County and Central Texas. Store locator with addresses, phone numbers, and directions. Direct delivery available in Bell County, TX.",
   alternates: { canonical: "/where-to-buy" },

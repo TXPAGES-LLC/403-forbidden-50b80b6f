@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Why Outlaw — Real Ingredients, Texas-Made Working Dog Food",
+  title: "Why Outlaw Feed — No Fillers, Real Meat, Made in Texas",
   description:
     "Learn why Outlaw Feed is different. No corn, wheat, or soy. Real meat first ingredient. AAFCO certified. Made in Bell County, Texas for hunting dogs, ranch dogs, and working dogs.",
   alternates: { canonical: "/why-outlaw" },
@@ -34,7 +34,7 @@ const pageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": "/why-outlaw#webpage",
-  name: "Why Outlaw Feed — Real Ingredients, Texas-Made Working Dog Food",
+  name: "Why Outlaw Feed — No Fillers, Real Meat, Made in Texas",
   url: "/why-outlaw",
   description:
     "No corn, wheat, or soy. Real meat first ingredient. AAFCO certified. Made in Bell County, Texas for hunting dogs, ranch dogs, and working dogs.",
