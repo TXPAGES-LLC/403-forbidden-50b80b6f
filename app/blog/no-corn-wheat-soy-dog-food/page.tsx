@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "No Corn, Wheat, or Soy Dog Food: Why It Matters | Outlaw Feed",
+  title: "No Corn, Wheat, or Soy Dog Food: Why It Matters",
   description:
     "Corn, wheat, and soy are cheap fillers that compromise digestion, coat quality, and long-term health. Here is exactly why Outlaw Feed cuts them out of every formula.",
   alternates: { canonical: "/blog/no-corn-wheat-soy-dog-food" },

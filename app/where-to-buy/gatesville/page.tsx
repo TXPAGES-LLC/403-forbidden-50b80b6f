@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Gatesville TX — Coryell County | Outlaw Feed",
+  title: "Dog Food in Gatesville TX — Coryell County",
   description:
     "Outlaw Feed is Texas-made working dog food available near Gatesville, TX in Coryell County. No corn, wheat, or soy. Real meat first ingredient. Call (254) 939-3957.",
   alternates: { canonical: "/where-to-buy/gatesville" },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/where-to-buy" },
   openGraph: {
     type: "website",
-    title: "Where to Buy Outlaw Feed — Central Texas Store Locator",
+    title: "Where to Buy Outlaw Feed — Central Texas Retailers | Outlaw Feed",
     description:
       "Find Outlaw Feed at local feed stores and ranch supply retailers across Bell County and Central Texas. Addresses and phone numbers included.",
     url: "/where-to-buy",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Where to Buy Outlaw Feed — Central Texas",
+    title: "Where to Buy Outlaw Feed — Central Texas Retailers | Outlaw Feed",
     description: "Find Outlaw Feed at feed stores and ranch supply retailers across Bell County, TX.",
     images: ["https://outlawfeed.com/opengraph-image.png"],
   },

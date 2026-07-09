@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'What "No Corn, No Wheat, No Soy" Means for Your Dog | Outlaw Feed',
+  title: 'What "No Corn, No Wheat, No Soy" Means for Your Dog',
   description:
     'Why corn, wheat, and soy dominate mass-market dog food, what allergen load means for your dog, and what clean alternatives look like on a label.',
   alternates: { canonical: '/blog/no-corn-no-wheat-no-soy-explained' },

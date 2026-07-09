@@ -3,13 +3,13 @@ import Link from "next/link";
 import GtmCtaLink from "@/components/gtm-cta-link";
 
 export const metadata: Metadata = {
-  title: "Blue Formula Dog Food — Adult Maintenance | Outlaw Feed",
+  title: "Blue Formula Dog Food — Adult Maintenance",
   description:
     "Outlaw Feed Blue Formula: 21% protein, 15% fat, zero fillers. Chicken meal, grain sorghum, brown rice — no corn, wheat, or soy. 3,170 kcal/kg. Texas-made for adult dogs.",
   alternates: { canonical: "/products/blue-formula" },
   openGraph: {
     type: "website",
-    title: "Blue Formula — 21% Protein, Adult Maintenance | Outlaw Feed",
+    title: "Blue Formula Dog Food — Adult Maintenance | Outlaw Feed",
     description:
       "Texas-made adult maintenance dog food. 21% protein, 15% fat, no corn wheat or soy. Chicken meal first ingredient. 3,170 kcal/kg.",
     url: "/products/blue-formula",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blue Formula — 21% Protein | Outlaw Feed",
+    title: "Blue Formula Dog Food — Adult Maintenance | Outlaw Feed",
     description: "Adult maintenance dog food. 21% protein, 15% fat, no fillers. Made in Texas.",
     images: ["https://outlawfeed.com/Blue-Package-Dog-Food-Dog-Food-Pet-Food.png"],
   },
@@ -54,8 +54,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home",     item: "" },
-    { "@type": "ListItem", position: 2, name: "Products", item: "/products/blue-formula" },
-    { "@type": "ListItem", position: 3, name: "Blue Formula" },
+    { "@type": "ListItem", position: 2, name: "Blue Formula", item: "/products/blue-formula" },
   ],
 };
 

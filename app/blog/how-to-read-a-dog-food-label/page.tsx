@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'How to Read a Dog Food Label Without Getting Fooled | Outlaw Feed',
+  title: 'How to Read a Dog Food Label Without Getting Fooled',
   description:
     'The guaranteed analysis, ingredients list, AAFCO statement — what each means and how to use them to separate real nutrition from marketing language on a dog food bag.',
   alternates: { canonical: '/blog/how-to-read-a-dog-food-label' },

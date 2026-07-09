@@ -3,13 +3,13 @@ import Link from "next/link";
 import GtmCtaLink from "@/components/gtm-cta-link";
 
 export const metadata: Metadata = {
-  title: "Gold Formula Dog Food — 26% Protein | Outlaw Feed",
+  title: "Gold Formula Dog Food — 26% Protein",
   description:
     "Outlaw Feed Gold Formula: 26% protein, 18% fat, zero fillers. Real chicken, brown rice, no corn, wheat, or soy. 3,640 kcal/kg. Texas-made for working and hunting dogs.",
   alternates: { canonical: "/products/gold-formula" },
   openGraph: {
     type: "website",
-    title: "Gold Formula — 26% Protein, 18% Fat | Outlaw Feed",
+    title: "Gold Formula Dog Food — 26% Protein | Outlaw Feed",
     description:
       "High-performance Texas-made dog food. 26% protein, 18% fat, no corn wheat or soy. Real chicken. 3,640 kcal/kg. Built for hunting, ranch, and working dogs.",
     url: "/products/gold-formula",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gold Formula — 26% Protein | Outlaw Feed",
+    title: "Gold Formula Dog Food — 26% Protein | Outlaw Feed",
     description: "High-performance dog food. 26% protein, 18% fat, no fillers. Made in Texas.",
     images: ["https://outlawfeed.com/Gold-Package-Dog-Food-Dog-Food-Pet-Food.png"],
   },
@@ -54,8 +54,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home",     item: "" },
-    { "@type": "ListItem", position: 2, name: "Products", item: "/products/gold-formula" },
-    { "@type": "ListItem", position: 3, name: "Gold Formula" },
+    { "@type": "ListItem", position: 2, name: "Gold Formula", item: "/products/gold-formula" },
   ],
 };
 

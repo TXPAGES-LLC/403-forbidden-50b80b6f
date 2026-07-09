@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Belton TX — Bell County Feed Store | Outlaw Feed",
+  title: "Dog Food in Belton TX — Bell County Feed Store",
   description:
     "Looking for high-protein dog food in Belton, TX? Outlaw Feed is Texas-made with no corn, wheat, or soy. Available at local feed stores in Bell County. Call (254) 939-3957.",
   alternates: { canonical: "/where-to-buy/belton" },

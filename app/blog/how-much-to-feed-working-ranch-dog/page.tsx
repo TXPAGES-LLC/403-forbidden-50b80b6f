@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'How Much to Feed a Working Ranch Dog | Outlaw Feed',
+  title: 'How Much to Feed a Working Ranch Dog',
   description:
     'Ranch dogs burn significantly more calories than pet dogs. Learn how activity level changes feeding requirements and how to use body condition scoring to dial in the right amount.',
   alternates: { canonical: '/blog/how-much-to-feed-working-ranch-dog' },

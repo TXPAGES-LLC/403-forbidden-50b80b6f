@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import GtmCallLink from "@/components/gtm-call-link";
 
 export const metadata: Metadata = {
-  title: "Contact Outlaw Feed — (254) 939-3957 | Bell County, TX",
+  title: "Contact Outlaw Feed — (254) 939-3957",
   description:
     "Contact Outlaw Feed by phone: (254) 939-3957. Available Monday–Friday, 8am–3pm. Product questions, Bell County delivery, and Texas retailer inquiries.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
-    title: "Contact Outlaw Feed — (254) 939-3957",
+    title: "Contact Outlaw Feed — (254) 939-3957 | Outlaw Feed",
     description:
       "Call (254) 939-3957 for product questions, Bell County delivery, or retailer inquiries. Mon–Fri, 8am–3pm.",
     url: "/contact",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Outlaw Feed — (254) 939-3957",
+    title: "Contact Outlaw Feed — (254) 939-3957 | Outlaw Feed",
     description: "Call for product questions, Bell County delivery, or retailer info. Mon–Fri 8am–3pm.",
     images: ["https://outlawfeed.com/opengraph-image.png"],
   },
@@ -116,6 +116,94 @@ export default function ContactPage() {
                 or call to find the closest location.
               </p>
             </div>
+          </div>
+
+          {/* Service area + reasons to call prose */}
+          <div className="p-8 md:p-10 bg-[#1a1712] border border-[#2e2820] rounded-lg flex flex-col gap-6">
+            <div>
+              <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#c85a00] font-semibold mb-3">
+                Who We Serve
+              </p>
+              <h2 className="font-serif text-2xl font-bold text-[#f5f0e8] mb-4 text-balance">
+                Central Texas Working Dog Country
+              </h2>
+              <p className="text-[#9a8870] text-sm leading-relaxed mb-3">
+                Outlaw Feed is made in Bell County, Texas and sold direct and through local retailers across Central Texas. Our primary service area covers Bell, McLennan, Coryell, Lampasas, Hill, and Hamilton counties — the heart of working ranch and hunting dog territory in the state.
+              </p>
+              <p className="text-[#9a8870] text-sm leading-relaxed mb-3">
+                If you are in Belton, Temple, Killeen, Copperas Cove, Harker Heights, Waco, Gatesville, Hillsboro, Lampasas, or Hamilton, there is a good chance a retailer near you already carries Outlaw Feed. Call us and we will point you to the closest location or discuss direct delivery options if you are in Bell County.
+              </p>
+              <p className="text-[#9a8870] text-sm leading-relaxed">
+                Outside that area? We still want to hear from you. If you are a feed store, farm supply, or co-op looking to carry a locally made, high-protein Texas dog food, that conversation starts with a phone call. We handle wholesale accounts directly — no distributor middleman.
+              </p>
+            </div>
+
+            <div className="border-t border-[#2e2820] pt-6">
+              <h3 className="font-serif text-xl font-bold text-[#f5f0e8] mb-4">
+                Good Reasons to Call Us
+              </h3>
+              <ul className="flex flex-col gap-3" role="list">
+                {[
+                  { heading: "You are switching formulas",       body: "Not sure whether Gold (26% protein, 18% fat) or Blue (21% protein, 15% fat) is right for your dog's workload? We can walk you through it based on breed, age, and how hard the dog is working." },
+                  { heading: "You need Bell County delivery",    body: "We offer direct delivery to Bell County addresses. Call to set up a recurring schedule so you never run out mid-season." },
+                  { heading: "Pre-season feeding adjustments",   body: "Heading into dove, deer, or quail season and want to adjust your dog's caloric intake before opening day? We can give you a protocol over the phone." },
+                  { heading: "You want to carry Outlaw Feed",    body: "Farm supply stores, feed co-ops, and ranch supply stores — call to ask about wholesale pricing and minimum order quantities." },
+                  { heading: "You have a dog with sensitivities", body: "Our formulas contain no corn, wheat, or soy. If your dog has shown symptoms of food intolerance on other brands, we can explain what we use instead and why it makes a difference." },
+                ].map((item) => (
+                  <li key={item.heading} className="flex items-start gap-3">
+                    <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#c85a00]" aria-hidden="true" />
+                    <span className="text-sm text-[#9a8870] leading-relaxed">
+                      <strong className="text-[#f5f0e8] font-semibold">{item.heading}.</strong>{" "}{item.body}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Where to buy locally */}
+          <div className="p-8 md:p-10 bg-[#1a1712] border border-[#2e2820] rounded-lg">
+            <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#c85a00] font-semibold mb-3">
+              Find It Locally
+            </p>
+            <h2 className="font-serif text-2xl font-bold text-[#f5f0e8] mb-4 text-balance">
+              Where to Buy Outlaw Feed Near You
+            </h2>
+            <p className="text-[#9a8870] text-sm leading-relaxed mb-4">
+              Outlaw Feed is stocked at select farm supply and feed stores across the six-county Central Texas area. Use the store locator below to find the nearest retail location, or call us at <GtmCallLink location="contact_inline" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors font-semibold">(254) 939-3957</GtmCallLink> and we will confirm current stock at the location closest to you.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+              {[
+                { city: "Belton",         county: "Bell County",      href: "/where-to-buy/belton" },
+                { city: "Waco",           county: "McLennan County",   href: "/where-to-buy/waco" },
+                { city: "Copperas Cove",  county: "Coryell County",    href: "/where-to-buy/copperas-cove" },
+                { city: "Lampasas",       county: "Lampasas County",   href: "/where-to-buy/lampasas" },
+                { city: "Hillsboro",      county: "Hill County",       href: "/where-to-buy/hillsboro" },
+                { city: "Hamilton",       county: "Hamilton County",   href: "/where-to-buy/hamilton" },
+                { city: "Harker Heights", county: "Bell County",       href: "/where-to-buy/harker-heights" },
+                { city: "Gatesville",     county: "Coryell County",    href: "/where-to-buy/gatesville" },
+              ].map((loc) => (
+                <Link
+                  key={loc.href}
+                  href={loc.href}
+                  className="group flex flex-col gap-0.5 p-3 bg-[#0f0e0c] border border-[#2e2820] rounded hover:border-[#c85a00]/50 transition-colors"
+                >
+                  <span className="text-sm font-semibold text-[#f5f0e8] group-hover:text-[#e8a44a] transition-colors leading-tight">
+                    {loc.city}
+                  </span>
+                  <span className="text-xs text-[#9a8870] leading-tight">{loc.county}</span>
+                </Link>
+              ))}
+            </div>
+            <Link
+              href="/where-to-buy"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#c85a00] hover:text-[#e8a44a] transition-colors"
+            >
+              View full store locator
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </Link>
           </div>
 
           {/* Verified Business Profiles */}

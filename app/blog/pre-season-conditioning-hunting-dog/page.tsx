@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Pre-Season Conditioning: Get Your Hunting Dog Field Ready | Outlaw Feed',
+  title: 'Pre-Season Conditioning: Get Your Hunting Dog Field Ready',
   description:
     'A six-week pre-season conditioning and nutrition timeline for hunting dogs. Get your bird dog, retriever, or hound to peak physical condition before opening day.',
   alternates: { canonical: '/blog/pre-season-conditioning-hunting-dog' },

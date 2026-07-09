@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
-    title: "Outlaw Feed Blog — Dog Nutrition & Hunting Dog Tips",
+    title: "Blog — Working Dog Nutrition & Hunting Dog Tips | Outlaw Feed",
     description:
       "Dog nutrition articles, hunting dog care tips, and working dog feeding guides from Bell County, Texas.",
     url: "/blog",
@@ -174,6 +174,70 @@ export default async function BlogPage() {
             Dog nutrition articles, hunting dog care tips, and working dog feeding advice —
             written for people who take their dogs seriously.
           </p>
+        </div>
+      </section>
+
+      {/* Editorial intro — expands thin content, adds topic authority */}
+      <section className="px-4 md:px-6 py-14 md:py-18 bg-[#0f0e0c] border-b border-[#2e2820]">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
+
+            {/* Main intro copy */}
+            <div className="lg:col-span-3 flex flex-col gap-5">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#f5f0e8] text-balance">
+                Why Working Dog Nutrition Is Different
+              </h2>
+              <p className="text-[#9a8870] text-sm leading-relaxed">
+                A bird dog covering ten miles of South Texas brush in November is not the same animal as a house pet that circles the couch twice a day. Neither is a cow dog putting in full days during branding season, or a hog dog running in the dark. These dogs burn through calories, stress their joints, and tax their digestive systems in ways that grocery-store kibble was never designed to handle.
+              </p>
+              <p className="text-[#9a8870] text-sm leading-relaxed">
+                High crude protein — above 26% for hard-working dogs — is not a marketing number. It is the floor for maintaining lean muscle under sustained physical load. Fat drives endurance: a formula with 18% crude fat gives a field dog sustained energy without the blood-sugar spike and crash that high-carbohydrate formulas cause. And the ingredients that are absent matter as much as the ones present. Corn, wheat, and soy are cheap caloric fillers that raise allergen load, trigger inflammatory responses in some dogs, and dilute the protein density of every cup you pour. Outlaw Feed removes all three.
+              </p>
+              <p className="text-[#9a8870] text-sm leading-relaxed">
+                The articles in this library are written for ranchers, hunters, and working-dog handlers in Central Texas and beyond — people who need straight information about feeding schedules, seasonal caloric adjustment, coat and joint health, and how to read a dog food label without getting misled. No fluff, no filler. Same standard we hold the feed to.
+              </p>
+            </div>
+
+            {/* Topic index sidebar */}
+            <aside className="lg:col-span-2 flex flex-col gap-4" aria-label="Topics covered in this blog">
+              <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#c85a00] font-semibold">
+                Topics Covered
+              </p>
+              <nav className="flex flex-col gap-2">
+                {[
+                  { label: "Hunting Dog Nutrition & Field Formulas", href: "/blog/best-dog-food-hunting-dogs" },
+                  { label: "Feeding During Hunting Season",          href: "/blog/feeding-hunting-dog-during-season" },
+                  { label: "Pre-Season Conditioning Guide",          href: "/blog/pre-season-conditioning-hunting-dog" },
+                  { label: "Working & Ranch Dog Feeding Amounts",    href: "/blog/how-much-to-feed-working-ranch-dog" },
+                  { label: "Working Dog Nutrition Through Demand Season", href: "/blog/working-dog-nutrition" },
+                  { label: "Year-Round Hunting Dog Care Tips",       href: "/blog/hunting-dog-care-tips" },
+                  { label: "No Corn, No Wheat, No Soy — Explained", href: "/blog/no-corn-no-wheat-no-soy-explained" },
+                  { label: "How to Read a Dog Food Label",           href: "/blog/how-to-read-a-dog-food-label" },
+                ].map((topic) => (
+                  <Link
+                    key={topic.href}
+                    href={topic.href}
+                    className="group flex items-start gap-3 py-2.5 border-b border-[#2e2820] last:border-0 hover:border-[#c85a00]/30 transition-colors"
+                  >
+                    <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-[#c85a00] group-hover:bg-[#e8a44a] transition-colors" aria-hidden="true" />
+                    <span className="text-sm text-[#9a8870] group-hover:text-[#e8a44a] transition-colors leading-snug">
+                      {topic.label}
+                    </span>
+                  </Link>
+                ))}
+              </nav>
+              <div className="mt-2 p-4 bg-[#1a1712] border border-[#2e2820] rounded-lg">
+                <p className="text-xs text-[#9a8870] leading-relaxed">
+                  Looking for feeding amounts? Start with the{" "}
+                  <Link href="/feeding-guide" className="text-[#c85a00] hover:text-[#e8a44a] transition-colors">
+                    Feeding Guide & FAQ
+                  </Link>
+                  {" "}for Gold and Blue Formula charts by weight and activity level.
+                </p>
+              </div>
+            </aside>
+
+          </div>
         </div>
       </section>
 

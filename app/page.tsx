@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Texas-Made Dog Food for Working & Hunting Dogs | Outlaw Feed",
+  title: "Texas-Made Dog Food for Working & Hunting Dogs",
   description:
     "Outlaw Feed: Texas-made, AAFCO-certified dog food with no corn, wheat, or soy. Real meat first ingredient for hunting dogs, ranch dogs, and working dogs in Bell County, TX.",
   alternates: { canonical: "" },
   openGraph: {
     type: "website",
-    title: "Outlaw Feed — Texas-Made Dog Food for Working & Hunting Dogs",
+    title: "Texas-Made Dog Food for Working & Hunting Dogs | Outlaw Feed",
     description:
       "No corn. No wheat. No soy. Real meat — first ingredient, every time. AAFCO-certified and made in Bell County, Texas for dogs that work as hard as their owners.",
     url: "",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Outlaw Feed — Texas-Made Dog Food",
+    title: "Texas-Made Dog Food for Working & Hunting Dogs | Outlaw Feed",
     description: "No corn, no wheat, no soy. Real meat first. Made in Bell County, TX for working and hunting dogs.",
     images: ["https://outlawfeed.com/opengraph-image.png"],
   },
@@ -170,6 +170,7 @@ const retailers = [
 const homePageSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  "@id": "/#product-list",
   name: "Outlaw Feed Dog Food Products",
   itemListElement: [
     {

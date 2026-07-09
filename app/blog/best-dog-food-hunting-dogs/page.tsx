@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Dog Food for Hunting Dogs: Field Formula Guide | Outlaw Feed",
+  title: "Best Dog Food for Hunting Dogs: Field Formula Guide",
   description:
     "Not all high-protein dog foods deliver what hunting dogs need in the field. Learn the key markers of a true hunting dog formula — protein source, fat ratios, and what to avoid.",
   alternates: { canonical: "/blog/best-dog-food-hunting-dogs" },

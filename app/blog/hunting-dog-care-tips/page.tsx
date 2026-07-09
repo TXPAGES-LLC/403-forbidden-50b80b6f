@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Hunting Dog Care Tips: Peak Condition Year-Round | Outlaw Feed",
+  title: "Hunting Dog Care Tips: Peak Condition Year-Round",
   description:
     "From pre-season conditioning to off-season maintenance, learn how experienced hunters keep their dogs performing at the highest level. Nutrition, fitness, and recovery tips.",
   alternates: { canonical: "/blog/hunting-dog-care-tips" },

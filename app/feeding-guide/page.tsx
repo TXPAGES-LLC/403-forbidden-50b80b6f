@@ -3,13 +3,13 @@ import Link from "next/link";
 import FeedingGuideFAQ from "@/components/feeding-guide-faq";
 
 export const metadata: Metadata = {
-  title: "Dog Feeding Guide & FAQ — Gold & Blue Formula | Outlaw Feed",
+  title: "Dog Feeding Guide & FAQ — Gold & Blue Formula",
   description:
     "How much to feed your working or hunting dog. Daily feeding amounts for Gold and Blue formulas by weight, plus answers to the most common Outlaw Feed questions.",
   alternates: { canonical: "/feeding-guide" },
   openGraph: {
     type: "website",
-    title: "Dog Feeding Guide & FAQ | Outlaw Feed",
+    title: "Dog Feeding Guide & FAQ — Gold & Blue Formula | Outlaw Feed",
     description:
       "Daily feeding charts for Gold and Blue formulas plus FAQ — how much to feed, how to transition, and which formula fits your dog.",
     url: "/feeding-guide",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dog Feeding Guide | Outlaw Feed",
+    title: "Dog Feeding Guide & FAQ — Gold & Blue Formula | Outlaw Feed",
     description: "Daily feeding charts and FAQ for Gold and Blue formulas. Texas-made dog food for working dogs.",
     images: ["https://outlawfeed.com/opengraph-image.png"],
   },

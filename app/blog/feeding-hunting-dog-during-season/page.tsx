@@ -4,7 +4,7 @@ import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Feeding Your Hunting Dog During Season: What Changes | Outlaw Feed',
+  title: 'Feeding Your Hunting Dog During Season: What Changes',
   description:
     'In-season hunting dogs burn significantly more calories than the bag\'s feeding chart accounts for. What to adjust, when, and how to monitor body condition throughout the season.',
   alternates: { canonical: '/blog/feeding-hunting-dog-during-season' },

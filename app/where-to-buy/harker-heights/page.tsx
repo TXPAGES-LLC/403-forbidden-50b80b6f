@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Harker Heights TX — Real Protein | Outlaw Feed",
+  title: "Dog Food in Harker Heights TX — Real Protein",
   description:
     "Find Outlaw Feed dog food near Harker Heights, TX. Texas-made, AAFCO certified, no corn wheat or soy. High-protein formulas for active and working dogs in Bell County.",
   alternates: { canonical: "/where-to-buy/harker-heights" },

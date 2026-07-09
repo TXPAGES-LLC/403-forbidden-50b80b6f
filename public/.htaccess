@@ -1,0 +1,27 @@
+# ============================================================
+# outlawfeed.com — canonical host enforcement
+# DreamHost Apache / mod_rewrite
+# ============================================================
+# Force ALL www.outlawfeed.com traffic to https://outlawfeed.com
+# with a permanent 301 redirect, preserving full path + query string.
+# This eliminates the duplicate-content and duplicate-meta-description
+# errors caused by the same page resolving on both www and non-www.
+# ============================================================
+
+Options -MultiViews
+RewriteEngine On
+
+# ── 1. www → non-www (301 permanent) ──────────────────────────────────────────
+# Matches any request where the host begins with "www."
+# Redirects to the bare domain, keeping scheme, path, and query string intact.
+RewriteCond %{HTTP_HOST} ^www\.outlawfeed\.com$ [NC]
+RewriteRule ^(.*)$ https://outlawfeed.com/$1 [R=301,L]
+
+# ── 2. Force HTTPS (belt-and-suspenders, in case Vercel/DreamHost CDN is bypassed) ─
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^outlawfeed\.com$ [NC]
+RewriteRule ^(.*)$ https://outlawfeed.com/$1 [R=301,L]
+
+# ── 3. Dead-page redirects ─────────────────────────────────────────────────────
+# /benefits (4XX dead) → /why-outlaw (most relevant live page)
+RewriteRule ^benefits/?$ https://outlawfeed.com/why-outlaw [R=301,L]

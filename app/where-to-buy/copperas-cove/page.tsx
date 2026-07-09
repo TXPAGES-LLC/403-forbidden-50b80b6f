@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityPage from "@/components/city-page";
 
 export const metadata: Metadata = {
-  title: "Dog Food in Copperas Cove TX — No Fillers | Outlaw Feed",
+  title: "Dog Food in Copperas Cove TX — No Fillers",
   description:
     "Outlaw Feed is high-protein dog food available near Copperas Cove, TX. No corn, wheat, or soy. Texas-made, AAFCO certified for working dogs, hunting dogs, and active breeds.",
   alternates: { canonical: "/where-to-buy/copperas-cove" },
