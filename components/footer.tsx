@@ -21,7 +21,6 @@ const footerLinks = [
     heading: "Resources",
     links: [
       { label: "Feeding Guide", href: "/feeding-guide" },
-      { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/feeding-guide#faq" },
     ],
   },

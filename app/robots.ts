@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
           "/find-a-store/",
           "/our-story/",
           "/ingredients/",
-          "/blog/best-dog-food-for-hunting-dogs/",
+          "/blog/",
         ],
       },
     ],
