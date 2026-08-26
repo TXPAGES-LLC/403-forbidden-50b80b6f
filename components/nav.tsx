@@ -39,6 +39,7 @@ const navLinks = [
     ],
   },
   { label: "Feeding Guide", href: "/feeding-guide" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

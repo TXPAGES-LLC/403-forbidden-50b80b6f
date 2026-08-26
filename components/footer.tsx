@@ -20,6 +20,7 @@ const footerLinks = [
   {
     heading: "Resources",
     links: [
+      { label: "Blog", href: "/blog" },
       { label: "Feeding Guide", href: "/feeding-guide" },
       { label: "FAQ", href: "/feeding-guide#faq" },
     ],
